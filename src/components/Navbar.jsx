@@ -6,7 +6,7 @@ const navigation = [
   { name: 'Exhibitions', href: '/exhibitions', current: false },
   { name: 'News', href: '/news', current: false },
   { name: 'Booking', href: '/booking', current: false },
-  { name: 'Logo', href: '/', current: false, isLogo: true }, // Inserted logo as a navigation item
+  { name: 'Logo', href: '/', current: false, isLogo: true },
   { name: 'Events', href: '/events', current: false },
   { name: 'Gallery', href: '/gallery', current: false },
   { name: 'Contact Us', href: '/contactus', current: false },
