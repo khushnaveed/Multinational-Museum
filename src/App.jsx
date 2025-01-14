@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Exhibitions from "./components/Exhibitions";
 import News from "./components/News";
 import Booking from "./components/Booking";
+import BookingConfirmation from './components/BookingConfirmation';
+
 import Events from "./components/Events";
 
 import ContactUs from "./components/ContactUs";
@@ -23,6 +25,7 @@ function App() {
           <Route path="/exhibitions" element={<Exhibitions />} />
           <Route path="/news" element={<News />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/booking-confirmation" element={<BookingConfirmation />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/artwork" element={<Artwork />} />

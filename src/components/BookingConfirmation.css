@@ -1,0 +1,10 @@
+.confirmation-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 83, 83);
+    color: white;
+    border-radius: 10px;
+    height: 50vh;
+}
