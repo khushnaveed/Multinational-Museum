@@ -1,4 +1,7 @@
 /* eslint-disable no-unused-vars */
+<<<<<<< HEAD
+import React from 'react'
+=======
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
@@ -20,6 +23,7 @@ const countries = [
 const CountryGallery = ({ country }) => {
   const navigate = useNavigate();
   const artworks = country.data;
+>>>>>>> 7c11db38a20e970dc463bbc16734499aa40c7fbb
 
   return (
     <div className="min-h-screen bg-black text-white p-8">
