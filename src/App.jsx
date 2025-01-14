@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 
 // eslint-disable-next-line no-unused-vars
 import { useState } from "react";
@@ -37,7 +36,7 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
-      <HeroContent />
+      {/* <HeroContent /> */}
     </>
 
   );
