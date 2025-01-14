@@ -23,10 +23,11 @@ function App() {
         <div className="flex flex-col min-h-screen">
           <Navbar />
           <Routes>
-          
+
             <Route path="/exhibitions" element={<Exhibitions />} />
             <Route path="/news" element={<News />} />
             <Route path="/booking" element={<Booking />} />
+            <Route path="/booking-confirmation" element={<BookingConfirmation />} />
             <Route path="/" element={<HeroContent />} />
             <Route path="/events" element={<Events />} />
             <Route path="/contactus" element={<ContactUs />} />
