@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -24,7 +25,7 @@ function App() {
           <Route path="/news" element={<News />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/events" element={<Events />} />
-          <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/artwork" element={<Artwork />} />
           <Route path="/documentaries" element={<Documentaries />} />
         </Routes>
