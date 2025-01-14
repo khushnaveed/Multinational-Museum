@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Persepolis at Dawn",
+    "artist": "Shirin Neshat",
+    "year": "2009",
+    "category": "Painting",
+    "description": "Mystical portrayal of the ancient city of Persepolis",
+    "imageUrl": "/artworks/iran/persepolis-dawn.jpg"
+  },
+  {
+    "title": "Tehran Bazaar",
+    "artist": "Parviz Tanavoli",
+    "year": "2014",
+    "category": "Drawing",
+    "description": "Intricate sketch of the bustling Tehran Grand Bazaar",
+    "imageUrl": "/artworks/iran/tehran-bazaar.jpg"
+  },
+  {
+    "title": "Nasir ol Molk Mosque",
+    "artist": "Monir Shahroudy Farmanfarmaian",
+    "year": "2006",
+    "category": "Painting",
+    "description": "Kaleidoscopic representation of the Pink Mosque in Shiraz",
+    "imageUrl": "/artworks/iran/nasir-ol-molk.jpg"
+  },
+  {
+    "title": "Alborz Mountains",
+    "artist": "Sohrab Sepehri",
+    "year": "1985",
+    "category": "Painting",
+    "description": "Serene landscape of the Alborz mountain range",
+    "imageUrl": "/artworks/iran/alborz-mountains.jpg"
+  },
+  {
+    "title": "Yazd Wind Towers",
+    "artist": "Bahman Mohassess",
+    "year": "1995",
+    "category": "Drawing",
+    "description": "Detailed study of traditional wind towers in Yazd",
+    "imageUrl": "/artworks/iran/yazd-wind-towers.jpg"
+  },
+  {
+    "title": "Nowruz Table",
+    "artist": "Farideh Lashai",
+    "year": "2011",
+    "category": "Painting",
+    "description": "Vibrant depiction of a traditional Persian New Year setting",
+    "imageUrl": "/artworks/iran/nowruz-table.jpg"
+  },
+  {
+    "title": "Caspian Sea Shore",
+    "artist": "Nicky Nodjoumi",
+    "year": "2017",
+    "category": "Painting",
+    "description": "Atmospheric scene of the Caspian Sea coastline",
+    "imageUrl": "/artworks/iran/caspian-sea.jpg"
+  },
+  {
+    "title": "Esfahan's Bridges",
+    "artist": "Marcos Grigorian",
+    "year": "2003",
+    "category": "Drawing",
+    "description": "Architectural study of Esfahan's historic bridges",
+    "imageUrl": "/artworks/iran/esfahan-bridges.jpg"
+  },
+  {
+    "title": "Esfahan's Bridges",
+    "artist": "Marcos Grigorian",
+    "year": "2003",
+    "category": "Drawing",
+    "description": "Architectural study of Esfahan's historic bridges",
+    "imageUrl": "/artworks/iran/esfahan-bridges.jpg"
+  },
+  {
+    "title": "Esfahan's Bridges",
+    "artist": "Marcos Grigorian",
+    "year": "2003",
+    "category": "Drawing",
+    "description": "Architectural study of Esfahan's historic bridges",
+    "imageUrl": "/artworks/iran/esfahan-bridges.jpg"
+  },
+  {
+    "title": "Golestan Palace",
+    "artist": "Behjat Sadr",
+    "year": "1992",
+    "category": "Painting",
+    "description": "Ornate portrayal of Tehran's Golestan Palace",
+    "imageUrl": "/artworks/iran/golestan-palace.jpg"
+  },
+  {
+    "title": "Lut Desert",
+    "artist": "Y.Z. Kami",
+    "year": "2019",
+    "category": "Drawing",
+    "description": "Minimalist representation of the vast Lut Desert",
+    "imageUrl": "/artworks/iran/lut-desert.jpg"
+  }
+]
