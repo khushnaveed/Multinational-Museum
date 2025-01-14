@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Grand Canyon Sunset",
+    "artist": "Georgia O'Keeffe",
+    "year": "1940",
+    "category": "Painting",
+    "description": "Vibrant depiction of a sunset over the Grand Canyon",
+    "imageUrl": "/artworks/usa/grand-canyon-sunset.jpg"
+  },
+  {
+    "title": "New York Skyline",
+    "artist": "Edward Hopper",
+    "year": "1935",
+    "category": "Painting",
+    "description": "Iconic view of the New York City skyline",
+    "imageUrl": "/artworks/usa/new-york-skyline.jpg"
+  },
+  {
+    "title": "Yosemite Valley",
+    "artist": "Ansel Adams",
+    "year": "1952",
+    "category": "Drawing",
+    "description": "Detailed sketch of Yosemite Valley's natural beauty",
+    "imageUrl": "/artworks/usa/yosemite-valley.jpg"
+  },
+  {
+    "title": "Route 66",
+    "artist": "Wayne Thiebaud",
+    "year": "1975",
+    "category": "Painting",
+    "description": "Nostalgic portrayal of the historic Route 66",
+    "imageUrl": "/artworks/usa/route-66.jpg"
+  },
+  {
+    "title": "Golden Gate Bridge",
+    "artist": "Richard Diebenkorn",
+    "year": "1980",
+    "category": "Painting",
+    "description": "Iconic representation of San Francisco's Golden Gate Bridge",
+    "imageUrl": "/artworks/usa/golden-gate-bridge.jpg"
+  },
+  {
+    "title": "Statue of Liberty",
+    "artist": "Keith Haring",
+    "year": "1986",
+    "category": "Drawing",
+    "description": "Unique interpretation of the Statue of Liberty",
+    "imageUrl": "/artworks/usa/statue-of-liberty.jpg"
+  },
+  {
+    "title": "Mount Rushmore",
+    "artist": "Norman Rockwell",
+    "year": "1960",
+    "category": "Painting",
+    "description": "Patriotic depiction of the Mount Rushmore National Memorial",
+    "imageUrl": "/artworks/usa/mount-rushmore.jpg"
+  },
+  {
+    "title": "French Quarter, New Orleans",
+    "artist": "John James Audubon",
+    "year": "1821",
+    "category": "Drawing",
+    "description": "Detailed sketch of New Orleans' historic French Quarter",
+    "imageUrl": "/artworks/usa/french-quarter.jpg"
+  },
+  {
+    "title": "Yellowstone Geysers",
+    "artist": "Thomas Moran",
+    "year": "1872",
+    "category": "Painting",
+    "description": "Dramatic portrayal of Yellowstone's famous geysers",
+    "imageUrl": "/artworks/usa/yellowstone-geysers.jpg"
+  },
+  {
+    "title": "Yellowstone Geysers",
+    "artist": "Thomas Moran",
+    "year": "1872",
+    "category": "Painting",
+    "description": "Dramatic portrayal of Yellowstone's famous geysers",
+    "imageUrl": "/artworks/usa/yellowstone-geysers.jpg"
+  },
+  {
+    "title": "Yellowstone Geysers",
+    "artist": "Thomas Moran",
+    "year": "1872",
+    "category": "Painting",
+    "description": "Dramatic portrayal of Yellowstone's famous geysers",
+    "imageUrl": "/artworks/usa/yellowstone-geysers.jpg"
+  },
+  {
+    "title": "Chicago Skyline",
+    "artist": "Judy Chicago",
+    "year": "1990",
+    "category": "Painting",
+    "description": "Modern interpretation of the Chicago skyline",
+    "imageUrl": "/artworks/usa/chicago-skyline.jpg"
+  }
+]

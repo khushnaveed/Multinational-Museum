@@ -47,6 +47,7 @@ const Booking = () => {
   }, [firstName, lastName, email, phone, date, time, paymentMethod]);
 
   return (
+
     <div className="booking-container">
       <h1>Museum Ticket Form</h1>
       <form onSubmit={handleSubmit}>
@@ -552,3 +553,4 @@ const Booking = () => {
 };
 
 export default Booking;
+

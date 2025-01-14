@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Nomadic Life",
+    "artist": "Karim Rahimi",
+    "year": "2005",
+    "category": "Painting",
+    "description": "A vibrant depiction of traditional Afghan nomadic life",
+    "imageUrl": "/artworks/afghanistan/nomadic-life.jpg"
+  },
+  {
+    "title": "Bamiyan Valley",
+    "artist": "Fatima Hussaini",
+    "year": "2010",
+    "category": "Drawing",
+    "description": "Detailed sketch of the historic Bamiyan Valley",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKvO9ovmsarb8cG8cZU2osSwRZqqhwJvdMsQ&s"
+  },
+  {
+    "title": "Bamiyan Valley",
+    "artist": "Fatima Hussaini",
+    "year": "2010",
+    "category": "Drawing",
+    "description": "Detailed sketch of the historic Bamiyan Valley",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKvO9ovmsarb8cG8cZU2osSwRZqqhwJvdMsQ&s"
+  },
+  {
+    "title": "Bamiyan Valley",
+    "artist": "Fatima Hussaini",
+    "year": "2010",
+    "category": "Drawing",
+    "description": "Detailed sketch of the historic Bamiyan Valley",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKvO9ovmsarb8cG8cZU2osSwRZqqhwJvdMsQ&s"
+  },
+  {
+    "title": "Kabul Bazaar",
+    "artist": "Ahmad Zahir",
+    "year": "1998",
+    "category": "Painting",
+    "description": "Bustling scene of a traditional bazaar in Kabul",
+    "imageUrl": "/artworks/afghanistan/kabul-bazaar.jpg"
+  },
+  {
+    "title": "Hindu Kush",
+    "artist": "Maryam Sadat",
+    "year": "2015",
+    "category": "Painting",
+    "description": "Majestic view of the Hindu Kush mountain range",
+    "imageUrl": "/artworks/afghanistan/hindu-kush.jpg"
+  },
+  {
+    "title": "Minaret of Jam",
+    "artist": "Rashid Azimi",
+    "year": "2008",
+    "category": "Drawing",
+    "description": "Intricate drawing of the UNESCO World Heritage site",
+    "imageUrl": "/artworks/afghanistan/minaret-of-jam.jpg"
+  },
+  {
+    "title": "Buzkashi Match",
+    "artist": "Noor Agha",
+    "year": "2012",
+    "category": "Painting",
+    "description": "Action-packed scene of Afghanistan's national sport",
+    "imageUrl": "/artworks/afghanistan/buzkashi-match.jpg"
+  },
+  {
+    "title": "Kochi Women",
+    "artist": "Laila Wahidi",
+    "year": "2017",
+    "category": "Drawing",
+    "description": "Portrait of Kochi nomad women in traditional attire",
+    "imageUrl": "/artworks/afghanistan/kochi-women.jpg"
+  },
+  {
+    "title": "Blue Mosque",
+    "artist": "Hamid Nawabi",
+    "year": "2003",
+    "category": "Painting",
+    "description": "Stunning portrayal of the Blue Mosque in Mazar-i-Sharif",
+    "imageUrl": "/artworks/afghanistan/blue-mosque.jpg"
+  },
+  {
+    "title": "Pamir Mountains",
+    "artist": "Zainab Haidari",
+    "year": "2019",
+    "category": "Drawing",
+    "description": "Serene landscape of the Pamir Mountains",
+    "imageUrl": "/artworks/afghanistan/pamir-mountains.jpg"
+  },
+  {
+    "title": "Nowruz Celebration",
+    "artist": "Yama Rahimi",
+    "year": "2014",
+    "category": "Painting",
+    "description": "Colorful depiction of Afghan New Year celebrations",
+    "imageUrl": "/artworks/afghanistan/nowruz-celebration.jpg"
+  }
+]
