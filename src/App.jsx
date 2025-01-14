@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 /* eslint-disable no-unused-vars */
-=======
 
 // eslint-disable-next-line no-unused-vars
->>>>>>> 7c11db38a20e970dc463bbc16734499aa40c7fbb
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";

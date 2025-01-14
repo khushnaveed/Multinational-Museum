@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 
 export default function HeroContent() {
@@ -15,7 +16,7 @@ export default function HeroContent() {
       {/* Title */}
       <div className="relative z-10 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold uppercase">
-        Exploring the Wonders of Human Achievement
+          Exploring the Wonders of Human Achievement
         </h1>
       </div>
     </div>
