@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Exhibitions from "./components/Exhibitions";
 import News from "./components/News";
 import Booking from "./components/Booking";
-import BookingConfirmation from './components/BookingConfirmation';
+/* import BookingConfirmation from './components/BookingConfirmation'; */
 
 import Events from "./components/Events";
 import ContactUs from "./components/ContactUs";
