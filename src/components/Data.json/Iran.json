@@ -5,7 +5,7 @@
     "year": "2009",
     "category": "Painting",
     "description": "Mystical portrayal of the ancient city of Persepolis",
-    "imageUrl": "/artworks/iran/persepolis-dawn.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Tehran Bazaar",
@@ -13,7 +13,7 @@
     "year": "2014",
     "category": "Drawing",
     "description": "Intricate sketch of the bustling Tehran Grand Bazaar",
-    "imageUrl": "/artworks/iran/tehran-bazaar.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Nasir ol Molk Mosque",
@@ -21,7 +21,7 @@
     "year": "2006",
     "category": "Painting",
     "description": "Kaleidoscopic representation of the Pink Mosque in Shiraz",
-    "imageUrl": "/artworks/iran/nasir-ol-molk.jpg"
+    "imageUrl": ""
   },
   {
     "title": "Alborz Mountains",
@@ -29,7 +29,7 @@
     "year": "1985",
     "category": "Painting",
     "description": "Serene landscape of the Alborz mountain range",
-    "imageUrl": "/artworks/iran/alborz-mountains.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Yazd Wind Towers",
@@ -37,7 +37,7 @@
     "year": "1995",
     "category": "Drawing",
     "description": "Detailed study of traditional wind towers in Yazd",
-    "imageUrl": "/artworks/iran/yazd-wind-towers.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Nowruz Table",
@@ -45,7 +45,7 @@
     "year": "2011",
     "category": "Painting",
     "description": "Vibrant depiction of a traditional Persian New Year setting",
-    "imageUrl": "/artworks/iran/nowruz-table.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Caspian Sea Shore",
@@ -53,7 +53,7 @@
     "year": "2017",
     "category": "Painting",
     "description": "Atmospheric scene of the Caspian Sea coastline",
-    "imageUrl": "/artworks/iran/caspian-sea.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Esfahan's Bridges",
@@ -61,7 +61,7 @@
     "year": "2003",
     "category": "Drawing",
     "description": "Architectural study of Esfahan's historic bridges",
-    "imageUrl": "/artworks/iran/esfahan-bridges.jpg"
+    "imageUrl": ""
   },
   {
     "title": "Esfahan's Bridges",
@@ -69,7 +69,7 @@
     "year": "2003",
     "category": "Drawing",
     "description": "Architectural study of Esfahan's historic bridges",
-    "imageUrl": "/artworks/iran/esfahan-bridges.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Esfahan's Bridges",
@@ -77,7 +77,7 @@
     "year": "2003",
     "category": "Drawing",
     "description": "Architectural study of Esfahan's historic bridges",
-    "imageUrl": "/artworks/iran/esfahan-bridges.jpg"
+    "imageUrl": ""
   },
   {
     "title": "Golestan Palace",
@@ -85,7 +85,7 @@
     "year": "1992",
     "category": "Painting",
     "description": "Ornate portrayal of Tehran's Golestan Palace",
-    "imageUrl": "/artworks/iran/golestan-palace.jpg"
+    "imageUrl": ""
   },
   {
     "title": "Lut Desert",
@@ -93,6 +93,54 @@
     "year": "2019",
     "category": "Drawing",
     "description": "Minimalist representation of the vast Lut Desert",
-    "imageUrl": "/artworks/iran/lut-desert.jpg"
+   "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
   }
 ]

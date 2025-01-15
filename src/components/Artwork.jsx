@@ -54,7 +54,7 @@ const CountryGallery = ({ country }) => {
       <BackgroundImage 
         src="/image-crack1.jpg?height=1080&width=1920"
         alt={`${country.name} background`} 
-      />
+              />
       <div className="relative z-10">
         <h1 className="text-4xl font-bold mb-8 text-center">{country.name} Gallery</h1>
         <button 
@@ -69,7 +69,7 @@ const CountryGallery = ({ country }) => {
               <div className="relative h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"></div>
                 <img
-                  src={artwork.imageUrl || '/placeholder.svg?height=256&width=256'}
+                  src={artwork.imageUrl || '/Museum-bg1.jpg?height=256&width=256'}
                   alt={artwork.title}
                   className="w-full h-full object-cover rounded-t-lg relative z-10"
                 />
