@@ -1,6 +1,8 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+
 
 const navigation = [
   { name: 'Exhibitions', href: '/exhibitions', current: false },
@@ -8,7 +10,7 @@ const navigation = [
   { name: 'Booking', href: '/booking', current: false },
   { name: 'Logo', href: '/', current: false, isLogo: true },
   { name: 'Events', href: '/events', current: false },
-  { name: 'Gallery', href: '/gallery', current: false }, // Ensure current is always false
+  { name: 'Gallery', href: '/gallery', current: false },
   { name: 'Contact Us', href: '/contactus', current: false },
 ];
 
@@ -22,6 +24,13 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const [activeTab, setActiveTab] = useState('');
+
+  // Function to handle tab click and set the active tab
+  const handleTabClick = (name) => {
+    setActiveTab(name);
+  };
+
   return (
     <Disclosure as="nav" className="bg-black sticky top-0 z-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -53,7 +62,13 @@ export default function Navbar() {
                   ) : item.name === 'Gallery' ? (
                     <Menu as="div" key={item.name} className="relative">
                       <MenuButton
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white inline-flex items-center rounded-md px-3 py-2 text-sm font-medium"
+                        className={classNames(
+                          activeTab === item.name
+                            ? 'bg-gray-900 text-white' // Active tab style
+                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                          'inline-flex items-center rounded-md px-3 py-2 text-sm font-medium'
+                        )}
+                        onClick={() => handleTabClick(item.name)} // Set active tab on click
                       >
                         {item.name}
                         <ChevronDownIcon
@@ -83,9 +98,10 @@ export default function Navbar() {
                     <Link
                       key={item.name}
                       to={item.href}
+                      onClick={() => handleTabClick(item.name)} // Set active tab on click
                       className={classNames(
-                        item.current
-                          ? 'bg-gray-900 text-white'
+                        activeTab === item.name
+                          ? 'bg-gray-900 text-white' // Active tab style
                           : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                         'rounded-md px-3 py-2 text-sm font-medium'
                       )}
@@ -117,7 +133,13 @@ export default function Navbar() {
             ) : item.name === 'Gallery' ? (
               <Disclosure as="div" key={item.name}>
                 <DisclosureButton
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium"
+                  className={classNames(
+                    activeTab === item.name
+                      ? 'bg-gray-900 text-white' // Active tab style for mobile
+                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    'flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium'
+                  )}
+                  onClick={() => handleTabClick(item.name)} // Set active tab on click
                 >
                   {item.name}
                   <ChevronDownIcon className="ml-2 h-4 w-4 text-gray-400" aria-hidden="true" />
@@ -139,9 +161,10 @@ export default function Navbar() {
                 key={item.name}
                 as="a"
                 href={item.href}
+                onClick={() => handleTabClick(item.name)} // Set active tab on click
                 className={classNames(
-                  item.current
-                    ? 'bg-gray-900 text-white'
+                  activeTab === item.name
+                    ? 'bg-gray-900 text-white' // Active tab style
                     : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                   'block rounded-md px-3 py-2 text-base font-medium'
                 )}

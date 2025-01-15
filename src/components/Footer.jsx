@@ -6,19 +6,23 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="relative w-full bg-black text-white">
-      <div className="mx-auto w-full max-w-7xl px-8">
+    <footer className="w-full bg-black text-gray-400">
+      <div className="w-full px-8">
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-gray-700 py-4 md:flex-row md:justify-between">
-          <Typography
-            variant="small"
-            className="mb-4 text-center font-normal md:mb-0">
-            &copy; {currentYear} DCI Cool Group. All Rights Reserved.
-          </Typography>
+        <div className="flex flex-col items-center justify-center w-full">
+  <Typography
+    variant="small"
+    className="text-center font-normal">
+    &copy; {currentYear} DCI Cool Group. All Rights Reserved.
+  </Typography>
+</div>
+
           <div className="flex gap-4">
             <Typography
               as="a"
-              href="#"
-              className="opacity-80 transition-opacity hover:opacity-100">
+              href="https://www.facebook.com/"
+              target="_blank"
+              className="opacity-80 transition-opacity hover:opacity-100 m-1">
               <svg
                 className="h-5 w-5"
                 fill="white"
@@ -33,8 +37,9 @@ export default function Footer() {
             </Typography>
             <Typography
               as="a"
-              href="#"
-              className="opacity-80 transition-opacity hover:opacity-100">
+              href="https://www.instagram.com/"
+              target="_blank"
+              className="opacity-80 transition-opacity hover:opacity-100 m-1">
               <svg
                 className="h-5 w-5"
                 fill="white"
@@ -47,13 +52,35 @@ export default function Footer() {
                 />
               </svg>
             </Typography>
-            <Typography>
+            <Typography
+              as="a"
+              href="https://x.com/"
+              target="_blank"
+              className="opacity-80 transition-opacity hover:opacity-100 m-1">
               <svg
                 className="h-5 w-5"
                 fill="white"
                 viewBox="0 0 24 24"
                 aria-hidden="true">
                 <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
+              </svg>
+            </Typography>
+            <Typography
+              as="a"
+              href="https://www.youtube.com/"
+              target="_blank"
+              className="opacity-80 transition-opacity hover:opacity-100 m-1">
+              <svg
+                className="h-5 w-5"
+                fill="white"
+                viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path d="M10 15V9l5 3-5 3z" />
+                <path
+                  fillRule="evenodd"
+                  d="M12 2a10 10 0 100 20 10 10 0 000-20zM0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12z"
+                  clipRule="evenodd"
+                />
               </svg>
             </Typography>
           </div>
