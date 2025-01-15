@@ -26,7 +26,7 @@ const BookingConfirmation = () => {
                 <p><strong>Tour Guides:</strong> {ticketDetails.guideQty}</p>
                 <p><strong>Total:</strong> ${ticketDetails.total.toFixed(2)}</p>
 
-                <button onClick={handlePrint}>Print</button>
+                <button onClick={handlePrint} >Print</button>
             </div>
         </div>
     );

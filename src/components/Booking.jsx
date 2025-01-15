@@ -1,10 +1,9 @@
 
-
-
-
-//LAST ONE 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+//TEST
+import { FaCreditCard, FaPaypal } from 'react-icons/fa'; // Import specific icons
+//FIN
 import './Booking.css';  // Import external CSS for styling
 
 const Booking = () => {
@@ -246,7 +245,7 @@ const Booking = () => {
 
         <div className="form-section-two">
           <p>Payment Methods:</p>
-          <label>
+          <label style={{ display: 'flex', alignItems: 'center' }}>
             <input
               type="radio"
               name="payment"
@@ -254,9 +253,9 @@ const Booking = () => {
               checked={paymentMethod === 'credit'}
               onChange={(e) => setPaymentMethod(e.target.value)}
               required
-            /> Debit or Credit Card
+            /> <FaCreditCard style={{ marginLeft: '8px', marginRight: '8px', color: "#0070ba" }} />Debit or Credit Card
           </label>
-          <label>
+          <label style={{ display: 'flex', alignItems: 'center' }}>
             <input
               type="radio"
               name="payment"
@@ -264,7 +263,7 @@ const Booking = () => {
               checked={paymentMethod === 'paypal'}
               onChange={(e) => setPaymentMethod(e.target.value)}
             />
-            PayPal
+            <FaPaypal style={{ marginLeft: '8px', marginRight: '8px', color: "#0070ba" }} />PayPal
           </label>
         </div>
 

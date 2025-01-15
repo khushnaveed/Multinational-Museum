@@ -1,70 +1,74 @@
 
+
+
+
+/* Set background color for the entire body */
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the booking container */
 .booking-container {
-  /* ask guys */
-  max-width: 700px;
+  width: 60%;
+  max-width: 800px; /* Ensure the container does not grow too large */
   margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
-  background-color: #ced4da;
+  /* background-color: #ced4da; */
+  color: white;
+  box-sizing: border-box; /* Include padding and borders in width calculation */
 }
 
+/* Styling for headings */
 h1 {
   font-weight: bold;
   padding: 20px;
   text-shadow: 2px 2px 4px rgb(92, 92, 92); 
   text-align: center;
 }
-h4{
+
+/* Basic style for h4 */
+h4 {
   font-weight: bold;
 }
-span{
-  margin-left: 200px;
+
+/* Styling for the price span */
+span {
+  margin-left: 20px;  /* Reduced margin for better responsiveness */
   font-weight: bold;
-}
-p{
-  margin-left: 20px;
+  text-align: left; /* Align with the other content */
 }
 
-
+/* Form styling */
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.form-section{
+.form-section {
   margin-bottom: 15px;
   display: flex;
-  /* ask guys what they think */
   flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  gap: 20px;  /* Reduced gap */
 }
-.form-section-two{
+
+.form-section-two {
   display: flex;
   flex-direction: column;
 }
 
+/* Input fields */
 input[type="checkbox"],
 input[type="radio"] {
   margin-right: 5px;
-    border: 1px solid #e9ecef;
-
-
+  border: 1px solid #e9ecef;
 }
 
-
-input[type="number"]{
-  width: 10%;
-    margin-left: 20px;
-
-}
-.radio{
-  display: flex;
-  flex-direction: column;
-} 
- 
 input[type="number"],
 input[type="text"],
 input[type="email"],
@@ -73,33 +77,94 @@ input[type="date"] {
   padding: 10px;
   margin-top: 10px;
   border: 1px solid #ccc;
+  color: black;
   border-radius: 5px;
+  width: 80%; /* Make inputs fill the available space */
+  box-sizing: border-box; /* Ensure padding is included in the total width */
 }
 
 
-
+/* Styling for buttons */
 button {
   padding: 10px 20px;
   font-weight: bold;
-  background-color:#212529;
+ /*  background-color: #212529; */
+ background-color:gray;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  
- 
+  width: 100%;  /* Ensure buttons take full width */
+  box-sizing: border-box;
 }
 
 button:hover {
   background-color: #495057;
-
 }
 
+/* Display total price on the right */
 .total-display {
   font-size: 18px;
   font-weight: bold;
   text-align: end;
 }
-a{
+
+/* Styling for links */
+a {
   color: blue;
+  text-decoration: none;
+}
+
+/* Media Queries for smaller screen sizes */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+  .booking-container {
+    width: 90%;  /* Allow the container to use more of the screen on smaller devices */
+    padding: 15px;
+  }
+
+  .form-section {
+    gap: 15px; /* Reduce the gap between form sections */
+  }
+
+  /* Stack form fields vertically for smaller screens */
+  .form-section label, .form-section input {
+    width: 80%; /* Ensure form fields take the full available width */
+  }
+
+  /* Adjust button and price text to ensure they fit on smaller screens */
+  .total-display {
+    font-size: 16px; /* Reduce font size of the total for smaller screens */
+  }
+
+  button {
+    width: 100%; /* Ensure buttons fill the available space */
+  }
+}
+
+/* For smaller screens like mobile phones */
+@media (max-width: 480px) {
+  .booking-container {
+    width: 95%; /* Further reduce the container width */
+    padding: 10px;
+  }
+
+  .form-section {
+    gap: 10px; /* Reduce space between fields */
+  }
+
+  .form-section label, .form-section input {
+    width: 70%; /* Ensure input fields take the full width */
+    font-size: 14px; /* Make the font size smaller */
+  }
+
+  button {
+    font-size: 14px; /* Reduce button font size */
+  }
+
+  .total-display {
+    font-size: 14px; /* Reduce font size for the total */
+    text-align: left; /* Align text to the left for better use of space */
+  }
 }
