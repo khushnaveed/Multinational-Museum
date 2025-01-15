@@ -9,24 +9,24 @@ const exhibitions = [
          
       
       "https://npr.brightspotcdn.com/dims4/default/954ee5d/2147483647/strip/true/crop/3000x3000+0+0/resize/880x880!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2022%2F08%2F31%2Fartifact_grid_custom-bc1342fd9df4c76e67f71127c8ba5aac960a8f49.jpg",
-      "https://sahandcarpet.com/wp-content/uploads/2024/09/%D8%B4%DA%A9%D9%88%D9%81%D8%A7%DB%8C%DB%8C-%D9%87%D9%86%D8%B1-%D9%81%D8%B1%D8%B4_%D8%A8%D8%A7%D9%81%DB%8C-%D8%AF%D8%B1-%D8%AF%D9%88%D8%B1%DB%80-%D8%B5%D9%81%D9%88%DB%8C%D9%87-1.webp",
-      "https://i.pinimg.com/474x/d8/7d/b3/d87db3c32e9dceaa0ac870d0998a9a34.jpg",
-      "https://i.etsystatic.com/19229681/r/il/4bb146/2301287411/il_570xN.2301287411_7ce6.jpg",
+      "https://pbs.twimg.com/media/EadrDH8WoAAI2l-.jpg",
+      "https://smarthistory.org/wp-content/uploads/2023/10/standing_buddha_bamiyan.png",
+      "https://i.pinimg.com/736x/32/be/7c/32be7cd01dbe88b435cb817aefa9a613.jpg",
     ],
     
     
-    exhibitions: [
+    exhibitions: [ 
+      "Afghan Tribal Jewelry Showcase",
       "Miniature Paintings from the Timurid Era",
       "Bamiyan Buddhas: A Lost Heritage",
-      "Afghan Tribal Jewelry Showcase",
-      "Traditional Afghan Carpets and Weaving Techniques",
+     "Afghan Textiles: Patterns of Culture and Tradition",
     ],
   },
   {
     country: "Pakistan",
     description: "Explore the vibrant traditions of Pakistan.",
     image: [
-      "https://i.dawn.com/primary/2019/03/5c9688da4ae9c.jpg",
+      "https://pbs.twimg.com/media/FEDL1afWUAI1jNc.jpg",
       "https://i.pinimg.com/736x/4d/ce/0f/4dce0f04fe438238824591ce4f57a108.jpg",
       "https://thumbs.dreamstime.com/b/mughal-architecture-indo-islamic-architectural-style-developed-india-under-patronage-empire-33543864.jpg",
       "https://civilisable.com/wp-content/uploads/2024/02/Pakistani-fashion-Salwar-Kameez-26.2.2024.jpg",
@@ -42,34 +42,36 @@ const exhibitions = [
     country: "Iran",
     description: "Immerse yourself in the Persian heritage of Iran.",
     image: [    
-      "https://iranontour.com/wp-content/uploads/2020/10/persian-carpet-museum.jpg",
 
+      "https://www.christies.com/-/jssmedia/Images/features/articles/2024/04/1-5/Silk-Carpets-from-the-George-Farrow-Collection/hero-George-Farrow-carpet-collection.jpg?hash=",
       "https://farsicalligraphy.com/wp-content/uploads/2016/11/Rumi_when_lovers.jpg",
-      "https://www.carpetu2.co.uk/images/nmd16020-812_details.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Faravahar_Atashkadeh_Yazd.jpg",
+       "https://upload.wikimedia.org/wikipedia/commons/5/5a/Faravahar_Atashkadeh_Yazd.jpg",
+       "https://i.pinimg.com/736x/0d/43/e8/0d43e8298bd51fc99cd53254b31becca.jpg",
     ],
     
     exhibitions: [
-      "Persian Poetry and Calligraphy",
-      "The Art of Persian Rugs: Stories Woven in Silk",
-      "Zoroastrian Heritage and Symbols",
-      "Achaemenid Empire: Persepolis Reimagined",
+     "The Art of Persian Rugs: Stories Woven in Silk", 
+     "Persian Poetry and Calligraphy",
+      "Zoroastrian Heritage and Symbols",    
+        "The Evolution of Persian Ceramics: From Earth to Artistry",
+
     ],
   },
   {
     country: "USA",
     description: "Experience the innovation and diversity of the USA.",
     image:  [
-       "https://www.museum.de/public/uploads/museum/573/m/Vorschaubild_Museumde.jpg",
-      "https://cdn.sanity.io/images/cxgd3urn/production/87ca5271214d2a048d7aea307d3f6982495bd2fe-2485x1420.jpg?rect=1,0,2484,1420&w=1200&h=686&fit=crop&auto=format",
-      "https://i.pinimg.com/236x/65/7f/a7/657fa7574d1060a64607575009b58b3e.jpg",
-      "https://media.timeout.com/images/105949695/750/562/image.jpg",
+       "https://cdn.sanity.io/images/cxgd3urn/production/87ca5271214d2a048d7aea307d3f6982495bd2fe-2485x1420.jpg?rect=1,0,2484,1420&w=1200&h=686&fit=crop&auto=format",
+      "https://hocokatati.org/wp-content/uploads/2021/08/20210430_Spring-Native-Artist-Pop-Up-Shop_SM-002.jpg",
+      "https://press.moma.org/wp-content/uploads/2021/10/Mike-Kelleys-Deodorized-Central-Mass-with-Satellites--2000x1333.jpg",
+      "https://media.licdn.com/dms/image/v2/D4D12AQE057WgB37qhg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1677244412460?e=2147483647&v=beta&t=eVmOjyA_df3ohsMploG_uzAJropZ3yocVewL98JexuA",
     ],
     exhibitions: [
       "Hollywood and the Evolution of Cinema",
       "Native American Art and Crafts",
-      "The Jazz Age: Music and Culture of the 1920s",
-      "Modern Art Movements in the United States",
+      "MoMA: A Journey Through Modern Art and Innovation",
+     "American Innovation: Design and Technology"
+
     ],
   },
   {
@@ -82,13 +84,16 @@ const exhibitions = [
       "https://media.rnztools.nz/rnz/image/upload/s--97WaG3QG--/c_scale,f_auto,q_auto,w_1050/v1643868100/4M0R893_image_crop_134216?_a=BACCd2AD",
     ],
     exhibitions: [
-      "The Rock-Hewn Churches of Lalibela",
-      "Ancient Ethiopian Manuscripts and Scripts",
+      "Ancient Ethiopian Manuscripts and Scripts", 
+       "The Rock-Hewn Churches of Lalibela",
       "The Origins of Coffee: A Cultural History",
       "Traditional Ethiopian Ceremonial Artifacts",
     ],
   },
 ];
+
+
+
 const Exhibitions = ({ exhibit }) => {
   const openPopupWindow = (exhibit) => {
     const popup = window.open("", "width=800,height=600");
@@ -221,6 +226,7 @@ const Exhibitions = ({ exhibit }) => {
                 `
               )
               .join("")}
+
             <button class="nav-btn prev-btn" onclick="navigateGallery(-1)">&#10094;</button>
             <button class="nav-btn next-btn" onclick="navigateGallery(1)">&#10095;</button>
           </div>
@@ -242,6 +248,7 @@ const Exhibitions = ({ exhibit }) => {
               // Update opacity and positioning for the new card
               updateCardOpacity(currentIndex);
             }
+              
 
             function updateCardOpacity(activeIndex) {
               cards.forEach((card, index) => {
@@ -277,6 +284,7 @@ const Exhibitions = ({ exhibit }) => {
       `);
     }
   };
+
 
 
 
