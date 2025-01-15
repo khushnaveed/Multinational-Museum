@@ -37,7 +37,6 @@ function App() {
           <Footer />
         </div>
       </BrowserRouter>
-      {/* <HeroContent /> */}
     </>
 
   );
