@@ -1,46 +1,41 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
+import React from "react";
+import { Link } from "react-router-dom";
 
-const CountryGallery = ({ country }) => {
-  const navigate = useNavigate();
-  const artworks = country.data;
-
+const CountryCard = ({ name, flag, mapUrl }) => {
   return (
-    <div className="min-h-screen bg-black text-white p-8">
-      <h1 className="text-4xl font-bold mb-8 text-center">{country.name} Gallery</h1>
-      <button 
-        onClick={() => navigate('/')} 
-        className="mb-4 px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300 inline-block"
+    <div className="w-1/5 min-w-[200px] bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 flex flex-col justify-between custom-box-shadow">
+      <h2 className="text-2xl font-semibold p-4 text-center">{name}</h2>
+      <a
+        href={mapUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block p-4"
       >
-        ← Back to Countries
-      </button>
-      <div className="flex flex-wrap justify-center gap-8 mt-8">
-        {artworks.map((artwork, index) => (
-          <div key={index} className="w-64 bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105">
-            <div className="relative h-64 overflow-hidden">
-              <img
-                src={artwork.imageUrl || '/placeholder.svg?height=256&width=256'}
-                alt={artwork.title}
-                className="w-full h-full object-cover rounded-t-lg"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-center p-4">{artwork.description}</p>
-              </div>
-            </div>
-            <div className="p-4">
-              <h2 className="text-xl font-semibold mb-2">{artwork.title}</h2>
-              <p className="text-sm mb-1">Artist: {artwork.artist}</p>
-              <p className="text-sm mb-1">Year: {artwork.year}</p>
-              <p className="text-sm mb-2">Category: {artwork.category}</p>
-            </div>
-          </div>
-        ))}
-      </div>
+        <img
+          src={flag}
+          alt={`Flag of ${name}`}
+          className="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
+        />
+      </a>
+      <Link
+        to={`gallery/${name.toLowerCase().replace(/\s+/g, "-")}`}
+        className="block w-full py-2 bg-blue-600 text-center text-white font-semibold hover:bg-blue-700 transition-colors duration-300"
+      >
+        See Gallery
+      </Link>
     </div>
   );
 };
 
-export default CountryGallery;
+export default CountryCard;
 
+<style jsx>{`
+  .custom-box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+`}</style>;

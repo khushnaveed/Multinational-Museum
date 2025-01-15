@@ -1,27 +1,27 @@
 [
   {
-    "title": "Nomadic Life",
-    "artist": "Karim Rahimi",
-    "year": "2005",
+    "title": "Afghan Girl",
+    "artist": "Steve McCurry",
+    "year": "1984",
+    "category": "Photography",
+    "description": "Sharbat Gula, a young Pashtun orphan who was residing in a refugee camp in Pakistan during the Soviet-Afghan War. ",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg"
+},
+  {
+    "title": "Relaxed Buddha",
+    "artist": "Unknown",
+    "year": "7th Century",
+    "category": "Sculpture",
+    "description": "A relaxed Buddha, made of unbaked clay, from around the seventh century, discovered by Jean Carl in 1937 in Aghanistan",
+    "imageUrl": "https://static01.nyt.com/images/2022/10/20/multimedia/20sp-paris-guimet-inyt2/20sp-paris-guimet-inyt2-videoSixteenByNineJumbo1600.jpg"
+  },
+  {
+    "title": "Pashtuns Girls",
+    "artist": "Nasib Khan",
+    "year": "2017",
     "category": "Painting",
-    "description": "A vibrant depiction of traditional Afghan nomadic life",
-    "imageUrl": "/artworks/afghanistan/nomadic-life.jpg"
-  },
-  {
-    "title": "Bamiyan Valley",
-    "artist": "Fatima Hussaini",
-    "year": "2010",
-    "category": "Drawing",
-    "description": "Detailed sketch of the historic Bamiyan Valley",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKvO9ovmsarb8cG8cZU2osSwRZqqhwJvdMsQ&s"
-  },
-  {
-    "title": "Bamiyan Valley",
-    "artist": "Fatima Hussaini",
-    "year": "2010",
-    "category": "Drawing",
-    "description": "Detailed sketch of the historic Bamiyan Valley",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKvO9ovmsarb8cG8cZU2osSwRZqqhwJvdMsQ&s"
+    "description": "Portrays the typical daily life of Afghan Peoples and Afghan Normand. ",
+    "imageUrl": "https://ia801508.us.archive.org/13/items/AfghanPaintings/Afghan%20Painting%20%281%29.jpg"
   },
   {
     "title": "Bamiyan Valley",
@@ -37,23 +37,23 @@
     "year": "1998",
     "category": "Painting",
     "description": "Bustling scene of a traditional bazaar in Kabul",
-    "imageUrl": "/artworks/afghanistan/kabul-bazaar.jpg"
+    "imageUrl": "https://www.forcesnews.com/sites/default/files/The_Char-Chatta_Bazaar_of_Kabul%20The%20Char-Chatta%20Bazaar%20of%20Kabul%2C%20by%20A.%20Gh.%20Brechna%2C%201932.jpg"
   },
   {
-    "title": "Hindu Kush",
-    "artist": "Maryam Sadat",
-    "year": "2015",
-    "category": "Painting",
-    "description": "Majestic view of the Hindu Kush mountain range",
-    "imageUrl": "/artworks/afghanistan/hindu-kush.jpg"
+    "title": "Afghan Tribal Bridal Jewelry",
+    "artist": "EENGAR",
+    "year": "21 century",
+    "category": "Jewelry Set",
+    "description": "This Bridal Jewelry set is widely used in Afghan Kuchi tribe which has beautiful matching earing, Matha Patti and necklace. Necklace and earing have hanging chains with anklets balls and colorful gems ",
+    "imageUrl": "https://seengar.com/wp-content/uploads/2017/10/MG_9200-1.jpg"
   },
   {
-    "title": "Minaret of Jam",
-    "artist": "Rashid Azimi",
-    "year": "2008",
-    "category": "Drawing",
-    "description": "Intricate drawing of the UNESCO World Heritage site",
-    "imageUrl": "/artworks/afghanistan/minaret-of-jam.jpg"
+    "title": "Antique Afghan carpets",
+    "artist": "Wakil Kohsar/AFP",
+    "year": "2021",
+    "category": "Photography",
+    "description": "Abdul Wahab, one of Kabul's top tribal carpet collectors, displays a rug inside his shop on Chicken Street in the capital.",
+    "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2021/03/000_9263RM.jpg?resize=1170%2C780&quality=80"
   },
   {
     "title": "Buzkashi Match",
@@ -88,11 +88,11 @@
     "imageUrl": "/artworks/afghanistan/pamir-mountains.jpg"
   },
   {
-    "title": "Nowruz Celebration",
-    "artist": "Yama Rahimi",
-    "year": "2014",
-    "category": "Painting",
-    "description": "Colorful depiction of Afghan New Year celebrations",
-    "imageUrl": "/artworks/afghanistan/nowruz-celebration.jpg"
-  }
-]
+    "title": "Afghan Girl",
+    "artist": "Steve McCurry",
+    "year": "1984",
+    "category": "Photography",
+    "description": "This iconic photograph, titled 'Afghan Girl,' features Sharbat Gula, a young Pashtun orphan who was residing in a refugee camp in Pakistan during the Soviet-Afghan War. Captured by photojournalist Steve McCurry, the image became globally famous after being featured on the cover of National Geographic in June 1985. The girl's piercing green eyes and intense expression symbolize the resilience and plight of refugees.",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg"
+}
+  ]
