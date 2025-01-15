@@ -6,6 +6,11 @@ const BookingConfirmation = () => {
         return <p>No booking details found.</p>;
     }
 
+    const handlePrint = () => {
+        window.print(); // Initiates print dialog
+        alert('The booking confirmation has been sent to the printer.');
+    };
+
     return (
         <div className="confirmation-container">
             <div>
@@ -21,7 +26,7 @@ const BookingConfirmation = () => {
                 <p><strong>Tour Guides:</strong> {ticketDetails.guideQty}</p>
                 <p><strong>Total:</strong> ${ticketDetails.total.toFixed(2)}</p>
 
-                <button>Print</button>
+                <button onClick={handlePrint}>Print</button>
             </div>
         </div>
     );

@@ -1,14 +1,18 @@
+
 .booking-container {
+  /* ask guys */
   max-width: 700px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 15px;
-  background-color: #f5f1f1;
+  background-color: #ced4da;
 }
 
 h1 {
   font-weight: bold;
   padding: 20px;
+  text-shadow: 2px 2px 4px rgb(92, 92, 92); 
+  text-align: center;
 }
 h4{
   font-weight: bold;
@@ -20,11 +24,7 @@ span{
 p{
   margin-left: 20px;
 }
-/* hr{
-  padding: 5px;
-  margin-top: 10px;
-}
- */
+
 
 form {
   display: flex;
@@ -35,6 +35,8 @@ form {
 .form-section{
   margin-bottom: 15px;
   display: flex;
+  /* ask guys what they think */
+  flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
@@ -47,16 +49,22 @@ form {
 input[type="checkbox"],
 input[type="radio"] {
   margin-right: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #e9ecef;
 
 
 }
+
+
 input[type="number"]{
   width: 10%;
     margin-left: 20px;
 
 }
-
+.radio{
+  display: flex;
+  flex-direction: column;
+} 
+ 
 input[type="number"],
 input[type="text"],
 input[type="email"],
@@ -73,7 +81,7 @@ input[type="date"] {
 button {
   padding: 10px 20px;
   font-weight: bold;
-  background-color:gray;
+  background-color:#212529;
   color: white;
   border: none;
   border-radius: 5px;
@@ -83,7 +91,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #495057;
 
 }
 
