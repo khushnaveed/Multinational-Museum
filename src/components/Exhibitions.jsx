@@ -118,15 +118,21 @@ const Exhibitions = ({ exhibit }) => {
               justify-content: center;
               min-height: 100vh;
               overflow: hidden;
-            }
-            h1 {
-              font-size: 2.5rem;
-              margin-bottom: 2rem;
-              text-align: center;
-              font-weight: 700;
-              color: #e63946;
-              text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-            }
+       h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+  color: white; /* White text */
+  text-shadow: 
+    2px 2px 5px rgba(255, 255, 255, 0.8), /* White shadow */
+    -2px -2px 5px rgba(255, 255, 255, 0.8); /* White shadow */
+  animation: glow 3s ease-in-out infinite alternate; /* Slower animation */
+  padding-right: 155px; /* Pushes the text to the left */
+}
+
+
+         
             .gallery {
               display: flex;
               justify-content: center;
@@ -139,21 +145,20 @@ const Exhibitions = ({ exhibit }) => {
             }
             .card {
               position: absolute;
-              width: 80%; /* Adjust width to leave space for adjacent cards */
+              width: 80%;
               height: 100%;
               background-color: #fff;
               border-radius: 16px;
               box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
               overflow: hidden;
               transition: transform 0.3s ease, opacity 0.3s ease;
-              opacity: 0.3; /* Low opacity for non-active cards */
-              transform: scale(0.9); /* Slightly reduced size for non-active cards */
-              transition: all 0.3s ease; /* Smooth transition for opacity and transform */
+              opacity: 0.3;
+              transform: scale(0.9);
+              transition: all 0.3s ease;
             }
             .card.active {
               opacity: 1;
               transform: scale(1);
-              transition: all 0.3s ease;
             }
             .card img {
               width: 100%;
@@ -191,23 +196,26 @@ const Exhibitions = ({ exhibit }) => {
             .next-btn {
               right: 0;
             }
-            .back-btn {
-              background-color: #e63946;
-              color: #fff;
-              padding: 0.8rem 1.6rem;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-              font-weight: 600;
-              text-transform: uppercase;
-              width: 120px;
-              margin: 1rem auto;
-              transition: background-color 0.3s ease, transform 0.3s ease;
-            }
-            .back-btn:hover {
-              background-color: #d62828;
-              transform: scale(1.05);
-            }
+           .back-btn {
+  background-color: #fff; /* White background */
+  color: #121212; /* Dark color for the text */
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 120px;
+  margin: 1rem auto;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: gray;
+  color: #fff; 
+  transform: scale(1.05); 
+}
+
           </style>
         </head>
         <body>
@@ -219,8 +227,8 @@ const Exhibitions = ({ exhibit }) => {
                   <div class="card ${index === 0 ? 'active' : ''}" id="card-${index}">
                     <img src="${img}" alt="${exhibit.country} - Image ${index + 1}" />
                     <div class="card-content">
-                      <h3>${exhibit.exhibitions[index]}</h3>
-                      <p>${exhibit.description}</p>
+                      <h3><a href="http://localhost:5183/documentaries" style="color: white; text-decoration: none;" class="hover:text-gray-300">${exhibit.exhibitions[index]}</a></h3>
+                      <p><a href="http://localhost:5183/documentaries" style="color: white; text-decoration: none;" class="hover:text-gray-300">${exhibit.description}</a></p>
                     </div>
                   </div>
                 `
@@ -236,47 +244,33 @@ const Exhibitions = ({ exhibit }) => {
             const cards = document.querySelectorAll('.card');
 
             function navigateGallery(direction) {
-              // Remove active class from the current card
               cards[currentIndex].classList.remove('active');
-              
-              // Update the current index
               currentIndex = (currentIndex + direction + cards.length) % cards.length;
-              
-              // Add active class to the new card
               cards[currentIndex].classList.add('active');
-
-              // Update opacity and positioning for the new card
               updateCardOpacity(currentIndex);
             }
-              
 
             function updateCardOpacity(activeIndex) {
               cards.forEach((card, index) => {
-                // Set opacity and scaling for the active card
                 if (index === activeIndex) {
                   card.style.opacity = '1';
                   card.style.transform = 'scale(1)';
-                  card.style.left = '0'; // Active card is centered
+                  card.style.left = '0';
                 } else if (index === (activeIndex - 1 + cards.length) % cards.length) {
-                  // Set previous card's opacity and position
                   card.style.opacity = '0.1';
                   card.style.transform = 'scale(0.9)';
-                  card.style.left = '-85%'; // Previous card on the left
+                  card.style.left = '-85%';
                 } else if (index === (activeIndex + 1) % cards.length) {
-                  // Set next card's opacity and position
                   card.style.opacity = '0.1';
                   card.style.transform = 'scale(0.9)';
-                  card.style.left = '85%'; // Next card on the right
+                  card.style.left = '85%';
                 } else {
-                  // Set opacity for other non-adjacent cards
                   card.style.opacity = '0.1';
                   card.style.transform = 'scale(0.8)';
-                  card.style.left = '100%'; // Cards far away are hidden
+                  card.style.left = '100%';
                 }
               });
             }
-
-            // Initialize opacity settings for the first card
             updateCardOpacity(currentIndex);
           </script>
         </body>
@@ -285,56 +279,86 @@ const Exhibitions = ({ exhibit }) => {
     }
   };
 
-
-
-
   return (
-    <div className="min-h-screen bg-gradient-to-b text-white bg-black">
-      {/* Hero Section */}
-      <section className="bg-black text-white py-8 bg-opacity-60">
-        <div className="max-w-7xl mx-auto text-center ">
-          <h1 className="text-5xl font-extrabold mb-4 flex items-center justify-center">
-            <i className="fas fa-globe mr-3"></i>Exhibitions
-          </h1>
-        </div>
-      </section>
 
-      {/* Overlapping Exhibitions Section */}
-      <section
-        className="relative py-16 px-8"
-        style={{
-          backgroundImage: 'url("")',
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10">
-          {exhibitions.map((exhibit, index) => (
-            <div
-              key={index}
-              className="relative group w-[400px] h-[600px] bg-white rounded-lg shadow-lg transform transition duration-500 hover:scale-110 hover:z-10"
-              style={{
-                marginTop: `${index * -70}px`,
-                zIndex: `${100 - index}`,
-              }}
-              onClick={() => openPopupWindow(exhibit)}
-            >
-              <img
-                src={exhibit.image[0]}
-                alt={exhibit.country}
-                className="w-full h-full object-cover group-hover:opacity-80"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
-              <div className="absolute bottom-0 p-6 text-white z-10">
-                <h2 className="text-3xl font-bold">{exhibit.country}</h2>
-                <p className="mt-2 text-white">{exhibit.description}</p>
+    <div className="min-h-screen text-white">
+   <style>
+  {`
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+        background-color: rgba(0, 0, 0, 1); /* Pure black */
+      }
+      100% {
+        background-position: 100% 50%;
+        background-color: rgba(50, 50, 50, 1); /* Lighter black (dark gray) */
+      }
+    }
+    .gradient-animation {
+      background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(50, 50, 50, 1)); /* Black to lighter black */
+      background-size: 300% 300%;
+      animation: gradient 3s ease infinite;
+    }
+  `}
+</style>
+
+  
+      {/* Whole Page Background Animation */}
+      <div className="gradient-animation min-h-screen">
+  
+        {/* Hero Section */}
+        <section
+          className="text-white py-14 bg-opacity-60 pt-[120px]"
+          style={{ paddingTop: "80px" }}
+        >
+          <div className="max-w-7xl mx-auto text-center">
+            <h1 className="text-5xl font-extrabold mb-12 flex items-center justify-center">
+              <i className="fas fa-globe mr-3"></i>Exhibitions
+            </h1>
+          </div>
+        </section>
+  
+        {/* Overlapping Exhibitions Section */}
+        <section
+          className="relative py-16 px-8"
+          style={{
+            backgroundImage: 'url("")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            zIndex: "1",
+          }}
+        >
+          <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10">
+            {exhibitions.map((exhibit, index) => (
+              <div
+                key={index}
+                className="relative group w-[400px] h-[600px] bg-white rounded-[10px] transform transition duration-500 hover:scale-110 hover:rotate-12 hover:translate-y-[-10px] hover:z-10 shadow-[rgba(255,255,255,0.5)_0px_0px_15px_0px,_rgba(255,255,255,0.3)_4px_4px_20px_0px,_rgba(0,0,0,0.5)_8px_8px_30px_0px,_rgba(0,0,0,0.3)_12px_12px_40px_0px]"
+                style={{
+                  marginTop: `${index * -70}px`,
+                  zIndex: `${100 - index}`,
+                }}
+                onClick={() => openPopupWindow(exhibit)}
+              >
+                <img
+                  src={exhibit.image[0]}
+                  alt={exhibit.country}
+                  className="w-full h-full object-cover group-hover:opacity-80"
+                />
+                <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                <div className="absolute bottom-0 p-6 text-white z-10">
+                  <h2 className="text-3xl font-bold">{exhibit.country}</h2>
+                  <p className="mt-2">{exhibit.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+  
+      </div>
     </div>
   );
+  
+  
 };
 
 export default Exhibitions;
