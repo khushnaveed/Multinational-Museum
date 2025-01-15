@@ -50,10 +50,12 @@ const exhibitions = [
     ],
     
     exhibitions: [
-      "Persian Poetry and Calligraphy",
-      "The Art of Persian Rugs: Stories Woven in Silk",
+     "The Art of Persian Rugs: Stories Woven in Silk", 
+     "Persian Poetry and Calligraphy",
+      
+      
+      "",
       "Zoroastrian Heritage and Symbols",
-      "Achaemenid Empire: Persepolis Reimagined",
     ],
   },
   {
@@ -277,6 +279,7 @@ const Exhibitions = ({ exhibit }) => {
       `);
     }
   };
+
 
 
 
