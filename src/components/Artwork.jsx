@@ -50,9 +50,9 @@ const CountryGallery = ({ country }) => {
   const artworks = country.data;
 
   return (
-    <div className="min-h-screen bg-gray-800 text-white p-8 relative">
+    <div className="min-h-screen bg-black text-white p-8 relative">
       <BackgroundImage 
-        src="/image-crack1.jpg?height=1080&width=1920"
+        src="/stars2.webp?height=1080&width=1920"
         alt={`${country.name} background`} 
               />
       <div className="relative z-10">
@@ -94,7 +94,7 @@ const CountryGallery = ({ country }) => {
 const CountryList = () => (
   <div className="min-h-screen bg-gray-800 text-white p-8 relative">
     <BackgroundImage 
-      src="/image-crack1.jpg?height=1080&width=1920" 
+     src="/earth.gif?height=1080&width=1920" 
       alt="Country list background" 
     />
     <div className="relative z-10">
