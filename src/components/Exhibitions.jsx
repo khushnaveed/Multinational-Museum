@@ -1,5 +1,7 @@
 import React from "react";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import { FaCreditCard, FaPaypal } from "react-icons/fa";
+
 
 const exhibitions = [
   {
