@@ -5,7 +5,7 @@
     "year": "1940",
     "category": "Painting",
     "description": "Vibrant depiction of a sunset over the Grand Canyon",
-    "imageUrl": "/artworks/usa/grand-canyon-sunset.jpg"
+    "imageUrl": ""
   },
   {
     "title": "New York Skyline",
@@ -13,7 +13,7 @@
     "year": "1935",
     "category": "Painting",
     "description": "Iconic view of the New York City skyline",
-    "imageUrl": "/artworks/usa/new-york-skyline.jpg"
+    "imageUrl": ""
   },
   {
     "title": "Yosemite Valley",
@@ -21,7 +21,7 @@
     "year": "1952",
     "category": "Drawing",
     "description": "Detailed sketch of Yosemite Valley's natural beauty",
-    "imageUrl": "/artworks/usa/yosemite-valley.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Route 66",
@@ -29,7 +29,7 @@
     "year": "1975",
     "category": "Painting",
     "description": "Nostalgic portrayal of the historic Route 66",
-    "imageUrl": "/artworks/usa/route-66.jpg"
+    "imageUrl": ""
   },
   {
     "title": "Golden Gate Bridge",
@@ -37,7 +37,7 @@
     "year": "1980",
     "category": "Painting",
     "description": "Iconic representation of San Francisco's Golden Gate Bridge",
-    "imageUrl": "/artworks/usa/golden-gate-bridge.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Statue of Liberty",
@@ -45,7 +45,7 @@
     "year": "1986",
     "category": "Drawing",
     "description": "Unique interpretation of the Statue of Liberty",
-    "imageUrl": "/artworks/usa/statue-of-liberty.jpg"
+   "imageUrl": ""
   },
   {
     "title": "Mount Rushmore",
@@ -53,7 +53,7 @@
     "year": "1960",
     "category": "Painting",
     "description": "Patriotic depiction of the Mount Rushmore National Memorial",
-    "imageUrl": "/artworks/usa/mount-rushmore.jpg"
+     "imageUrl": ""
   },
   {
     "title": "French Quarter, New Orleans",
@@ -61,7 +61,7 @@
     "year": "1821",
     "category": "Drawing",
     "description": "Detailed sketch of New Orleans' historic French Quarter",
-    "imageUrl": "/artworks/usa/french-quarter.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Yellowstone Geysers",
@@ -69,7 +69,7 @@
     "year": "1872",
     "category": "Painting",
     "description": "Dramatic portrayal of Yellowstone's famous geysers",
-    "imageUrl": "/artworks/usa/yellowstone-geysers.jpg"
+    "imageUrl": ""
   },
   {
     "title": "Yellowstone Geysers",
@@ -77,7 +77,7 @@
     "year": "1872",
     "category": "Painting",
     "description": "Dramatic portrayal of Yellowstone's famous geysers",
-    "imageUrl": "/artworks/usa/yellowstone-geysers.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Yellowstone Geysers",
@@ -85,7 +85,7 @@
     "year": "1872",
     "category": "Painting",
     "description": "Dramatic portrayal of Yellowstone's famous geysers",
-    "imageUrl": "/artworks/usa/yellowstone-geysers.jpg"
+     "imageUrl": ""
   },
   {
     "title": "Chicago Skyline",
@@ -93,6 +93,55 @@
     "year": "1990",
     "category": "Painting",
     "description": "Modern interpretation of the Chicago skyline",
-    "imageUrl": "/artworks/usa/chicago-skyline.jpg"
+     "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
   }
 ]
+

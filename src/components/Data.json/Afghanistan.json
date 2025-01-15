@@ -4,7 +4,7 @@
     "artist": "Steve McCurry",
     "year": "1984",
     "category": "Photography",
-    "description": "Sharbat Gula, a young Pashtun orphan who was residing in a refugee camp in Pakistan during the Soviet-Afghan War. ",
+    "description": "The photo of the Afghan girl, Sharbat Gula, captures her striking features and expressive eyes, showcasing her resilience and strength. Her colorful attire reflects the rich cultural heritage of Afghanistan, highlighting the beauty and vibrancy of its people. ",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg"
 },
   {
@@ -20,29 +20,29 @@
     "artist": "Nasib Khan",
     "year": "2017",
     "category": "Painting",
-    "description": "Portrays the typical daily life of Afghan Peoples and Afghan Normand. ",
+    "description": "The painting of Pashtun girls beautifully portrays their vibrant traditional attire and intricate accessories, capturing their cultural pride and elegance. Their faces reflect the spirit and strength of Pashtun women, celebrating the richness of Afghan heritage and customs.",
     "imageUrl": "https://ia801508.us.archive.org/13/items/AfghanPaintings/Afghan%20Painting%20%281%29.jpg"
   },
   {
-    "title": "Bamiyan Valley",
-    "artist": "Fatima Hussaini",
-    "year": "2010",
-    "category": "Drawing",
-    "description": "Detailed sketch of the historic Bamiyan Valley",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKvO9ovmsarb8cG8cZU2osSwRZqqhwJvdMsQ&s"
+    "title": "Traditional Afghanistan Cuisine",
+    "artist": "Unknown",
+    "year": "2023",
+    "category": "Photography",
+    "description": "Traditional Afghan cuisine is known for its rich flavors and use of aromatic spices, with staple dishes like Kabuli Pulao and Mantu. Meals often include fresh herbs, yogurt, and flatbreads, emphasizing communal dining and cultural heritage.",
+    "imageUrl": "https://domesticfits.com/wp-content/uploads/2024/05/afghan-cuisine-mains-640x359.jpeg"
   },
   {
     "title": "Kabul Bazaar",
     "artist": "Ahmad Zahir",
     "year": "1998",
     "category": "Painting",
-    "description": "Bustling scene of a traditional bazaar in Kabul",
+    "description": "The Char Chatta Bazaar in Kabul is a bustling hub filled with vibrant colors and lively activity, showcasing Afghan culture. Stalls offer a variety of goods, from spices to textiles, reflecting the lively atmosphere and the importance of trade in society.",
     "imageUrl": "https://www.forcesnews.com/sites/default/files/The_Char-Chatta_Bazaar_of_Kabul%20The%20Char-Chatta%20Bazaar%20of%20Kabul%2C%20by%20A.%20Gh.%20Brechna%2C%201932.jpg"
   },
   {
     "title": "Afghan Tribal Bridal Jewelry",
     "artist": "EENGAR",
-    "year": "21 century",
+    "year": "Unknown",
     "category": "Jewelry Set",
     "description": "This Bridal Jewelry set is widely used in Afghan Kuchi tribe which has beautiful matching earing, Matha Patti and necklace. Necklace and earing have hanging chains with anklets balls and colorful gems ",
     "imageUrl": "https://seengar.com/wp-content/uploads/2017/10/MG_9200-1.jpg"
@@ -52,47 +52,91 @@
     "artist": "Wakil Kohsar/AFP",
     "year": "2021",
     "category": "Photography",
-    "description": "Abdul Wahab, one of Kabul's top tribal carpet collectors, displays a rug inside his shop on Chicken Street in the capital.",
+    "description": "Abdul Wahab, a top tribal carpet collector in Kabul, displays a crafted rug in his shop on Chicken Street. His collection features rugs with intricate patterns and vibrant colors, reflecting Afghanistan's rich weaving tradition.",
     "imageUrl": "https://www.aljazeera.com/wp-content/uploads/2021/03/000_9263RM.jpg?resize=1170%2C780&quality=80"
   },
   {
-    "title": "Buzkashi Match",
-    "artist": "Noor Agha",
-    "year": "2012",
-    "category": "Painting",
-    "description": "Action-packed scene of Afghanistan's national sport",
-    "imageUrl": "/artworks/afghanistan/buzkashi-match.jpg"
+    "title": "House for Rent",
+    "artist": "Wadsam",
+    "year": "2015",
+    "category": "Photography",
+    "description": "The demand for housing grows as Afghans return from neighboring countries and many foreigners working in Afghanistan rent these mansions. This shift highlights Kabul's evolving real estate market, where traditional and modern influences merge.",
+    "imageUrl": "https://wadsam.com/wp-content/uploads/2015/03/houses-890x395_c.jpeg"
   },
   {
-    "title": "Kochi Women",
-    "artist": "Laila Wahidi",
+    "title": "Rescuing the childhood of Afghan girls",
+    "artist": "World Vision Afghanistan",
     "year": "2017",
-    "category": "Drawing",
-    "description": "Portrait of Kochi nomad women in traditional attire",
-    "imageUrl": "/artworks/afghanistan/kochi-women.jpg"
+    "category": "Photography",
+    "description": "This campaign aims to empower Afghan girls to enjoy their childhood and access education, ensuring they have opportunities for a brighter future. By advocating for their rights, we strive to create an environment where girls can learn, grow, and reach their full potential.",
+    "imageUrl": "https://www.wvi.org/sites/default/files/styles/4_3_720x540/public/IMG_4316.webp?itok=WH9AcTik"
   },
   {
     "title": "Blue Mosque",
     "artist": "Hamid Nawabi",
-    "year": "2003",
-    "category": "Painting",
-    "description": "Stunning portrayal of the Blue Mosque in Mazar-i-Sharif",
-    "imageUrl": "/artworks/afghanistan/blue-mosque.jpg"
-  },
-  {
-    "title": "Pamir Mountains",
-    "artist": "Zainab Haidari",
-    "year": "2019",
-    "category": "Drawing",
-    "description": "Serene landscape of the Pamir Mountains",
-    "imageUrl": "/artworks/afghanistan/pamir-mountains.jpg"
-  },
-  {
-    "title": "Afghan Girl",
-    "artist": "Steve McCurry",
-    "year": "1984",
+    "year": "2021",
     "category": "Photography",
-    "description": "This iconic photograph, titled 'Afghan Girl,' features Sharbat Gula, a young Pashtun orphan who was residing in a refugee camp in Pakistan during the Soviet-Afghan War. Captured by photojournalist Steve McCurry, the image became globally famous after being featured on the cover of National Geographic in June 1985. The girl's piercing green eyes and intense expression symbolize the resilience and plight of refugees.",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg"
+    "description": "Located in the heart of Mazari Sharif, Afghanistan, the Blue Mosque, also known as the Shrine of Ali, is a site of extraordinary historical and spiritual significance since the 12th century.",
+    "imageUrl": "https://afghansafari.com/wp-content/uploads/2024/04/2%DB%8C%D8%A7%D9%81%D8%AA%D9%85-%DA%A9%D8%B1%D8%A7%D9%81%DB%8C%DA%A9-%DA%A9%D8%A7%D8%A8%D9%84-.jpeg"
+  },
+  {
+    "title": " Afghanistan National Institute of Music",
+    "artist": "Zainab Haidari",
+    "year": "2014",
+    "category": "Music",
+    "description": "Serene landscape of the Pamir Mountains",
+    "imageUrl": "https://violinsandchinrest.com/wp-content/uploads/2014/07/anim-kids.jpg?w=300"
+  },
+  {
+    "title": "Cheerful in Afghanistan",
+    "artist": "GlobalGiving",
+    "year": "2024",
+    "category": "Photography",
+    "description": "The Mobile Mini Circus for Children in Afghanistan brings joy and creativity to young audiences through engaging performances and activities. This initiative provides a safe space for children to explore talents, build confidence, and inspire hope in challenging environments.",
+    "imageUrl": "https://www.globalgiving.org/pfil/30959/pict_large.jpg"
+},
+{
+  "title": "Afghan Tribal Jewelry",
+  "artist": "Photographs courtesy of the Art Gallery of NSW ",
+  "year": "1st century CE",
+  "category": "Artifacts",
+  "description": "Seeing the ancient artifacts of Afghanistan, now on view at the Art Gallery of NSW, carries the burden of acknowledging what has been lost in recent times regarding that countries culture and philosophy.",
+  "imageUrl": "https://npr.brightspotcdn.com/dims4/default/954ee5d/2147483647/strip/true/crop/3000x3000+0+0/resize/880x880!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2022%2F08%2F31%2Fartifact_grid_custom-bc1342fd9df4c76e67f71127c8ba5aac960a8f49.jpg"
+},
+{
+  "title": "Miniature Paintings from the Timurid Era",
+  "artist": "Dr.Abdul Naser Sawaby",
+  "year": "2020",
+  "category": "Painting",
+  "description": "Dr. Abdul Nasir Sawabi, an artist from Herat, creates miniature paintings on Timurid-era bricks. His work merges historical artistry with contemporary themes, showcasing resilience and adaptation during challenging times.",
+  "imageUrl": "https://pbs.twimg.com/media/EadrDH8WoAAI2l-.jpg"
+},{
+  "title": "Bamiyan Buddhas: A Lost Heritage",
+  "artist": "Local Buddhist community",
+  "year": "570 AD",
+  "category": "Sculpture",
+  "description": "The Bamiyan Buddhas were once towering icons of ancient Afghan heritage, showcasing remarkable Buddhist art and architecture. Though destroyed in 2001, they symbolize cultural resilience and the rich history of the region.",
+  "imageUrl": "https://smarthistory.org/wp-content/uploads/2023/10/standing_buddha_bamiyan.png"
+},{
+  "title": "Afghan Textiles: Patterns of Culture and Tradition",
+  "artist": "IG: @afghanimood",
+  "year": "2023",
+  "category": "",
+  "description": "Afghan textiles, featuring vibrant colors and intricate patterns, reflect the diverse culture and traditions of Afghanistan. This artwork showcases skilled craftsmanship, incorporating designs that represent the region's history and heritage.",
+  "imageUrl": "https://i.pinimg.com/736x/32/be/7c/32be7cd01dbe88b435cb817aefa9a613.jpg"
+},{
+  "title": "Sufi dance",
+  "artist": "Fahima Mirzaie",
+  "year": "2019",
+  "category": "Dance",
+  "description": "Fahima Mirzaie set up a dance school for women in the Afghan capital in 2020, hoping to help her students fight depression and find inner peace in a war-torn country where dancing is widely considered taboo.",
+  "imageUrl": "https://vid.alarabiya.net/images/2020/01/17/a77efb1b-161b-4789-a65e-c8cb6de86454/a77efb1b-161b-4789-a65e-c8cb6de86454_16x9_1200x676.jpg?width=801&format=jpg"
+},{
+  "title": " Aghd (Wedding Ceremony)",
+  "artist": "Rahim Siddiq",
+  "year": "2023",
+  "category": "Ceromonial Wedding",
+  "description": "Afghan weddings are rich in customs and traditions, beautifully reflecting the cultural heritage of Afghanistan. These celebrations often include vibrant ceremonies, traditional attire, and various rituals that honor family and community bonds.",
+  "imageUrl": "https://images.squarespace-cdn.com/content/v1/5c2db4029772aebeba129860/1688023879574-KW15CNT3DTPOTX4452WY/3b06c423-c529-4892-bdb0-fe879ec9824a.jpeg"
 }
   ]
