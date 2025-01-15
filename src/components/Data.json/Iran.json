@@ -1,146 +1,155 @@
 [
   {
-    "title": "Persepolis at Dawn",
-    "artist": "Shirin Neshat",
-    "year": "2009",
-    "category": "Painting",
-    "description": "Mystical portrayal of the ancient city of Persepolis",
-     "imageUrl": ""
+    "title": "The Gate of Xerxes",
+    "artist": "Various contributors",
+    "year": "(r. 486 – 465 BC",
+    "category": "Photography",
+    "description": "The Gate of All Nations, also known as the Gate of Xerxes, is located in the ruins of the ancient city of Persepolis, Iran.",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYhaLhqyhVX6b56o-2EGTvNTQw_QCNubmA1w&s"
   },
   {
-    "title": "Tehran Bazaar",
-    "artist": "Parviz Tanavoli",
-    "year": "2014",
-    "category": "Drawing",
-    "description": "Intricate sketch of the bustling Tehran Grand Bazaar",
-     "imageUrl": ""
+    "title": "Azadi Tower",
+    "artist": "Various architects",
+    "year": "1971",
+    "category": "Architecture",
+    "description": "The Azadi Tower, an iconic symbol of Tehran, showcases unique Persian architectural design with its stunning arches and illuminated silhouette at night. It commemorates the 2,500th anniversary of the Persian Empire and stands as a testament to Iran's rich history.",
+    "imageUrl": "https://civilisable.com/wp-content/uploads/2024/05/Azadi-Tower-at-Night-13.5.2024.jpg"
   },
   {
-    "title": "Nasir ol Molk Mosque",
-    "artist": "Monir Shahroudy Farmanfarmaian",
-    "year": "2006",
-    "category": "Painting",
-    "description": "Kaleidoscopic representation of the Pink Mosque in Shiraz",
-    "imageUrl": ""
+    "title": "Shah Cheragh in Shiraz",
+    "artist": "Various artisans",
+    "year": "14th century",
+    "category": "Architecture",
+    "description": "Shah Cheragh is a stunning shrine in Shiraz, renowned for its exquisite mirror work and intricate tile mosaics. This sacred site is both a major pilgrimage destination and a masterpiece of Persian architecture, reflecting the rich spiritual heritage of Iran.",
+    "imageUrl": "https://toursofiran.com/wp-content/uploads/2019/04/shah-cheragh-4.jpg"
   },
   {
-    "title": "Alborz Mountains",
-    "artist": "Sohrab Sepehri",
-    "year": "1985",
-    "category": "Painting",
-    "description": "Serene landscape of the Alborz mountain range",
-     "imageUrl": ""
+    "title": "Eram Garden and Palace, Shiraz",
+    "artist": "Various architects",
+    "year": "19th century",
+    "category": "Landscape Architecture",
+    "description": "Eram Garden and Palace in Shiraz is a UNESCO World Heritage site known for its stunning Persian gardens and exquisite architectural design. Featuring beautifully maintained flower beds, fountains, and cypress trees, it embodies the elegance of traditional Iranian landscaping.",
+    "imageUrl": "https://iranontour.com/wp-content/uploads/2020/10/Eram-Garden-herdaer-1.jpg"
+  },
+
+  {
+    "title": "Cyrus the Great’s Tomb",
+    "artist": "Various architects",
+    "year": "Approximately 530 BC",
+    "category": "Historical Monument",
+    "description": "Located in Pasargadae, Iran, Cyrus the Great’s Tomb is of significant historical importance. It is believed to be the final resting place of Cyrus the Great, the revered founder of the Achaemenid Empire, marking the dawn of a golden age in Persian history.",
+    "imageUrl": "https://civilisable.com/wp-content/uploads/2024/05/Cyrus-the-Greats-Tomb-in-Pasargadae-13.5.2024.jpg"
+  },
+ 
+  {
+    "title": "Tehran Traffic on School's First Day",
+    "artist": "Various photographers",
+    "year": "Contemporary",
+    "category": "Urban Life",
+    "description": "A bustling scene of Tehran traffic on the first day of school in Iran, highlighting the city's vibrant energy and the annual return of students. The image captures the street life and the importance of education in Iranian culture.",
+    "imageUrl": "https://pbs.twimg.com/media/DKaC6a7W0AAyCnv.jpg:large"
   },
   {
-    "title": "Yazd Wind Towers",
-    "artist": "Bahman Mohassess",
-    "year": "1995",
-    "category": "Drawing",
-    "description": "Detailed study of traditional wind towers in Yazd",
-     "imageUrl": ""
+    "title": "Iranian Women's Fashion",
+    "artist": "Various designers",
+    "year": "Contemporary",
+    "category": "Fashion",
+    "description": "Iranian fashion for women seamlessly blends modesty with elegance, mirroring the essence of cultural heritage and identity.",
+    "imageUrl": "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/433720215_795683232588520_838697503766667957_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=f727a1&_nc_ohc=LHoRYn117KIQ7kNvgG-v34A&_nc_zt=23&_nc_ht=scontent-muc2-1.xx&_nc_gid=APgz1YmH3Odh6RRHxDs08gu&oh=00_AYBWseD1k3dy66Nnj8VxpDNUIpOyDahJSrfkorohJc4nCA&oe=678DB623"
   },
   {
-    "title": "Nowruz Table",
-    "artist": "Farideh Lashai",
-    "year": "2011",
-    "category": "Painting",
-    "description": "Vibrant depiction of a traditional Persian New Year setting",
-     "imageUrl": ""
+    "title": "Traditional Iranian Men's Attire",
+    "artist": "Various artisans",
+    "year": "Contemporary",
+    "category": "Fashion",
+    "description": "Traditional attire for men in Iran, rooted in centuries-old customs and influenced by various regional climates, harmonizes elegance and functionality. These garments reflect the rich cultural heritage and artistry of Iranian craftsmanship.",
+    "imageUrl": "https://scontent-muc2-1.xx.fbcdn.net/v/t39.30808-6/433635218_795683152588528_4138336213572742881_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=f727a1&_nc_ohc=K7OFC1j8VtwQ7kNvgHbpaWi&_nc_zt=23&_nc_ht=scontent-muc2-1.xx&_nc_gid=A7_duJ_CHX4uOtnd_dL_kdM&oh=00_AYCYPy7rgjV3GJqHGt-rep2iruo5KJ8kFZHt6AIOcfXPAQ&oe=678DC3EC"
   },
   {
-    "title": "Caspian Sea Shore",
-    "artist": "Nicky Nodjoumi",
-    "year": "2017",
-    "category": "Painting",
-    "description": "Atmospheric scene of the Caspian Sea coastline",
-     "imageUrl": ""
+    "title": "Traditional Iranian Accessories",
+    "artist": "Various artisans",
+    "year": "Contemporary",
+    "category": "Fashion",
+    "description": "The Kamarband is a luxurious waist sash made of silk or velvet with intricate patterns, while the Rusari is a scarf covering the hair, crafted from silk or chiffon with Persian-inspired designs for personal expression.",
+    "imageUrl": "https://civilisable.com/wp-content/uploads/2024/02/Traditional-Iranian-Accessories-26.2.2024-1024x1024.jpg"
   },
   {
-    "title": "Esfahan's Bridges",
-    "artist": "Marcos Grigorian",
-    "year": "2003",
-    "category": "Drawing",
-    "description": "Architectural study of Esfahan's historic bridges",
-    "imageUrl": ""
+    "title": "Kerman Persian Rug",
+    "artist": "Various artisans",
+    "year": "Contemporary",
+    "category": "Textile Art",
+    "description": "The incredible Kerman Persian rug is a handmade treasure, showcasing the artistry of skilled weavers. This piece reflects the rich tradition of Persian rug-making, with two women crafting these exquisite rugs by hand.",
+    "imageUrl": "https://www.rugman.com/blog/wp-content/uploads/Kerman-Rug_Rugman-16.jpg"
+  },
+
+  {
+    "title": "Rosewater Festival",
+    "artist": "Various photographers",
+    "year": "Contemporary",
+    "category": "Cultural Tradition",
+    "description": "An elderly Iranian woman picks flowers for the Rosewater festival, a cherished cultural event in Iran. This festival celebrates the blooming of roses and the traditional process of distilling rosewater, highlighting the importance of floral heritage in Iranian culture.",
+    "imageUrl": "https://iranamaze.com/wp-content/uploads/2022/03/elder-woman-roses-kashan.jpg"
   },
   {
-    "title": "Esfahan's Bridges",
-    "artist": "Marcos Grigorian",
-    "year": "2003",
-    "category": "Drawing",
-    "description": "Architectural study of Esfahan's historic bridges",
-     "imageUrl": ""
+    "title": "Kish Island",
+    "artist": "Various photographers",
+    "year": "Contemporary",
+    "category": "Travel Photography",
+    "description": "Kish Island, located in the Persian Gulf, is renowned for its stunning beaches, upscale resorts, and vibrant recreational activities. This popular tourist destination in Iran offers a unique blend of natural beauty and modern amenities.",
+    "imageUrl": "https://newsmedia.tasnimnews.com/Tasnim/Uploaded/Image/1395/01/09/139501091953467527420374.jpg"
   },
   {
-    "title": "Esfahan's Bridges",
-    "artist": "Marcos Grigorian",
-    "year": "2003",
-    "category": "Drawing",
-    "description": "Architectural study of Esfahan's historic bridges",
-    "imageUrl": ""
+    "title": "Crown of Empress Farah Pahlavi",
+    "artist": "Various jewelers",
+    "year": "20th century",
+    "category": "Jewelry",
+    "description": "This crown, worn by the former Empress of Iran, Farah Pahlavi, symbolizes the elegance and grandeur of the Pahlavi dynasty. Crafted with exquisite gemstones and intricate designs, it represents Iranian royal heritage.",
+    "imageUrl": "https://ifpnews.com/wp-content/uploads/2019/06/YYQG9CSbcjL1Wo4E-1534740991110.jpg"
   },
   {
-    "title": "Golestan Palace",
-    "artist": "Behjat Sadr",
-    "year": "1992",
-    "category": "Painting",
-    "description": "Ornate portrayal of Tehran's Golestan Palace",
-    "imageUrl": ""
+    "title": "Nightingale",
+    "artist": "Various photographers",
+    "year": "Contemporary",
+    "category": "Wildlife",
+    "description": "The nightingale is Iran's national bird, celebrated for its beautiful song and cultural significance in Persian poetry. This small songbird symbolizes love and beauty, often featured in literature and art throughout Iranian history.",
+    "imageUrl": "https://www.birdforum.net/wiki/images/b/ba/Common_Nightingale.jpg"
   },
+
   {
-    "title": "Lut Desert",
-    "artist": "Y.Z. Kami",
-    "year": "2019",
-    "category": "Drawing",
-    "description": "Minimalist representation of the vast Lut Desert",
-   "imageUrl": ""
+    "title": "Persian Cats",
+    "artist": "Various breeders",
+    "year": "Contemporary",
+    "category": "Animal Breeding",
+    "description": "Persian cats, originating from Iran, are known for their long fur, distinctive flat faces, and gentle personalities. They are one of the most popular and recognizable cat breeds worldwide, embodying beauty and grace.",
+    "imageUrl": "https://conservationcubclub.com/wp-content/uploads/2024/06/Iranian-Cats-600x600.jpeg"
+},
+  {
+    "title": "Persian cuisine",
+    "artist": "Aakifa Kellen",
+    "year": "2023",
+    "category": "Photography",
+    "description": "Iranian cuisine features a wide range of flavors influenced by the country’s diverse climates, vast terrain, and various cultures that have passed through. This rich culinary heritage creates unique and flavorful dishes.",
+    "imageUrl": "https://i0.wp.com/blog.worldholidayvibes.com/wp-content/uploads/2023/05/iran-food.jpg?resize=860%2C487&ssl=1"
   },
+  
+
   {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
+    "title": "Grilled Liver Street Food",
+    "artist": "Various vendors",
+    "year": "Contemporary",
+    "category": "Culinary Art",
+    "description": "Grilled liver is a popular street food in Iran, once considered a luxury item due to its nutritional value. This dish is enjoyed by many for its rich flavor and is often served with bread and fresh herbs.",
+    "imageUrl": "https://irandestination.com/wp-content/uploads/2021/04/Grilled-liver-and-other-kebabs-Street-Food-Iran-Destination.jpg"
   },
+
+
+  
   {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
-  },
-  {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
-  },
-  {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
-  },
-  {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
-  },
-  {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
+    "title": "Persian Freeze-Dried Sweets",
+    "artist": "Various artisans",
+    "year": "Contemporary",
+    "category": "Culinary Art",
+    "description": "Experience the delicate art of Persian freeze-dried sweets, which capture the essence of traditional flavors and textures. These visually stunning confections offer a unique taste of Persia, combining cultural heritage with modern techniques.",
+    "imageUrl": "https://www.pomegranaterestaurant.ca/wp-content/uploads/2024/12/persian-freeze-dried-sweets-art.jpeg"
   }
 ]
