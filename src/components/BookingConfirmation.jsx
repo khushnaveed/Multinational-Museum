@@ -13,7 +13,7 @@ const BookingConfirmation = () => {
 
     return (
         <div className="confirmation-container">
-            <div>
+            <div className="confirm">
                 <h1>Booking Confirmation</h1>
                 <p><strong>Name:</strong> {ticketDetails.firstName} {ticketDetails.lastName}</p>
                 <p><strong>Email:</strong> {ticketDetails.email}</p>

@@ -44,6 +44,10 @@ span {
 p{
   color: gray;
 }
+.total{
+  font-weight: bold;
+  color: white;
+}
 
 /* Form styling */
 form {
@@ -170,7 +174,8 @@ a {
   }
 
   button {
-    font-size: 14px; /* Reduce button font size */
+    font-size: 11px; /* Reduce button font size */
+    text-align: center;
   }
 
   .total-display {

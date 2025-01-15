@@ -1,9 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-//TEST
 import { FaCreditCard, FaPaypal } from 'react-icons/fa'; // Import specific icons
-//FIN
 import './Booking.css';  // Import external CSS for styling
 
 const Booking = () => {
@@ -160,7 +158,7 @@ const Booking = () => {
         </div>
 
         <div className="total-display">
-          <p>Total: ${total.toFixed(2)}</p>
+          <p className='total'>Total: ${total.toFixed(2)}</p>
         </div>
 
         <div className="form-section">
