@@ -207,7 +207,7 @@ function ContactUs() {
 
               <button
                 type="submit"
-                className="w-full bg-gray-600 text-white py-3 px-4 rounded-md hover:bg-gray-800 transition duration-300 font-medium"
+                className="w-full bg-gray-600 text-white py-3 px-4 rounded-md hover:bg-black transition duration-300 font-medium"
               >
                 Send Message
               </button>
@@ -219,7 +219,7 @@ function ContactUs() {
       {/* Chat Popup Button */}
       <button
         onClick={toggleChat}
-        className="fixed bottom-16 right-6 text-white rounded-full p-4 shadow-lg hover:bg-black transition"
+        className="fixed bottom-16 right-6 bg-gray-600 text-white rounded-full p-4 shadow-lg hover:bg-black transition"
       >
         <MessageCircle className="w-6 h-6" />
       </button>
@@ -229,7 +229,7 @@ function ContactUs() {
         <div className="fixed bottom-24 right-6  text-gray-400 w-80 backdrop-blur-lg rounded-lg shadow-xl p-6 space-y-4">
           <div className="flex justify-between items-center">
             <h3 className="font-bold text-white text-lg">Chat with us</h3>
-            <button onClick={toggleChat}>x</button>
+            <button onClick={toggleChat} className="text-white">x</button>
           </div>
           <div className="mt-4 space-y-3 overflow-y-auto max-h-60">
             {chatMessages.map((chat, index) => (
@@ -249,7 +249,7 @@ function ContactUs() {
             />
             <button
               onClick={sendMessage}
-              className="bg-gray text-white px-4 py-2  m-4 rounded-md hover:bg-black focus:outline-none focus:ring-2  transition duration-200"
+              className="bg-gray text-white px-4 py-2  border m-4 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2  transition duration-200"
             >
               Send
             </button>
