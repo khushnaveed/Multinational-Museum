@@ -48,10 +48,10 @@ function ContactUs() {
     <div className="min-h-screen bg-black text-white">
       {/* Hero Section */}
       <div
-        className="h-64 bg-cover bg-center relative"
+        className="h-80 bg-cover bg-center relative"
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80")',
+            'url("https://cdn.pixabay.com/photo/2018/08/14/11/03/acapulco-3605307_1280.jpg")',
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
