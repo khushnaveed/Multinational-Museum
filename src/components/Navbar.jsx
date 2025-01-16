@@ -3,7 +3,6 @@ import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outli
 import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 
-
 const navigation = [
   { name: 'Exhibitions', href: '/exhibitions', current: false },
   { name: 'News', href: '/news', current: false },
@@ -62,13 +61,7 @@ export default function Navbar() {
                   ) : item.name === 'Gallery' ? (
                     <Menu as="div" key={item.name} className="relative">
                       <MenuButton
-                        className={classNames(
-                          activeTab === item.name
-                            ? 'bg-gray-900 text-white' // Active tab style
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'inline-flex items-center rounded-md px-3 py-2 text-sm font-medium'
-                        )}
-                        onClick={() => handleTabClick(item.name)} // Set active tab on click
+                        className="text-gray-300 hover:bg-gray-700 hover:text-white inline-flex items-center rounded-md px-3 py-2 text-sm font-medium"
                       >
                         {item.name}
                         <ChevronDownIcon
@@ -133,13 +126,7 @@ export default function Navbar() {
             ) : item.name === 'Gallery' ? (
               <Disclosure as="div" key={item.name}>
                 <DisclosureButton
-                  className={classNames(
-                    activeTab === item.name
-                      ? 'bg-gray-900 text-white' // Active tab style for mobile
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium'
-                  )}
-                  onClick={() => handleTabClick(item.name)} // Set active tab on click
+                  className="flex w-full items-center justify-between rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                 >
                   {item.name}
                   <ChevronDownIcon className="ml-2 h-4 w-4 text-gray-400" aria-hidden="true" />
