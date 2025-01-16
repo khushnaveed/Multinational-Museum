@@ -1,41 +1,40 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-/* eslint-disable react/no-unknown-property */
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+import BackgroundImage from "./components/BackgroundImage"
+import ArtworkCard from './ArtworkCard';
 
-const CountryCard = ({ name, flag, mapUrl }) => {
+const CountryGallery = ({ country }) => {
+  const navigate = useNavigate();
+  const artworks = country.data;
+
   return (
-    <div className="w-1/5 min-w-[200px] bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 flex flex-col justify-between custom-box-shadow">
-      <h2 className="text-2xl font-semibold p-4 text-center">{name}</h2>
-      <a
-        href={mapUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block p-4"
-      >
-        <img
-          src={flag}
-          alt={`Flag of ${name}`}
-          className="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300"
-        />
-      </a>
-      <Link
-        to={`gallery/${name.toLowerCase().replace(/\s+/g, "-")}`}
-        className="block w-full py-2 bg-blue-600 text-center text-white font-semibold hover:bg-blue-700 transition-colors duration-300"
-      >
-        See Gallery
-      </Link>
+    <div className="min-h-screen bg-black text-white p-8 relative">
+      <BackgroundImage
+        src="/bg4.gif?height=1080&width=1920"//Country Gallery background image
+        alt={`${country.name} background`}
+      />
+      <div className="relative z-10">
+        <h1 className="text-4xl font-bold mb-8 text-center">{country.name} Gallery</h1>
+        <button
+          onClick={() => navigate('/artwork')}
+          className="mb-4 px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300 inline-block"
+        >
+          ← Back to Countries
+        </button>
+        <div className="flex flex-wrap justify-center gap-8 mt-8">
+          {artworks.map((artwork, index) => (
+            <ArtworkCard key={index} artwork={artwork} />
+          ))}
+        </div>
+      </div>
     </div>
   );
 };
 
-export default CountryCard;
+export default CountryGallery;
 
-<style jsx>{`
-  .custom-box-shadow {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-`}</style>;
+
+
+

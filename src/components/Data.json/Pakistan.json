@@ -5,7 +5,7 @@
     "year": "1975",
     "category": "Painting",
     "description": "Majestic portrayal of Lahore's Badshahi Mosque",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "K2 Mountain",
@@ -21,7 +21,7 @@
     "year": "2008",
     "category": "Drawing",
     "description": "Vibrant depiction of traditional Pakistani truck art",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Mohatta Palace",
@@ -29,7 +29,7 @@
     "year": "1985",
     "category": "Painting",
     "description": "Elegant representation of Karachi's Mohatta Palace",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Makran Coast",
@@ -45,7 +45,7 @@
     "year": "1970",
     "category": "Painting",
     "description": "Lush portrayal of the historic Shalimar Gardens in Lahore",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Deosai Plains",
@@ -61,7 +61,7 @@
     "year": "1995",
     "category": "Drawing",
     "description": "Intricate sketch of the Wazir Khan Mosque's tilework",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Wazir Khan Mosque",
@@ -69,7 +69,7 @@
     "year": "1995",
     "category": "Drawing",
     "description": "Intricate sketch of the Wazir Khan Mosque's tilework",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Wazir Khan Mosque",
@@ -85,7 +85,7 @@
     "year": "2000",
     "category": "Painting",
     "description": "Artistic interpretation of ancient Indus Valley civilization artifacts",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Hunza Valley",
@@ -144,4 +144,3 @@
     "imageUrl": ""
   }
 ]
-
