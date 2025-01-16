@@ -1,8 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import { FaCreditCard, FaPaypal } from 'react-icons/fa'; // Import specific icons
-import './Booking.css';  // Import external CSS for styling
+import { useNavigate } from 'react-router-dom';
+import { FaCreditCard, FaPaypal } from 'react-icons/fa';
 
 const Booking = () => {
   const [adultQty, setAdultQty] = useState(() => Number(localStorage.getItem('adultQty')) || 0);
@@ -17,21 +15,18 @@ const Booking = () => {
   const [date, setDate] = useState(() => localStorage.getItem('date') || '');
   const [time, setTime] = useState(() => localStorage.getItem('time') || '');
   const [paymentMethod, setPaymentMethod] = useState(() => localStorage.getItem('paymentMethod') || '');
-  const navigate = useNavigate();  // Initialize useNavigate
+  const navigate = useNavigate();
 
   const calculateTotal = () => {
     const adultCost = 25 * adultQty;
     const childCost = 5 * childQty;
     const guideCost = 5 * guideQty;
-    const museumPassCost = 0 * museumPassQty;
     const totalCost = adultCost + childCost + guideCost;
     setTotal(totalCost);
-    localStorage.setItem('adultQty', adultQty);
-    localStorage.setItem('childQty', childQty);
-    localStorage.setItem('guideQty', guideQty);
-    localStorage.setItem('museumPassQty', museumPassQty);
-
-
+    localStorage.setItem('adultQty', adultQty.toString());
+    localStorage.setItem('childQty', childQty.toString());
+    localStorage.setItem('guideQty', guideQty.toString());
+    localStorage.setItem('museumPassQty', museumPassQty.toString());
   };
 
   useEffect(() => {
@@ -40,24 +35,11 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    // Store all booking details in localStorage as an object
     const bookingDetails = {
-      firstName,
-      lastName,
-      email,
-      phone,
-      date,
-      time,
-      paymentMethod,
-      adultQty,
-      childQty,
-      guideQty,
-      total
+      firstName, lastName, email, phone, date, time,
+      paymentMethod, adultQty, childQty, guideQty, total
     };
     localStorage.setItem('ticketDetails', JSON.stringify(bookingDetails));
-
-    // Redirect to BookingConfirmation
     navigate('/booking-confirmation');
   };
 
@@ -70,9 +52,6 @@ const Booking = () => {
     localStorage.setItem('time', time);
     localStorage.setItem('paymentMethod', paymentMethod);
   }, [firstName, lastName, email, phone, date, time, paymentMethod]);
-
-
-
 
   const resetForm = () => {
     setAdultQty(0);
@@ -87,190 +66,214 @@ const Booking = () => {
     setTime('');
     setPaymentMethod('');
 
-    // Clear related localStorage keys
-    localStorage.removeItem('adultQty');
-    localStorage.removeItem('childQty');
-    localStorage.removeItem('guideQty');
-    localStorage.removeItem('museumPassQty');
-    localStorage.removeItem('firstName');
-    localStorage.removeItem('lastName');
-    localStorage.removeItem('email');
-    localStorage.removeItem('phone');
-    localStorage.removeItem('date');
-    localStorage.removeItem('time');
-    localStorage.removeItem('paymentMethod');
-    localStorage.removeItem('ticketDetails');
+    ['adultQty', 'childQty', 'guideQty', 'museumPassQty', 'firstName', 
+     'lastName', 'email', 'phone', 'date', 'time', 'paymentMethod', 
+     'ticketDetails'].forEach(key => localStorage.removeItem(key));
   };
 
-
   return (
-    <div className="booking-container">
-      <h1>Museum Ticket Form</h1>
-      <form onSubmit={handleSubmit}>
-        {/* Booking form fields */}
-        <div className="form-section">
-          <label>
-            <h4>Adult</h4>
-            <p>Quantity</p>
-            <input
-              type="number"
-              min="0"
-              value={adultQty}
-              onChange={(e) => setAdultQty(Number(e.target.value))}
-            />
-            <span>$25.00</span>
-          </label><hr />
-          <label>
-            <h4>Child </h4>
-            <p>Ages 18 and under</p>
-            <p>Quantity</p>
-            <input
-              type="number"
-              min="0"
-              value={childQty}
-              onChange={(e) => setChildQty(Number(e.target.value))}
-            />
-            <span>$5.00</span>
-          </label><hr />
-          <label>
-            <h4>Tour Guide </h4>
-            <p>Quantity</p>
-            <input
-              type="number"
-              min="0"
-              value={guideQty}
-              onChange={(e) => setGuideQty(Number(e.target.value))}
-            />
-            <span>$5.00</span>
-          </label><hr />
-          <label>
-            <h4>Museum Pass </h4>
-            <p>Ages 18 and under</p>
-            <p>Quantity</p>
-            <input
-              type="number"
-              min="0"
-              value={museumPassQty}
-              onChange={(e) => setMuseumPassQty(Number(e.target.value))}
-            />
-            <span>Free</span>
-          </label><hr />
-        </div>
-
-        <div className="total-display">
-          <p className='total'>Total: ${total.toFixed(2)}</p>
-        </div>
-
-        <div className="form-section">
-          <input
-            type="text"
-            placeholder="First Name"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-            required
-          />
-          <input
-            type="text"
-            placeholder="Last Name"
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-            required
-          />
-          <input
-            type="email"
-            placeholder="example@example.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <input
-            type="tel"
-            placeholder="+00-0000 0000 0000"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
-        </div>
-
-        <div className="form-section">
-          <label htmlFor="date">Choose your start time:</label>
-          <input
-            type="date"
-            id="date"
-            name="date"
-            value={date}
-            onChange={(e) => setDate(e.target.value)}
-          />
-          <div>
-            <div className='radio'>
-              <label>
-
+    <div className="min-h-screen bg-black p-4">
+      <div className="w-[90%] max-w-3xl mx-auto my-5 p-5 rounded-2xl text-white">
+        <h1 className="text-3xl font-bold text-center p-5 text-shadow">Museum Ticket Form</h1>
+        
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6">
+            {/* Adult Section */}
+            <div className="border-b border-gray-600 pb-4">
+              <h4 className="font-bold text-lg">Adult</h4>
+              <p className="text-gray-400">Quantity</p>
+              <div className="flex items-center gap-4">
                 <input
-                  type="radio"
-                  name="time"
-                  value="9:00 AM"
-                  checked={time === '9:00 AM'}
-                  onChange={(e) => setTime(e.target.value)}
-                /> 9:00 AM
-              </label>
-              <label>
+                  type="number"
+                  min="0"
+                  value={adultQty}
+                  onChange={(e) => setAdultQty(Number(e.target.value))}
+                  className="mt-2 p-2 rounded-md w-32 text-black"
+                />
+                <span className="font-bold">$25.00</span>
+              </div>
+            </div>
+
+            {/* Child Section */}
+            <div className="border-b border-gray-600 pb-4">
+              <h4 className="font-bold text-lg">Child</h4>
+              <p className="text-gray-400">Ages 18 and under</p>
+              <p className="text-gray-400">Quantity</p>
+              <div className="flex items-center gap-4">
                 <input
-                  type="radio"
-                  name="time"
-                  value="2:00 PM"
-                  checked={time === '2:00 PM'}
-                  onChange={(e) => setTime(e.target.value)}
-                /> 2:00 PM
-              </label>
-              <label>
+                  type="number"
+                  min="0"
+                  value={childQty}
+                  onChange={(e) => setChildQty(Number(e.target.value))}
+                  className="mt-2 p-2 rounded-md w-32 text-black"
+                />
+                <span className="font-bold">$5.00</span>
+              </div>
+            </div>
+
+            {/* Guide Section */}
+            <div className="border-b border-gray-600 pb-4">
+              <h4 className="font-bold text-lg">Tour Guide</h4>
+              <p className="text-gray-400">Quantity</p>
+              <div className="flex items-center gap-4">
                 <input
-                  type="radio"
-                  name="time"
-                  value="5:00 PM"
-                  checked={time === '5:00 PM'}
-                  onChange={(e) => setTime(e.target.value)}
-                /> 5:00 PM
-              </label>
+                  type="number"
+                  min="0"
+                  value={guideQty}
+                  onChange={(e) => setGuideQty(Number(e.target.value))}
+                  className="mt-2 p-2 rounded-md w-32 text-black"
+                />
+                <span className="font-bold">$5.00</span>
+              </div>
+            </div>
+
+            {/* Museum Pass Section */}
+            <div className="border-b border-gray-600 pb-4">
+              <h4 className="font-bold text-lg">Museum Pass</h4>
+              <p className="text-gray-400">Ages 18 and under</p>
+              <p className="text-gray-400">Quantity</p>
+              <div className="flex items-center gap-4">
+                <input
+                  type="number"
+                  min="0"
+                  value={museumPassQty}
+                  onChange={(e) => setMuseumPassQty(Number(e.target.value))}
+                  className="mt-2 p-2 rounded-md w-32 text-black"
+                />
+                <span className="font-bold">Free</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="form-section">
-          <label>
-            <input type="checkbox" required />
-            I agree to  <a href="https://www.freeprivacypolicy.com/free-terms-and-conditions-generator/" target="_blank" rel="noopener noreferrer">Terms & Conditions and measure for safe visit.</a>
-          </label>
-        </div>
+          <div className="text-right">
+            <p className="text-xl font-bold">Total: ${total.toFixed(2)}</p>
+          </div>
 
-        <div className="form-section-two">
-          <p>Payment Methods:</p>
-          <label style={{ display: 'flex', alignItems: 'center' }}>
+          <div className="flex flex-col gap-4">
             <input
-              type="radio"
-              name="payment"
-              value="credit"
-              checked={paymentMethod === 'credit'}
-              onChange={(e) => setPaymentMethod(e.target.value)}
+              type="text"
+              placeholder="First Name"
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
               required
-            /> <FaCreditCard style={{ marginLeft: '8px', marginRight: '8px', color: "#0070ba" }} />Debit or Credit Card
-          </label>
-          <label style={{ display: 'flex', alignItems: 'center' }}>
-            <input
-              type="radio"
-              name="payment"
-              value="paypal"
-              checked={paymentMethod === 'paypal'}
-              onChange={(e) => setPaymentMethod(e.target.value)}
+              className="p-2 rounded-md w-full text-black"
             />
-            <FaPaypal style={{ marginLeft: '8px', marginRight: '8px', color: "#0070ba" }} />PayPal
-          </label>
-        </div>
+            <input
+              type="text"
+              placeholder="Last Name"
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+              required
+              className="p-2 rounded-md w-full text-black"
+            />
+            <input
+              type="email"
+              placeholder="example@example.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="p-2 rounded-md w-full text-black"
+            />
+            <input
+              type="tel"
+              placeholder="+00-0000 0000 0000"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className="p-2 rounded-md w-full text-black"
+            />
+          </div>
 
-        <button type="submit">Submit</button>
-        <button type="button" onClick={resetForm}>Reset All</button>
-      </form>
+          <div className="flex flex-col gap-4">
+            <label className="block">
+              <span className="text-white">Choose your start time:</span>
+              <input
+                type="date"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+                className="mt-2 p-2 rounded-md w-full text-black"
+              />
+            </label>
+
+            <div className="flex gap-6">
+              {['9:00 AM', '2:00 PM', '5:00 PM'].map((timeOption) => (
+                <label key={timeOption} className="flex items-center gap-2">
+                  <input
+                    type="radio"
+                    name="time"
+                    value={timeOption}
+                    checked={time === timeOption}
+                    onChange={(e) => setTime(e.target.value)}
+                    className="text-blue-600"
+                  />
+                  {timeOption}
+                </label>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <input type="checkbox" required className="text-blue-600" />
+            <span>
+              I agree to{' '}
+              <a 
+                href="https://www.freeprivacypolicy.com/free-terms-and-conditions-generator/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-400"
+              >
+                Terms & Conditions and measure for safe visit.
+              </a>
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <p className="font-medium">Payment Methods:</p>
+            <label className="flex items-center gap-2">
+              <input
+                type="radio"
+                name="payment"
+                value="credit"
+                checked={paymentMethod === 'credit'}
+                onChange={(e) => setPaymentMethod(e.target.value)}
+                required
+                className="text-blue-600"
+              />
+              <FaCreditCard className="text-[#0070ba]" />
+              <span>Debit or Credit Card</span>
+            </label>
+            <label className="flex items-center gap-2">
+              <input
+                type="radio"
+                name="payment"
+                value="paypal"
+                checked={paymentMethod === 'paypal'}
+                onChange={(e) => setPaymentMethod(e.target.value)}
+                className="text-blue-600"
+              />
+              <FaPaypal className="text-[#0070ba]" />
+              <span>PayPal</span>
+            </label>
+          </div>
+
+          <div className="flex flex-col gap-3">
+            <button
+              type="submit"
+              className="w-full py-2 px-4 bg-gray-600 hover:bg-gray-700 text-white font-bold rounded-md transition-colors"
+            >
+              Submit
+            </button>
+            <button
+              type="button"
+              onClick={resetForm}
+              className="w-full py-2 px-4 bg-gray-600 hover:bg-gray-700 text-white font-bold rounded-md transition-colors"
+            >
+              Reset All
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
 
 export default Booking;
-
