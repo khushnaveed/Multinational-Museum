@@ -21,7 +21,11 @@ const countries = [
     data: ethiopiaData,
     flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Flag_of_Ethiopia.svg/1280px-Flag_of_Ethiopia.svg.png",
   },
-  { name: "Iran", data: iranData, flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iran_State_Flag.jpg/320px-Iran_State_Flag.jpg" },
+  {
+    name: "Iran",
+    data: iranData,
+    flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Iran_State_Flag.jpg/320px-Iran_State_Flag.jpg",
+  },
   {
     name: "Pakistan",
     data: pakistanData,
@@ -36,9 +40,9 @@ const countries = [
 
 const BackgroundImage = ({ src, alt }) => (
   <div className="absolute inset-0 z-0">
-    <img 
-      src={src} 
-      alt={alt} 
+    <img
+      src={src}
+      alt={alt}
       className="w-full h-full object-cover opacity-30"
     />
     <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -50,31 +54,40 @@ const CountryGallery = ({ country }) => {
   const artworks = country.data;
 
   return (
-    <div className="min-h-screen bg-gray-800 text-white p-8 relative">
-      <BackgroundImage 
-        src="/image-crack1.jpg?height=1080&width=1920"
-        alt={`${country.name} background`} 
-              />
+    <div className="min-h-screen bg-black text-white p-8 relative">
+      <BackgroundImage
+        src="/slow.gif?height=1080&width=1920"
+        alt={`${country.name} background`}
+      />
       <div className="relative z-10">
-        <h1 className="text-4xl font-bold mb-8 text-center">{country.name} Gallery</h1>
-        <button 
-          onClick={() => navigate('/artwork')} 
+        <h1 className="text-4xl font-bold mb-8 text-center">
+          {country.name} Gallery
+        </h1>
+        <button
+          onClick={() => navigate("/artwork")}
           className="mb-4 px-4 py-2 bg-gray-800 rounded-lg hover:bg-gray-700 transition-colors duration-300 inline-block"
         >
           ← Back to Countries
         </button>
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           {artworks.map((artwork, index) => (
-            <div key={index} className="w-64 bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 custom-box-shadow">
+            <div
+              key={index}
+              className="w-64 bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 custom-box-shadow"
+            >
               <div className="relative h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"></div>
                 <img
-                  src={artwork.imageUrl || '/Museum-bg1.jpg?height=256&width=256'}
+                  src={
+                    artwork.imageUrl || "/Museum-bg1.jpg?height=256&width=256"
+                  }
                   alt={artwork.title}
                   className="w-full h-full object-cover rounded-t-lg relative z-10"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 z-20">
-                  <p className="text-white text-center p-4">{artwork.description}</p>
+                  <p className="text-white text-center p-4">
+                    {artwork.description}
+                  </p>
                 </div>
               </div>
               <div className="p-4">
@@ -93,19 +106,23 @@ const CountryGallery = ({ country }) => {
 
 const CountryList = () => (
   <div className="min-h-screen bg-gray-800 text-white p-8 relative">
-    <BackgroundImage 
-      src="/image-crack1.jpg?height=1080&width=1920" 
-      alt="Country list background" 
+    <BackgroundImage
+      src="/slow.gif?height=1080&width=1920"
+      alt="Country list background"
     />
     <div className="relative z-10">
-      <h1 className="text-4xl font-bold mb-8 text-center">The DCI Student Museum Gallery</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center">
+        The DCI Student Museum Gallery
+      </h1>
       <div className="flex flex-wrap justify-center gap-8">
         {countries.map((country) => (
           <CountryCard
             key={country.name}
             name={country.name}
             flag={country.flag}
-            mapUrl={`https://www.google.com/maps/place/${encodeURIComponent(country.name)}`}
+            mapUrl={`https://www.google.com/maps/place/${encodeURIComponent(
+              country.name
+            )}`}
           />
         ))}
       </div>
@@ -118,10 +135,10 @@ const Artwork = () => {
     <Routes>
       <Route index element={<CountryList />} />
       {countries.map((country) => (
-        <Route 
-          key={country.name} 
-          path={`gallery/${country.name.toLowerCase().replace(/\s+/g, '-')}`} 
-          element={<CountryGallery country={country} />} 
+        <Route
+          key={country.name}
+          path={`gallery/${country.name.toLowerCase().replace(/\s+/g, "-")}`}
+          element={<CountryGallery country={country} />}
         />
       ))}
     </Routes>
@@ -132,6 +149,8 @@ export default Artwork;
 
 <style jsx>{`
   .custom-box-shadow {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
-`}</style>
+`}</style>;
