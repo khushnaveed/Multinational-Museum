@@ -1,20 +1,34 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { FaCreditCard, FaPaypal } from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { FaCreditCard, FaPaypal } from "react-icons/fa";
 
 const Booking = () => {
-  const [adultQty, setAdultQty] = useState(() => Number(localStorage.getItem('adultQty')) || 0);
-  const [childQty, setChildQty] = useState(() => Number(localStorage.getItem('childQty')) || 0);
-  const [guideQty, setGuideQty] = useState(() => Number(localStorage.getItem('guideQty')) || 0);
-  const [museumPassQty, setMuseumPassQty] = useState(() => Number(localStorage.getItem('museumPassQty')) || 0);
+  const [adultQty, setAdultQty] = useState(
+    () => Number(localStorage.getItem("adultQty")) || 0
+  );
+  const [childQty, setChildQty] = useState(
+    () => Number(localStorage.getItem("childQty")) || 0
+  );
+  const [guideQty, setGuideQty] = useState(
+    () => Number(localStorage.getItem("guideQty")) || 0
+  );
+  const [museumPassQty, setMuseumPassQty] = useState(
+    () => Number(localStorage.getItem("museumPassQty")) || 0
+  );
   const [total, setTotal] = useState(0);
-  const [firstName, setFirstName] = useState(() => localStorage.getItem('firstName') || '');
-  const [lastName, setLastName] = useState(() => localStorage.getItem('lastName') || '');
-  const [email, setEmail] = useState(() => localStorage.getItem('email') || '');
-  const [phone, setPhone] = useState(() => localStorage.getItem('phone') || '');
-  const [date, setDate] = useState(() => localStorage.getItem('date') || '');
-  const [time, setTime] = useState(() => localStorage.getItem('time') || '');
-  const [paymentMethod, setPaymentMethod] = useState(() => localStorage.getItem('paymentMethod') || '');
+  const [firstName, setFirstName] = useState(
+    () => localStorage.getItem("firstName") || ""
+  );
+  const [lastName, setLastName] = useState(
+    () => localStorage.getItem("lastName") || ""
+  );
+  const [email, setEmail] = useState(() => localStorage.getItem("email") || "");
+  const [phone, setPhone] = useState(() => localStorage.getItem("phone") || "");
+  const [date, setDate] = useState(() => localStorage.getItem("date") || "");
+  const [time, setTime] = useState(() => localStorage.getItem("time") || "");
+  const [paymentMethod, setPaymentMethod] = useState(
+    () => localStorage.getItem("paymentMethod") || ""
+  );
   const navigate = useNavigate();
 
   const calculateTotal = () => {
@@ -23,10 +37,10 @@ const Booking = () => {
     const guideCost = 5 * guideQty;
     const totalCost = adultCost + childCost + guideCost;
     setTotal(totalCost);
-    localStorage.setItem('adultQty', adultQty.toString());
-    localStorage.setItem('childQty', childQty.toString());
-    localStorage.setItem('guideQty', guideQty.toString());
-    localStorage.setItem('museumPassQty', museumPassQty.toString());
+    localStorage.setItem("adultQty", adultQty.toString());
+    localStorage.setItem("childQty", childQty.toString());
+    localStorage.setItem("guideQty", guideQty.toString());
+    localStorage.setItem("museumPassQty", museumPassQty.toString());
   };
 
   useEffect(() => {
@@ -36,21 +50,30 @@ const Booking = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const bookingDetails = {
-      firstName, lastName, email, phone, date, time,
-      paymentMethod, adultQty, childQty, guideQty, total
+      firstName,
+      lastName,
+      email,
+      phone,
+      date,
+      time,
+      paymentMethod,
+      adultQty,
+      childQty,
+      guideQty,
+      total,
     };
-    localStorage.setItem('ticketDetails', JSON.stringify(bookingDetails));
-    navigate('/booking-confirmation');
+    localStorage.setItem("ticketDetails", JSON.stringify(bookingDetails));
+    navigate("/booking-confirmation");
   };
 
   useEffect(() => {
-    localStorage.setItem('firstName', firstName);
-    localStorage.setItem('lastName', lastName);
-    localStorage.setItem('email', email);
-    localStorage.setItem('phone', phone);
-    localStorage.setItem('date', date);
-    localStorage.setItem('time', time);
-    localStorage.setItem('paymentMethod', paymentMethod);
+    localStorage.setItem("firstName", firstName);
+    localStorage.setItem("lastName", lastName);
+    localStorage.setItem("email", email);
+    localStorage.setItem("phone", phone);
+    localStorage.setItem("date", date);
+    localStorage.setItem("time", time);
+    localStorage.setItem("paymentMethod", paymentMethod);
   }, [firstName, lastName, email, phone, date, time, paymentMethod]);
 
   const resetForm = () => {
@@ -58,25 +81,55 @@ const Booking = () => {
     setChildQty(0);
     setGuideQty(0);
     setMuseumPassQty(0);
-    setFirstName('');
-    setLastName('');
-    setEmail('');
-    setPhone('');
-    setDate('');
-    setTime('');
-    setPaymentMethod('');
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setPhone("");
+    setDate("");
+    setTime("");
+    setPaymentMethod("");
 
-    ['adultQty', 'childQty', 'guideQty', 'museumPassQty', 'firstName', 
-     'lastName', 'email', 'phone', 'date', 'time', 'paymentMethod', 
-     'ticketDetails'].forEach(key => localStorage.removeItem(key));
+    [
+      "adultQty",
+      "childQty",
+      "guideQty",
+      "museumPassQty",
+      "firstName",
+      "lastName",
+      "email",
+      "phone",
+      "date",
+      "time",
+      "paymentMethod",
+      "ticketDetails",
+    ].forEach((key) => localStorage.removeItem(key));
   };
 
   return (
-    <div className="min-h-screen bg-black p-4">
-      <div className="w-[90%] max-w-3xl mx-auto my-5 p-5 rounded-2xl text-white">
-        <h1 className="text-3xl font-bold text-center p-5 text-shadow">Museum Ticket Form</h1>
-        
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+    <div className="min-h-screen relative">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-60"
+      >
+        <source
+          src="https://cdn.pixabay.com/video/2017/01/12/7260-199191197_large.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+
+      <div className="w-[90%] max-w-3xl mx-auto my-5 p-5 rounded-2xl text-gray-200">
+        <h1 className="text-3xl font-bold text-center p-5 text-shadow">
+          Museum Ticket Form
+        </h1>
+
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-6 bg-gray-800 p-7 rounded-2xl"
+        >
           <div className="flex flex-col gap-6">
             {/* Adult Section */}
             <div className="border-b border-gray-600 pb-4">
@@ -88,7 +141,7 @@ const Booking = () => {
                   min="0"
                   value={adultQty}
                   onChange={(e) => setAdultQty(Number(e.target.value))}
-                  className="mt-2 p-2 rounded-md w-32 text-black"
+                  className="mt-2 p-2 rounded-md w-32 text-black bg-gray-200"
                 />
                 <span className="font-bold">$25.00</span>
               </div>
@@ -105,7 +158,7 @@ const Booking = () => {
                   min="0"
                   value={childQty}
                   onChange={(e) => setChildQty(Number(e.target.value))}
-                  className="mt-2 p-2 rounded-md w-32 text-black"
+                  className="mt-2 p-2 rounded-md w-32 text-black bg-gray-200"
                 />
                 <span className="font-bold">$5.00</span>
               </div>
@@ -121,7 +174,7 @@ const Booking = () => {
                   min="0"
                   value={guideQty}
                   onChange={(e) => setGuideQty(Number(e.target.value))}
-                  className="mt-2 p-2 rounded-md w-32 text-black"
+                  className="mt-2 p-2 rounded-md w-32 text-black bg-gray-200"
                 />
                 <span className="font-bold">$5.00</span>
               </div>
@@ -138,7 +191,7 @@ const Booking = () => {
                   min="0"
                   value={museumPassQty}
                   onChange={(e) => setMuseumPassQty(Number(e.target.value))}
-                  className="mt-2 p-2 rounded-md w-32 text-black"
+                  className="mt-2 p-2 rounded-md w-32 text-black bg-gray-200"
                 />
                 <span className="font-bold">Free</span>
               </div>
@@ -156,7 +209,7 @@ const Booking = () => {
               value={firstName}
               onChange={(e) => setFirstName(e.target.value)}
               required
-              className="p-2 rounded-md w-full text-black"
+              className="p-2 rounded-md w-full text-black bg-gray-200"
             />
             <input
               type="text"
@@ -164,7 +217,7 @@ const Booking = () => {
               value={lastName}
               onChange={(e) => setLastName(e.target.value)}
               required
-              className="p-2 rounded-md w-full text-black"
+              className="p-2 rounded-md w-full text-black bg-gray-200"
             />
             <input
               type="email"
@@ -172,14 +225,14 @@ const Booking = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="p-2 rounded-md w-full text-black"
+              className="p-2 rounded-md w-full text-black bg-gray-200"
             />
             <input
               type="tel"
               placeholder="+00-0000 0000 0000"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-              className="p-2 rounded-md w-full text-black"
+              className="p-2 rounded-md w-full text-black bg-gray-200"
             />
           </div>
 
@@ -190,12 +243,12 @@ const Booking = () => {
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="mt-2 p-2 rounded-md w-full text-black"
+                className="mt-2 p-2 rounded-md w-full text-black bg-gray-200"
               />
             </label>
 
             <div className="flex gap-6">
-              {['9:00 AM', '2:00 PM', '5:00 PM'].map((timeOption) => (
+              {["9:00 AM", "2:00 PM", "5:00 PM"].map((timeOption) => (
                 <label key={timeOption} className="flex items-center gap-2">
                   <input
                     type="radio"
@@ -214,10 +267,10 @@ const Booking = () => {
           <div className="flex items-center gap-2">
             <input type="checkbox" required className="text-blue-600" />
             <span>
-              I agree to{' '}
-              <a 
-                href="https://www.freeprivacypolicy.com/free-terms-and-conditions-generator/" 
-                target="_blank" 
+              I agree to{" "}
+              <a
+                href="https://www.freeprivacypolicy.com/free-terms-and-conditions-generator/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-400"
               >
@@ -233,7 +286,7 @@ const Booking = () => {
                 type="radio"
                 name="payment"
                 value="credit"
-                checked={paymentMethod === 'credit'}
+                checked={paymentMethod === "credit"}
                 onChange={(e) => setPaymentMethod(e.target.value)}
                 required
                 className="text-blue-600"
@@ -246,7 +299,7 @@ const Booking = () => {
                 type="radio"
                 name="payment"
                 value="paypal"
-                checked={paymentMethod === 'paypal'}
+                checked={paymentMethod === "paypal"}
                 onChange={(e) => setPaymentMethod(e.target.value)}
                 className="text-blue-600"
               />

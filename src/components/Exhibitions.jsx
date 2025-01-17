@@ -100,7 +100,7 @@ const Exhibitions = ({ exhibit }) => {
           <title>${exhibit.country} Exhibitions</title>
           <style>
             body {
-              font-family: 'Roboto', sans-serif;
+              /* font-family: 'Roboto', sans-serif; */
               margin: 0;
               padding: 0;
               background-color: #121212;
@@ -281,37 +281,28 @@ const Exhibitions = ({ exhibit }) => {
   };
 
   return (
-    <div className="min-h-screen text-white">
-      <style>
-        {`
-    @keyframes gradient {
-      0% {
-        background-position: 0% 50%;
-        background-color: rgba(0, 0, 0, 1); /* Pure black */
-      }
-      100% {
-        background-position: 100% 50%;
-        background-color: rgba(50, 50, 50, 1); /* Lighter black (dark gray) */
-      }
-    }
-    .gradient-animation {
-      background: linear-gradient(45deg, rgba(0, 0, 0, 1), rgba(50, 50, 50, 1)); /* Black to lighter black */
-      background-size: 300% 300%;
-      animation: gradient 3s ease infinite;
-    }
-  `}
-      </style>
+    <div className="min-h-screen relative text-gray-200">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-40"
+      >
+        <source
+          src="https://cdn.pixabay.com/video/2024/02/06/199539-910530492_large.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
 
       {/* Whole Page Background Animation */}
       <div className="gradient-animation min-h-screen">
         {/* Hero Section */}
-        <section
-          className="text-white py-14 bg-opacity-60 pt-[120px]"
-          style={{ paddingTop: "80px" }}
-        >
+        <section className="text-gray-200  py-14 bg-opacity-60 ">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-5xl font-extrabold mb-12 flex items-center justify-center">
-              <i className="fas fa-globe mr-3"></i>Exhibitions
+            <h1 className="text-4xl font-bold text-center mb-12 text-gray-200 flex items-center justify-center">
+              {/* <i className="fas fa-globe mr-3"></i> */}Exhibitions
             </h1>
           </div>
         </section>
@@ -330,7 +321,7 @@ const Exhibitions = ({ exhibit }) => {
             {exhibitions.map((exhibit, index) => (
               <div
                 key={index}
-                className="relative group w-[400px] h-[600px] bg-white rounded-[10px] transform transition duration-500 hover:scale-110 hover:rotate-12 hover:translate-y-[-10px] hover:z-10 shadow-[rgba(255,255,255,0.5)_0px_0px_15px_0px,_rgba(255,255,255,0.3)_4px_4px_20px_0px,_rgba(0,0,0,0.5)_8px_8px_30px_0px,_rgba(0,0,0,0.3)_12px_12px_40px_0px]"
+                className="relative group w-[400px] h-[600px] bg-gray-200 rounded-[10px] transform transition duration-500 hover:scale-110 hover:rotate-12 hover:translate-y-[-10px] hover:z-10 shadow-[rgba(255,255,255,0.5)_0px_0px_15px_0px,_rgba(255,255,255,0.3)_4px_4px_20px_0px,_rgba(0,0,0,0.5)_8px_8px_30px_0px,_rgba(0,0,0,0.3)_12px_12px_40px_0px]"
                 style={{
                   marginTop: `${index * -70}px`,
                   zIndex: `${100 - index}`,
@@ -340,10 +331,10 @@ const Exhibitions = ({ exhibit }) => {
                 <img
                   src={exhibit.image[0]}
                   alt={exhibit.country}
-                  className="w-full h-full object-cover group-hover:opacity-80"
+                  className="w-full h-full rounded object-cover group-hover:opacity-80"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
-                <div className="absolute bottom-0 p-6 text-white z-10">
+                <div className="absolute rounded inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
+                <div className="absolute w-full bottom-0 p-6 text-gray-200 bg-black  bg-opacity-40  z-10">
                   <h2 className="text-3xl font-bold">{exhibit.country}</h2>
                   <p className="mt-2">{exhibit.description}</p>
                 </div>
