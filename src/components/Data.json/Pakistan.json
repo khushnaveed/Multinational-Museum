@@ -1,102 +1,70 @@
 [
   {
     "title": "Badshahi Mosque",
-    "artist": "Sadequain",
-    "year": "1975",
-    "category": "Painting",
+    "artist": "",
+    "year": "",
+    "category": "",
     "description": "Majestic portrayal of Lahore's Badshahi Mosque",
+    "imageUrl": "https://res.cloudinary.com/jerrick/image/upload/c_scale,f_jpg,q_auto/659faae3a7003c001d6ea169.png"
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
     "imageUrl": ""
   },
   {
-    "title": "K2 Mountain",
-    "artist": "Ismail Gulgee",
-    "year": "1990",
-    "category": "Painting",
-    "description": "Awe-inspiring view of K2, the world's second-highest peak",
+    "title": "Vibrant Pakistani Truck Art",
+    "artist": "Unknown Artist", 
+    "year": "2023", 
+    "category": "Visual Art / Folk Art",
+    "description": "A vibrant depiction of traditional Pakistani truck art, showcasing intricate designs and bright colors often found on trucks in Pakistan. Originating in the mid-20th century, Pakistani truck art evolved as a means for truck drivers to personalize their vehicles, reflecting their identities and aspirations. This unique art form draws influence from Mughal art and local traditions, often including poetic verses, religious symbols, and representations of local flora and fauna. Over time, it has gained international recognition, celebrating the craftsmanship and creativity of local artists while capturing the rich cultural heritage and diversity of Pakistan.",
+    "imageUrl": "https://www.borderlink-altogether.com/files/topics/171_ext_03_0.jpg"
+  },
+  {
+   "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
     "imageUrl": ""
   },
   {
-    "title": "Truck Art",
-    "artist": "Hanif Shahzad",
-    "year": "2008",
-    "category": "Drawing",
-    "description": "Vibrant depiction of traditional Pakistani truck art",
+   "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
     "imageUrl": ""
   },
   {
-    "title": "Mohatta Palace",
-    "artist": "Shakir Ali",
-    "year": "1985",
-    "category": "Painting",
-    "description": "Elegant representation of Karachi's Mohatta Palace",
+   "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
     "imageUrl": ""
   },
   {
-    "title": "Makran Coast",
-    "artist": "Lubna Agha",
-    "year": "2005",
-    "category": "Drawing",
-    "description": "Serene landscape of the Makran Coast in Balochistan",
-    "imageUrl": ""
-  },
-  {
-    "title": "Shalimar Gardens",
-    "artist": "Ahmed Parvez",
-    "year": "1970",
-    "category": "Painting",
-    "description": "Lush portrayal of the historic Shalimar Gardens in Lahore",
-    "imageUrl": ""
-  },
-  {
-    "title": "Deosai Plains",
-    "artist": "Zubeida Agha",
-    "year": "2012",
-    "category": "Painting",
-    "description": "Expansive view of the Deosai Plains in Gilgit-Baltistan",
-    "imageUrl": ""
-  },
-  {
-    "title": "Wazir Khan Mosque",
-    "artist": "Bashir Mirza",
-    "year": "1995",
-    "category": "Drawing",
-    "description": "Intricate sketch of the Wazir Khan Mosque's tilework",
-    "imageUrl": ""
-  },
-  {
-    "title": "Wazir Khan Mosque",
-    "artist": "Bashir Mirza",
-    "year": "1995",
-    "category": "Drawing",
-    "description": "Intricate sketch of the Wazir Khan Mosque's tilework",
-    "imageUrl": ""
-  },
-  {
-    "title": "Wazir Khan Mosque",
-    "artist": "Bashir Mirza",
-    "year": "1995",
-    "category": "Drawing",
-    "description": "Intricate sketch of the Wazir Khan Mosque's tilework",
-    "imageUrl": ""
-  },
-  {
-    "title": "Indus Valley Artifacts",
-    "artist": "Jamil Naqsh",
-    "year": "2000",
-    "category": "Painting",
-    "description": "Artistic interpretation of ancient Indus Valley civilization artifacts",
-    "imageUrl": ""
-  },
-  {
-    "title": "Hunza Valley",
-    "artist": "Nahid Raza",
-    "year": "2015",
-    "category": "Drawing",
-    "description": "Picturesque rendering of the Hunza Valley in autumn",
+   "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
     "imageUrl": ""
   },
   {
     "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+   "title": "",
     "artist": "",
     "year": "",
     "category": "",
@@ -125,7 +93,7 @@
     "year": "",
     "category": "",
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "https://www.wouafpetitchien.com/post/Files/Image/pakistan-markhor.jpeg"
   },
   {
     "title": "",
@@ -133,7 +101,7 @@
     "year": "",
     "category": "",
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "https://www.pkbridals.ca/wp-content/uploads/2024/08/PK-Bridals-banner-image.webp"
   },
   {
     "title": "",
@@ -141,6 +109,38 @@
     "year": "",
     "category": "",
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "https://i.pinimg.com/736x/47/a0/16/47a016f182097d09cf16f63484ade72e.jpg"
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": "https://blog.bridals.pk/wp-content/uploads/2019/04/Untitled-design9-min-1024x512.jpg"
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": "https://blog.bridals.pk/wp-content/uploads/2019/04/The-Bald-Eagle1-min.jpg"
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": "https://nishathotels.com/wp-content/uploads/2023/11/pk-cusine-blog-1.webp"
+  },
+  {
+    "title": "",
+    "artist": "",
+    "year": "",
+    "category": "",
+    "description": "",
+    "imageUrl": "https://thumbs.dreamstime.com/b/beautiful-arrangement-traditional-pakistani-sweets-including-delicacies-like-gulab-jamun-barfi-jalebi-vibrant-344515766.jpg"
   }
 ]

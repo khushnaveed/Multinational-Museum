@@ -12,7 +12,7 @@ const CountryGallery = ({ country }) => {
   return (
     <div className="min-h-screen bg-black text-white p-8 relative">
       <BackgroundImage
-        src="/bg4.gif?height=1080&width=1920"//Country Gallery background image
+        src="/b.jpg?height=1080&width=1920"//Country Gallery background image
         alt={`${country.name} background`}
       />
       <div className="relative z-10">
