@@ -9,7 +9,7 @@ export default function Events() {
           autoPlay
           loop
           muted
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover opacity-40"
         >
           <source src="https://cdn.pixabay.com/video/2023/09/25/182287-868067162_large.mp4" type="video/mp4" />
           Your browser does not support the video tag.

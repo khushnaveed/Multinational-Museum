@@ -1,27 +1,23 @@
 import React from "react";
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import { FaCreditCard, FaPaypal } from "react-icons/fa";
-
 
 const exhibitions = [
   {
     country: "Afghanistan",
     description: "Discover the rich history and art of Afghanistan.",
-    image:[
-         
-      
+    image: [
       "https://npr.brightspotcdn.com/dims4/default/954ee5d/2147483647/strip/true/crop/3000x3000+0+0/resize/880x880!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2022%2F08%2F31%2Fartifact_grid_custom-bc1342fd9df4c76e67f71127c8ba5aac960a8f49.jpg",
       "https://pbs.twimg.com/media/EadrDH8WoAAI2l-.jpg",
       "https://smarthistory.org/wp-content/uploads/2023/10/standing_buddha_bamiyan.png",
       "https://i.pinimg.com/736x/32/be/7c/32be7cd01dbe88b435cb817aefa9a613.jpg",
     ],
-    
-    
-    exhibitions: [ 
+
+    exhibitions: [
       "Afghan Tribal Jewelry Showcase",
       "Miniature Paintings from the Timurid Era",
       "Bamiyan Buddhas: A Lost Heritage",
-     "Afghan Textiles: Patterns of Culture and Tradition",
+      "Afghan Textiles: Patterns of Culture and Tradition",
     ],
   },
   {
@@ -43,27 +39,25 @@ const exhibitions = [
   {
     country: "Iran",
     description: "Immerse yourself in the Persian heritage of Iran.",
-    image: [    
-
+    image: [
       "https://www.christies.com/-/jssmedia/Images/features/articles/2024/04/1-5/Silk-Carpets-from-the-George-Farrow-Collection/hero-George-Farrow-carpet-collection.jpg?hash=",
       "https://farsicalligraphy.com/wp-content/uploads/2016/11/Rumi_when_lovers.jpg",
-       "https://upload.wikimedia.org/wikipedia/commons/5/5a/Faravahar_Atashkadeh_Yazd.jpg",
-       "https://i.pinimg.com/736x/0d/43/e8/0d43e8298bd51fc99cd53254b31becca.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Faravahar_Atashkadeh_Yazd.jpg",
+      "https://i.pinimg.com/736x/0d/43/e8/0d43e8298bd51fc99cd53254b31becca.jpg",
     ],
-    
-    exhibitions: [
-     "The Art of Persian Rugs: Stories Woven in Silk", 
-     "Persian Poetry and Calligraphy",
-      "Zoroastrian Heritage and Symbols",    
-        "The Evolution of Persian Ceramics: From Earth to Artistry",
 
+    exhibitions: [
+      "The Art of Persian Rugs: Stories Woven in Silk",
+      "Persian Poetry and Calligraphy",
+      "Zoroastrian Heritage and Symbols",
+      "The Evolution of Persian Ceramics: From Earth to Artistry",
     ],
   },
   {
     country: "USA",
     description: "Experience the innovation and diversity of the USA.",
-    image:  [
-       "https://cdn.sanity.io/images/cxgd3urn/production/87ca5271214d2a048d7aea307d3f6982495bd2fe-2485x1420.jpg?rect=1,0,2484,1420&w=1200&h=686&fit=crop&auto=format",
+    image: [
+      "https://cdn.sanity.io/images/cxgd3urn/production/87ca5271214d2a048d7aea307d3f6982495bd2fe-2485x1420.jpg?rect=1,0,2484,1420&w=1200&h=686&fit=crop&auto=format",
       "https://hocokatati.org/wp-content/uploads/2021/08/20210430_Spring-Native-Artist-Pop-Up-Shop_SM-002.jpg",
       "https://press.moma.org/wp-content/uploads/2021/10/Mike-Kelleys-Deodorized-Central-Mass-with-Satellites--2000x1333.jpg",
       "https://media.licdn.com/dms/image/v2/D4D12AQE057WgB37qhg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1677244412460?e=2147483647&v=beta&t=eVmOjyA_df3ohsMploG_uzAJropZ3yocVewL98JexuA",
@@ -72,8 +66,7 @@ const exhibitions = [
       "Hollywood and the Evolution of Cinema",
       "Native American Art and Crafts",
       "MoMA: A Journey Through Modern Art and Innovation",
-     "American Innovation: Design and Technology"
-
+      "American Innovation: Design and Technology",
     ],
   },
   {
@@ -86,15 +79,13 @@ const exhibitions = [
       "https://media.rnztools.nz/rnz/image/upload/s--97WaG3QG--/c_scale,f_auto,q_auto,w_1050/v1643868100/4M0R893_image_crop_134216?_a=BACCd2AD",
     ],
     exhibitions: [
-      "Ancient Ethiopian Manuscripts and Scripts", 
-       "The Rock-Hewn Churches of Lalibela",
+      "Ancient Ethiopian Manuscripts and Scripts",
+      "The Rock-Hewn Churches of Lalibela",
       "The Origins of Coffee: A Cultural History",
       "Traditional Ethiopian Ceremonial Artifacts",
     ],
   },
 ];
-
-
 
 const Exhibitions = ({ exhibit }) => {
   const openPopupWindow = (exhibit) => {
@@ -226,11 +217,19 @@ const Exhibitions = ({ exhibit }) => {
             ${exhibit.image
               .map(
                 (img, index) => `
-                  <div class="card ${index === 0 ? 'active' : ''}" id="card-${index}">
-                    <img src="${img}" alt="${exhibit.country} - Image ${index + 1}" />
+                  <div class="card ${
+                    index === 0 ? "active" : ""
+                  }" id="card-${index}">
+                    <img src="${img}" alt="${exhibit.country} - Image ${
+                  index + 1
+                }" />
                     <div class="card-content">
-                      <h3><a href="http://localhost:5183/documentaries" style="color: white; text-decoration: none;" class="hover:text-gray-300">${exhibit.exhibitions[index]}</a></h3>
-                      <p><a href="http://localhost:5183/documentaries" style="color: white; text-decoration: none;" class="hover:text-gray-300">${exhibit.description}</a></p>
+                      <h3><a href="http://localhost:5183/documentaries" style="color: white; text-decoration: none;" class="hover:text-gray-300">${
+                        exhibit.exhibitions[index]
+                      }</a></h3>
+                      <p><a href="http://localhost:5183/documentaries" style="color: white; text-decoration: none;" class="hover:text-gray-300">${
+                        exhibit.description
+                      }</a></p>
                     </div>
                   </div>
                 `
@@ -282,10 +281,9 @@ const Exhibitions = ({ exhibit }) => {
   };
 
   return (
-
     <div className="min-h-screen text-white">
-   <style>
-  {`
+      <style>
+        {`
     @keyframes gradient {
       0% {
         background-position: 0% 50%;
@@ -302,12 +300,10 @@ const Exhibitions = ({ exhibit }) => {
       animation: gradient 3s ease infinite;
     }
   `}
-</style>
+      </style>
 
-  
       {/* Whole Page Background Animation */}
       <div className="gradient-animation min-h-screen">
-  
         {/* Hero Section */}
         <section
           className="text-white py-14 bg-opacity-60 pt-[120px]"
@@ -319,7 +315,7 @@ const Exhibitions = ({ exhibit }) => {
             </h1>
           </div>
         </section>
-  
+
         {/* Overlapping Exhibitions Section */}
         <section
           className="relative py-16 px-8"
@@ -355,12 +351,9 @@ const Exhibitions = ({ exhibit }) => {
             ))}
           </div>
         </section>
-  
       </div>
     </div>
   );
-  
-  
 };
 
 export default Exhibitions;
