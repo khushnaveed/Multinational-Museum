@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Athiya';
+    src: url('./assets/fonts/Athiya\ Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Athiya';
+    background-color: black;
+}

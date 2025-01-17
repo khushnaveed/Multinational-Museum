@@ -45,7 +45,7 @@ function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-gray-200">
       {/* Hero Section */}
       <div
         className="h-80 bg-cover bg-center relative"
@@ -54,7 +54,7 @@ function ContactUs() {
             'url("https://cdn.pixabay.com/photo/2018/08/14/11/03/acapulco-3605307_1280.jpg")',
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         <div className="container mx-auto px-6 h-full flex items-center z-10 relative">
           <div>
             <h1 className="text-4xl font-bold mb-2 animate-fadeIn">
@@ -73,7 +73,7 @@ function ContactUs() {
           <div className="space-y-8">
             <div>
               <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-              <p className="text-gray-400 mb-8">
+              <p className="text-gray-200 mb-8">
                 Have questions? We're here to help. Send us a message and we'll
                 respond as soon as possible.
               </p>
@@ -81,34 +81,34 @@ function ContactUs() {
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4 group">
-                <MapPin className="w-6 h-6 text-white group-hover:text-gray-400 transition duration-300" />
+                <MapPin className="w-6 h-6 text-blue-600 group-hover:text-blue-700transition duration-300" />
                 <div>
                   <h3 className="font-semibold">Our Location</h3>
-                  <p className="text-gray-400">Vulkanstraße 1, 10367 Berlin</p>
+                  <p className="text-gray-200">Vulkanstraße 1, 10367 Berlin</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4 group">
-                <Phone className="w-6 h-6 text-white group-hover:text-gray-400 transition duration-300" />
+                <Phone className="w-6 h-6 text-blue-600 group-hover:text-blue-700 transition duration-300" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-400">03056795008</p>
+                  <p className="text-gray-200">03056795008</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4 group">
-                <Mail className="w-6 h-6 text-white group-hover:text-gray-400 transition duration-300" />
+                <Mail className="w-6 h-6 text-blue-600 group-hover:text-blue-700 transition duration-300" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-400">contact@company.com</p>
+                  <p className="text-gray-200">contact@company.com</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4 group">
-                <Clock className="w-6 h-6 text-white group-hover:text-gray-400 transition duration-300" />
+                <Clock className="w-6 h-6 text-blue-600 group-hover:text-blue-700transition duration-300" />
                 <div>
                   <h3 className="font-semibold">Business Hours</h3>
-                  <p className="text-gray-400">
+                  <p className="text-gray-200">
                     Monday - Friday: 9:00 AM - 6:00 PM
                   </p>
                 </div>
@@ -129,50 +129,51 @@ function ContactUs() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-black rounded-lg shadow-lg p-8 lg:col-span-2">
-            <form onSubmit={handleSubmit} className="space-y-6 animate-slideUp">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-gray-400 mb-1"
-                  >
-                    Full Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-gray-600  text-white rounded-md focus:ring-2 focus:ring-gray-400 focus:outline-none"
-                    required
-                  />
-                </div>
+          <div className="bg-gray-900 rounded-lg shadow-lg p-8 lg:col-span-2 ">
+            <form
+              onSubmit={handleSubmit}
+              className="space-y-7 animate-slideUp  ml-auto"
+            >
+              <div>
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-200 mb-1"
+                >
+                  Full Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 bg-gray-800 text-gray-200 rounded-md focus:ring-2 focus:ring-gray-500 focus:outline-none"
+                  required
+                />
+              </div>
 
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-gray-400 mb-1"
-                  >
-                    Email Address
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-gray-600  text-white rounded-md focus:ring-2 focus:ring-gray-400 focus:outline-none"
-                    required
-                  />
-                </div>
+              <div>
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-medium text-gray-200 mb-1"
+                >
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full px-4 py-2 bg-gray-800 text-gray-200 rounded-md focus:ring-2 focus:ring-gray-500 focus:outline-none"
+                  required
+                />
               </div>
 
               <div>
                 <label
                   htmlFor="subject"
-                  className="block text-sm font-medium text-gray-400 mb-1"
+                  className="block text-sm font-medium text-gray-200 mb-1"
                 >
                   Subject
                 </label>
@@ -182,7 +183,7 @@ function ContactUs() {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-2  bg-gray-600 text-white rounded-md focus:ring-2 focus:ring-gray-400 focus:outline-none"
+                  className="w-full px-4 py-2 bg-gray-800 text-gray-200 rounded-md focus:ring-2 focus:ring-gray-500 focus:outline-none"
                   required
                 />
               </div>
@@ -190,7 +191,7 @@ function ContactUs() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-400 mb-1"
+                  className="block text-sm font-medium text-gray-200 mb-1"
                 >
                   Message
                 </label>
@@ -200,14 +201,14 @@ function ContactUs() {
                   value={formData.message}
                   onChange={handleChange}
                   rows={6}
-                  className="w-full px-4 py-2 bg-gray-600  text-white rounded-md focus:ring-2 focus:ring-gray-400 focus:outline-none"
+                  className="w-full px-4 py-2 bg-gray-800 text-gray-200 rounded-md focus:ring-2 focus:ring-gray-500 focus:outline-none"
                   required
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gray-600 text-white py-3 px-4 rounded-md hover:bg-black transition duration-300 font-medium"
+                className="w-auto py-3 px-4 font-medium text-gray-200 transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700"
               >
                 Send Message
               </button>
@@ -219,22 +220,24 @@ function ContactUs() {
       {/* Chat Popup Button */}
       <button
         onClick={toggleChat}
-        className="fixed bottom-16 right-6 bg-gray-600 text-white rounded-full p-4 shadow-lg hover:bg-black transition"
+        className="fixed bottom-16 right-6 bg-blue-600 hover:bg-blue-700 text-gray-200 rounded-full p-4 shadow-lg transition"
       >
         <MessageCircle className="w-6 h-6" />
       </button>
 
       {/* Chat Window */}
       {chatOpen && (
-        <div className="fixed bottom-24 right-6  text-gray-400 w-80 backdrop-blur-lg rounded-lg shadow-xl p-6 space-y-4">
+        <div className="fixed bottom-24 right-6  text-gray-200 w-80 backdrop-blur-lg rounded-lg shadow-xl p-6 space-y-4">
           <div className="flex justify-between items-center">
-            <h3 className="font-bold text-white text-lg">Chat with us</h3>
-            <button onClick={toggleChat} className="text-white">x</button>
+            <h3 className="font-bold text-gray-200 text-lg">Chat with us</h3>
+            <button onClick={toggleChat} className="text-gray-200">
+              X
+            </button>
           </div>
           <div className="mt-4 space-y-3 overflow-y-auto max-h-60">
             {chatMessages.map((chat, index) => (
               <div key={index} className="text-sm">
-                <strong className="text-white">{chat.user}:</strong>{" "}
+                <strong className="text-gray-200">{chat.user}:</strong>{" "}
                 {chat.message}
               </div>
             ))}
@@ -249,7 +252,7 @@ function ContactUs() {
             />
             <button
               onClick={sendMessage}
-              className="bg-gray text-white px-4 py-2  border m-4 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2  transition duration-200"
+              className="px-4 py-2 font-medium text-gray-200 bg-blue-600 hover:bg-blue-700 m-4 rounded-md 0 focus:outline-none focus:ring-2 transition duration-200"
             >
               Send
             </button>

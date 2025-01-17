@@ -9,7 +9,7 @@ import Exhibitions from "./components/Exhibitions";
 import News from "./components/News";
 import Booking from "./components/Booking";
 import BookingConfirmation from './components/BookingConfirmation';
-
+import "./App.css"
 import Events from "./components/Events";
 import ContactUs from "./components/ContactUs";
 import Artwork from "./components/Artwork";
@@ -17,13 +17,11 @@ import Documentaries from "./components/Documentaries";
 
 function App() {
   return (
-
     <>
       <BrowserRouter>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen" >
           <Navbar />
           <Routes>
-
             <Route path="/exhibitions" element={<Exhibitions />} />
             <Route path="/news" element={<News />} />
             <Route path="/booking" element={<Booking />} />
@@ -38,7 +36,6 @@ function App() {
         </div>
       </BrowserRouter>
     </>
-
   );
 }
 
