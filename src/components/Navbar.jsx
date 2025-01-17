@@ -43,7 +43,6 @@ export default function Navbar() {
 
   return (
     <Disclosure as="nav" className=" sticky top-0 z-50 backdrop-blur-md ">
-
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative  flex h-16 items-center justify-between">
           {/* Mobile menu button */}
@@ -61,6 +60,27 @@ export default function Navbar() {
             </DisclosureButton>
           </div>
 
+          {/* Centered Logo and Name */}
+          <div className="flex flex-1 items-center justify-center sm:hidden">
+            <a
+              href="/"
+              className="flex items-center text-white text-lg font-semibold ml-10"
+            >
+              Meuseum Website
+            </a>
+          </div>
+
+          {/* Logo on the Right */}
+          <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+            <a href="/" className="flex items-center">
+              <img
+                src="/image/Logo.png"
+                alt="Website Logo"
+                className="h-10 w-auto"
+              />
+            </a>
+          </div>
+
           {/* Desktop navigation */}
           <div className="flex flex-1 items-center justify-center ">
             <div className="hidden sm:ml-6 sm:block">
@@ -74,10 +94,8 @@ export default function Navbar() {
                       <a href={item.href}>
                         <img
                           alt="Your Company"
-
                           src="/image/Logo.png"
                           className="h-12 w-auto"
-
                         />
                       </a>
                     </div>
@@ -136,22 +154,12 @@ export default function Navbar() {
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) =>
-            item.isLogo ? (
-              <div key={item.name} className="flex justify-center py-2">
-                <a href={item.href}>
-                  <img
-                    alt=""
-                    src="/image/Logo.png"
-                    className="h-8 w-auto"
-                  />
-                </a>
-              </div>
-            ) : item.name === "Gallery" ? (
+            item.name === "Gallery" ? (
               <Disclosure as="div" key={item.name}>
                 <DisclosureButton className="flex w-full items-center justify-between rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-gray-700 hover:text-white">
                   {item.name}
                   <ChevronDownIcon
-                    className="ml-2 h-4 w-4 text-gray-400"
+                    className="ml-2 h-4 w-4 text-white"
                     aria-hidden="true"
                   />
                 </DisclosureButton>
@@ -160,7 +168,7 @@ export default function Navbar() {
                     <a
                       key={subItem.name}
                       href={subItem.href}
-                      className="block rounded-md px-3 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+                      className="block rounded-md px-3 py-2 text-gray-300 hover:bg-700 hover:text-white"
                     >
                       {subItem.name}
                     </a>
