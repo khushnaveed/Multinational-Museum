@@ -74,8 +74,10 @@ export default function Navbar() {
                       <a href={item.href}>
                         <img
                           alt="Your Company"
-                          src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
-                          className="h-12 w-auto"
+
+                          src="/image/Logo.png"
+                          className="h-8 w-auto"
+
                         />
                       </a>
                     </div>
