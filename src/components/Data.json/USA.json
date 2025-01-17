@@ -21,7 +21,7 @@
     "year": "1952",
     "category": "Drawing",
     "description": "Detailed sketch of Yosemite Valley's natural beauty",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Route 66",
@@ -37,7 +37,7 @@
     "year": "1980",
     "category": "Painting",
     "description": "Iconic representation of San Francisco's Golden Gate Bridge",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Statue of Liberty",
@@ -45,7 +45,7 @@
     "year": "1986",
     "category": "Drawing",
     "description": "Unique interpretation of the Statue of Liberty",
-   "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Mount Rushmore",
@@ -53,7 +53,7 @@
     "year": "1960",
     "category": "Painting",
     "description": "Patriotic depiction of the Mount Rushmore National Memorial",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "French Quarter, New Orleans",
@@ -61,7 +61,7 @@
     "year": "1821",
     "category": "Drawing",
     "description": "Detailed sketch of New Orleans' historic French Quarter",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Yellowstone Geysers",
@@ -77,7 +77,7 @@
     "year": "1872",
     "category": "Painting",
     "description": "Dramatic portrayal of Yellowstone's famous geysers",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Yellowstone Geysers",
@@ -85,7 +85,7 @@
     "year": "1872",
     "category": "Painting",
     "description": "Dramatic portrayal of Yellowstone's famous geysers",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "Chicago Skyline",
@@ -93,7 +93,7 @@
     "year": "1990",
     "category": "Painting",
     "description": "Modern interpretation of the Chicago skyline",
-     "imageUrl": ""
+    "imageUrl": ""
   },
   {
     "title": "",
@@ -144,4 +144,3 @@
     "imageUrl": ""
   }
 ]
-

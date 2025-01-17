@@ -4,15 +4,15 @@
     "artist": "Steve McCurry",
     "year": "1984",
     "category": "Photography",
-    "description": "The photo of the Afghan girl, Sharbat Gula, captures her striking features and expressive eyes, showcasing her resilience and strength. Her colorful attire reflects the rich cultural heritage of Afghanistan, highlighting the beauty and vibrancy of its people. ",
+    "description": "The photo of the Afghan girl, Sharbat Gula, captures her striking features and expressive eyes, showcasing her resilience and strength. Her colorful attire reflects the rich cultural heritage of Afghanistan, highlighting the beauty and vibrancy of its people.",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b4/Sharbat_Gula.jpg"
-},
+  },
   {
     "title": "Relaxed Buddha",
     "artist": "Unknown",
     "year": "7th Century",
     "category": "Sculpture",
-    "description": "A relaxed Buddha, made of unbaked clay, from around the seventh century, discovered by Jean Carl in 1937 in Aghanistan",
+    "description": "A relaxed Buddha, made of unbaked clay, from around the seventh century, discovered by Jean Carl in 1937 in Afghanistan.",
     "imageUrl": "https://static01.nyt.com/images/2022/10/20/multimedia/20sp-paris-guimet-inyt2/20sp-paris-guimet-inyt2-videoSixteenByNineJumbo1600.jpg"
   },
   {
@@ -44,7 +44,7 @@
     "artist": "EENGAR",
     "year": "Unknown",
     "category": "Jewelry Set",
-    "description": "This Bridal Jewelry set is widely used in Afghan Kuchi tribe which has beautiful matching earing, Matha Patti and necklace. Necklace and earing have hanging chains with anklets balls and colorful gems ",
+    "description": "This Bridal Jewelry set is widely used in the Afghan Kuchi tribe, featuring beautiful matching earrings, Matha Patti, and necklace. The necklace and earrings have hanging chains with anklets balls and colorful gems.",
     "imageUrl": "https://seengar.com/wp-content/uploads/2017/10/MG_9200-1.jpg"
   },
   {
@@ -80,7 +80,7 @@
     "imageUrl": "https://afghansafari.com/wp-content/uploads/2024/04/2%DB%8C%D8%A7%D9%81%D8%AA%D9%85-%DA%A9%D8%B1%D8%A7%D9%81%DB%8C%DA%A9-%DA%A9%D8%A7%D8%A8%D9%84-.jpeg"
   },
   {
-    "title": " Afghanistan National Institute of Music",
+    "title": "Afghanistan National Institute of Music",
     "artist": "Zainab Haidari",
     "year": "2014",
     "category": "Music",
@@ -94,49 +94,53 @@
     "category": "Photography",
     "description": "The Mobile Mini Circus for Children in Afghanistan brings joy and creativity to young audiences through engaging performances and activities. This initiative provides a safe space for children to explore talents, build confidence, and inspire hope in challenging environments.",
     "imageUrl": "https://www.globalgiving.org/pfil/30959/pict_large.jpg"
-},
-{
-  "title": "Afghan Tribal Jewelry",
-  "artist": "Photographs courtesy of the Art Gallery of NSW ",
-  "year": "1st century CE",
-  "category": "Artifacts",
-  "description": "Seeing the ancient artifacts of Afghanistan, now on view at the Art Gallery of NSW, carries the burden of acknowledging what has been lost in recent times regarding that countries culture and philosophy.",
-  "imageUrl": "https://npr.brightspotcdn.com/dims4/default/954ee5d/2147483647/strip/true/crop/3000x3000+0+0/resize/880x880!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2022%2F08%2F31%2Fartifact_grid_custom-bc1342fd9df4c76e67f71127c8ba5aac960a8f49.jpg"
-},
-{
-  "title": "Miniature Paintings from the Timurid Era",
-  "artist": "Dr.Abdul Naser Sawaby",
-  "year": "2020",
-  "category": "Painting",
-  "description": "Dr. Abdul Nasir Sawabi, an artist from Herat, creates miniature paintings on Timurid-era bricks. His work merges historical artistry with contemporary themes, showcasing resilience and adaptation during challenging times.",
-  "imageUrl": "https://pbs.twimg.com/media/EadrDH8WoAAI2l-.jpg"
-},{
-  "title": "Bamiyan Buddhas: A Lost Heritage",
-  "artist": "Local Buddhist community",
-  "year": "570 AD",
-  "category": "Sculpture",
-  "description": "The Bamiyan Buddhas were once towering icons of ancient Afghan heritage, showcasing remarkable Buddhist art and architecture. Though destroyed in 2001, they symbolize cultural resilience and the rich history of the region.",
-  "imageUrl": "https://smarthistory.org/wp-content/uploads/2023/10/standing_buddha_bamiyan.png"
-},{
-  "title": "Afghan Textiles: Patterns of Culture and Tradition",
-  "artist": "IG: @afghanimood",
-  "year": "2023",
-  "category": "",
-  "description": "Afghan textiles, featuring vibrant colors and intricate patterns, reflect the diverse culture and traditions of Afghanistan. This artwork showcases skilled craftsmanship, incorporating designs that represent the region's history and heritage.",
-  "imageUrl": "https://i.pinimg.com/736x/32/be/7c/32be7cd01dbe88b435cb817aefa9a613.jpg"
-},{
-  "title": "Sufi dance",
-  "artist": "Fahima Mirzaie",
-  "year": "2019",
-  "category": "Dance",
-  "description": "Fahima Mirzaie set up a dance school for women in the Afghan capital in 2020, hoping to help her students fight depression and find inner peace in a war-torn country where dancing is widely considered taboo.",
-  "imageUrl": "https://vid.alarabiya.net/images/2020/01/17/a77efb1b-161b-4789-a65e-c8cb6de86454/a77efb1b-161b-4789-a65e-c8cb6de86454_16x9_1200x676.jpg?width=801&format=jpg"
-},{
-  "title": " Aghd (Wedding Ceremony)",
-  "artist": "Rahim Siddiq",
-  "year": "2023",
-  "category": "Ceromonial Wedding",
-  "description": "Afghan weddings are rich in customs and traditions, beautifully reflecting the cultural heritage of Afghanistan. These celebrations often include vibrant ceremonies, traditional attire, and various rituals that honor family and community bonds.",
-  "imageUrl": "https://images.squarespace-cdn.com/content/v1/5c2db4029772aebeba129860/1688023879574-KW15CNT3DTPOTX4452WY/3b06c423-c529-4892-bdb0-fe879ec9824a.jpeg"
-}
-  ]
+  },
+  {
+    "title": "Afghan Tribal Jewelry",
+    "artist": "Photographs courtesy of the Art Gallery of NSW",
+    "year": "1st century CE",
+    "category": "Artifacts",
+    "description": "Seeing the ancient artifacts of Afghanistan, now on view at the Art Gallery of NSW, carries the burden of acknowledging what has been lost in recent times regarding that country's culture and philosophy.",
+    "imageUrl": "https://npr.brightspotcdn.com/dims4/default/954ee5d/2147483647/strip/true/crop/3000x3000+0+0/resize/880x880!/quality/90/?url=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2022%2F08%2F31%2Fartifact_grid_custom-bc1342fd9df4c76e67f71127c8ba5aac960a8f49.jpg"
+  },
+  {
+    "title": "Miniature Paintings from the Timurid Era",
+    "artist": "Dr. Abdul Naser Sawaby",
+    "year": "2020",
+    "category": "Painting",
+    "description": "Dr. Abdul Nasir Sawabi, an artist from Herat, creates miniature paintings on Timurid-era bricks. His work merges historical artistry with contemporary themes, showcasing resilience and adaptation during challenging times.",
+    "imageUrl": "https://pbs.twimg.com/media/EadrDH8WoAAI2l-.jpg"
+  },
+  {
+    "title": "Bamiyan Buddhas: A Lost Heritage",
+    "artist": "Local Buddhist community",
+    "year": "570 AD",
+    "category": "Sculpture",
+    "description": "The Bamiyan Buddhas were once towering icons of ancient Afghan heritage, showcasing remarkable Buddhist art and architecture. Though destroyed in 2001, they symbolize cultural resilience and the rich history of the region.",
+    "imageUrl": "https://smarthistory.org/wp-content/uploads/2023/10/standing_buddha_bamiyan.png"
+  },
+  {
+    "title": "Afghan Textiles: Patterns of Culture and Tradition",
+    "artist": "IG: @afghanimood",
+    "year": "2023",
+    "category": "",
+    "description": "Afghan textiles, featuring vibrant colors and intricate patterns, reflect the diverse culture and traditions of Afghanistan. This artwork showcases skilled craftsmanship, incorporating designs that represent the region's history and heritage.",
+    "imageUrl": "https://i.pinimg.com/736x/32/be/7c/32be7cd01dbe88b435cb817aefa9a613.jpg"
+  },
+  {
+    "title": "Sufi dance",
+    "artist": "Fahima Mirzaie",
+    "year": "2019",
+    "category": "Dance",
+    "description": "Fahima Mirzaie set up a dance school for women in the Afghan capital in 2020, hoping to help her students fight depression and find inner peace in a war-torn country where dancing is widely considered taboo.",
+    "imageUrl": "https://vid.alarabiya.net/images/2020/01/17/a77efb1b-161b-4789-a65e-c8cb6de86454/a77efb1b-161b-4789-a65e-c8cb6de86454_16x9_1200x676.jpg?width=801&format=jpg"
+  },
+  {
+    "title": " Aghd (Wedding Ceremony)",
+    "artist": "Rahim Siddiq",
+    "year": "2023",
+    "category": "Ceromonial Wedding",
+    "description": "Afghan weddings are rich in customs and traditions, beautifully reflecting the cultural heritage of Afghanistan. These celebrations often include vibrant ceremonies, traditional attire, and various rituals that honor family and community bonds.",
+    "imageUrl": "https://images.squarespace-cdn.com/content/v1/5c2db4029772aebeba129860/1688023879574-KW15CNT3DTPOTX4452WY/3b06c423-c529-4892-bdb0-fe879ec9824a.jpeg"
+  }
+]

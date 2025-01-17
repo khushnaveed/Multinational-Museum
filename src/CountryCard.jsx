@@ -1,29 +1,65 @@
-/* eslint-disable react/no-unknown-property */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React from "react";
 import { Link } from "react-router-dom";
 
 const CountryCard = ({ name, flag, mapUrl }) => {
+  const cardStyle = {
+    width: "18%", // 1/5
+    minWidth: "200px",
+    backgroundColor: "#000000", //Country Card individual background color
+    borderRadius: "0.5rem", // rounded-lg
+    overflow: "hidden",
+    boxShadow:
+      "box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;",
+    transition: "transform 0.3s",
+    "&:hover": { transform: "scale(2.05)" },
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  };
+
+  const titleStyle = {
+    fontSize: "1.5rem",
+    fontWeight: "600",
+    padding: "1rem",
+    textAlign: "center",
+    color: "#f8f9fa", //country name color
+  };
+
+  const imgStyle = {
+    display: "block",
+    padding: "1rem",
+    position: "relative",
+    width: "100%",
+    borderRadius: "0.5rem",
+    transition: "opacity 0.3s",
+    zIndex: 10,
+  };
+
   return (
-    <div className="w-1/4 min-w-[150px] bg-black rounded-lg overflow-hidden shadow-lg transform transition-all duration-300 hover:scale-105 flex flex-col justify-between custom-box-shadow">
-      <h2 className="text-2xl font-semibold p-4 text-center">{name}</h2>
-      <a
-        href={mapUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block p-4 relative"
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg"></div>
-        <img
-          src={flag}
-          alt={`Flag of ${name}`}
-          className="w-full h-auto rounded-lg hover:opacity-80 transition-opacity duration-300 relative z-10"
-        />
+    <div style={cardStyle}>
+      <h2 style={titleStyle}>{name}</h2>
+      <a href={mapUrl} target="_blank" rel="noopener noreferrer">
+        <img src={flag} alt={`Flag of ${name}`} style={imgStyle} />
       </a>
       <Link
         to={`gallery/${name.toLowerCase().replace(/\s+/g, "-")}`}
-        className="block w-full py-2 bg-black text-center text-white font-semibold hover:bg-green-700 transition-colors duration-300"
+        style={{
+          display: "block",
+          width: "100%",
+          padding: "0.5rem 0",
+          backgroundColor: "black",
+          textAlign: "center",
+          color: "#f8f9fa", //see gallery font color
+          fontWeight: "600",
+          textDecoration: "none",
+          transition: "background-color 0.3s",
+        }}
+        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "gray")} //gallery button
+        onMouseLeave={(e) =>
+          (e.currentTarget.style.backgroundColor = "#495057")
+        } //gallery color button
       >
         See Gallery
       </Link>
@@ -32,11 +68,3 @@ const CountryCard = ({ name, flag, mapUrl }) => {
 };
 
 export default CountryCard;
-
-<style jsx>{`
-  .custom-box-shadow {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-`}</style>;
