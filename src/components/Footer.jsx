@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import React from "react";
 
 const currentYear = new Date().getFullYear();
@@ -18,7 +19,7 @@ const Footer = () => {
             <div className="flex">
               <img
                 className="w-auto h-9"
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                src="/image/Logo.png"
                 alt="Logo"
               />
               <h3 className="text-gray-200 uppercase ml-3 mt-2">
