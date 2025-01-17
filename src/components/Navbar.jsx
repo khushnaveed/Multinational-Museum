@@ -76,7 +76,7 @@ export default function Navbar() {
                           alt="Your Company"
 
                           src="/image/Logo.png"
-                          className="h-8 w-auto"
+                          className="h-12 w-auto"
 
                         />
                       </a>
@@ -140,8 +140,8 @@ export default function Navbar() {
               <div key={item.name} className="flex justify-center py-2">
                 <a href={item.href}>
                   <img
-                    alt="Your Company"
-                    src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                    alt=""
+                    src="/image/Logo.png"
                     className="h-8 w-auto"
                   />
                 </a>
