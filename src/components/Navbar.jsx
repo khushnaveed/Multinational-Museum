@@ -74,7 +74,7 @@ export default function Navbar() {
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <a href="/" className="flex items-center">
               <img
-                src="/public/Logo.png"
+                src="/Logo.png"
                 alt="Website Logo"
                 className="h-10 w-auto"
               />
@@ -94,7 +94,7 @@ export default function Navbar() {
                       <a href={item.href}>
                         <img
                           alt="Your Company"
-                          src="/public/Logo.png"
+                          src="/Logo.png"
                           className="h-12 w-auto"
                         />
                       </a>
