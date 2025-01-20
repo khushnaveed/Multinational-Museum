@@ -287,7 +287,7 @@ const Exhibitions = ({ exhibit }) => {
         autoPlay
         loop
         muted
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-40"
+        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-10"
       >
         <source
           src="https://cdn.pixabay.com/video/2024/02/06/199539-910530492_large.mp4"
