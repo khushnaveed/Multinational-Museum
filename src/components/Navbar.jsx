@@ -61,10 +61,10 @@ export default function Navbar() {
           </div>
 
           {/* Centered Logo and Name */}
-          <div className="flex flex-1 items-center justify-center sm:hidden">
+          <div className="flex flex-1 items-center justify-center sm:hidden  ml-6">
             <a
               href="/"
-              className="flex items-center text-white text-lg font-semibold ml-10"
+              className="flex items-center text-gray-200 text-lg font-semibold ml-6 "
             >
               Meuseum Website
             </a>
