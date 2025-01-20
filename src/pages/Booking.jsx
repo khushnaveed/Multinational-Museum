@@ -308,17 +308,17 @@ const Booking = () => {
             </label>
           </div>
 
-          <div className="flex flex-col gap-3">
+          <div className="flex gap-3">
             <button
               type="submit"
-              className="w-full py-2 px-4 bg-gray-600 hover:bg-gray-700 text-white font-bold rounded-md transition-colors"
+              className=" text-gray-200 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
             >
               Submit
             </button>
             <button
               type="button"
               onClick={resetForm}
-              className="w-full py-2 px-4 bg-gray-600 hover:bg-gray-700 text-white font-bold rounded-md transition-colors"
+              className=" text-gray-200 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
             >
               Reset All
             </button>

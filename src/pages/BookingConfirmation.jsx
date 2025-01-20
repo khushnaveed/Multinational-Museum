@@ -90,7 +90,7 @@ const BookingConfirmation = () => {
         <div className="mt-8 flex justify-center">
           <button
             onClick={handlePrint}
-            className=" text-gray-200 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md
+            className="text-gray-200 bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md
                                  transition-colors duration-200 focus:outline-none focus:ring-2 
                                  focus:ring-offset-2 focus:ring-gray-900"
           >
