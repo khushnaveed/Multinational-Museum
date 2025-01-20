@@ -73,11 +73,7 @@ export default function Navbar() {
           {/* Logo on the Right */}
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <a href="/" className="flex items-center">
-              <img
-                src="/Logo.png"
-                alt="Website Logo"
-                className="h-10 w-auto"
-              />
+              <img src="/Logo.png" alt="Website Logo" className="h-10 w-auto" />
             </a>
           </div>
 
@@ -153,45 +149,47 @@ export default function Navbar() {
       {/* Mobile navigation */}
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          {navigation.map((item) =>
-            item.name === "Gallery" ? (
-              <Disclosure as="div" key={item.name}>
-                <DisclosureButton className="flex w-full items-center justify-between rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-gray-700 hover:text-white">
+          {navigation
+            .filter((item) => item.name !== "Logo") // Exclude the logo from the menu
+            .map((item) =>
+              item.name === "Gallery" ? (
+                <Disclosure as="div" key={item.name}>
+                  <DisclosureButton className="flex w-full items-center justify-between rounded-md px-3 py-2 text-lg font-medium text-white hover:bg-gray-700 hover:text-white">
+                    {item.name}
+                    <ChevronDownIcon
+                      className="ml-2 h-4 w-4 text-white"
+                      aria-hidden="true"
+                    />
+                  </DisclosureButton>
+                  <DisclosurePanel className="ml-4 space-y-1">
+                    {galleryItems.map((subItem) => (
+                      <a
+                        key={subItem.name}
+                        href={subItem.href}
+                        className="block rounded-md px-3 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+                      >
+                        {subItem.name}
+                      </a>
+                    ))}
+                  </DisclosurePanel>
+                </Disclosure>
+              ) : (
+                <DisclosureButton
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  onClick={() => handleTabClick(item.name)}
+                  className={classNames(
+                    activeTab === item.name
+                      ? "bg-gray-900 text-white"
+                      : "text-white hover:bg-gray-700 hover:text-white",
+                    "block rounded-md px-3 py-2 text-lg font-medium"
+                  )}
+                >
                   {item.name}
-                  <ChevronDownIcon
-                    className="ml-2 h-4 w-4 text-white"
-                    aria-hidden="true"
-                  />
                 </DisclosureButton>
-                <DisclosurePanel className="ml-4 space-y-1">
-                  {galleryItems.map((subItem) => (
-                    <a
-                      key={subItem.name}
-                      href={subItem.href}
-                      className="block rounded-md px-3 py-2 text-gray-300 hover:bg-700 hover:text-white"
-                    >
-                      {subItem.name}
-                    </a>
-                  ))}
-                </DisclosurePanel>
-              </Disclosure>
-            ) : (
-              <DisclosureButton
-                key={item.name}
-                as="a"
-                href={item.href}
-                onClick={() => handleTabClick(item.name)}
-                className={classNames(
-                  activeTab === item.name
-                    ? "bg-gray-900 text-white"
-                    : "text-white hover:bg-gray-700 hover:text-white",
-                  "block rounded-md px-3 py-2 text-lg font-medium"
-                )}
-              >
-                {item.name}
-              </DisclosureButton>
-            )
-          )}
+              )
+            )}
         </div>
       </DisclosurePanel>
     </Disclosure>
