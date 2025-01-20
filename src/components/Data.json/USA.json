@@ -1,146 +1,147 @@
 [
   {
     "title": "Grand Canyon Sunset",
-    "artist": "Georgia O'Keeffe",
-    "year": "1940",
-    "category": "Painting",
-    "description": "Vibrant depiction of a sunset over the Grand Canyon",
-    "imageUrl": ""
+    "artist": "Unknown",
+    "year": "1919",
+    "category": "Landscape Photography",
+    "description": "This vibrant photograph captures a stunning sunset over the Grand Canyon, one of the natural wonders of the world. The rich colors of the sky blend beautifully with the intricate rock formations, showcasing the breathtaking beauty that this iconic landmark offers. As the sun dips below the horizon, it casts warm hues of orange, pink, and purple across the canyon, illuminating its vastness and creating a serene atmosphere. This image reflects the grandeur of the landscape and the transformative power of nature at dusk. Visitors to the Grand Canyon are often left in awe of its scale and color, making sunset one of the most popular times to experience its majesty. Through this depiction, the viewer is invited to appreciate the awe-inspiring vistas and the peaceful moments that nature provides.",
+    "imageUrl": "https://www.usatoday.com/gcdn/-mm-/1eeda088f69ac69fdd9fb56f0db7c1b8b5158adf/c=116-0-1931-1365/local/-/media/2016/08/16/USATODAY/USATODAY/636069643017112394-GrandCanyonNPRandyLangstraat.jpg"
   },
   {
     "title": "New York Skyline",
-    "artist": "Edward Hopper",
-    "year": "1935",
-    "category": "Painting",
-    "description": "Iconic view of the New York City skyline",
-    "imageUrl": ""
+    "artist": "Unknown",
+    "year": "1913",
+    "category": "Urban Photography",
+    "description": "This striking photograph showcases the iconic view of the New York City skyline, a symbol of innovation and urban beauty. The skyline is dominated by towering skyscrapers, including famous structures like the Empire State Building and One World Trade Center, reflecting the city’s rich architectural heritage and modern development. The juxtaposition of historic and contemporary buildings captures the essence of New York as a vibrant metropolis. This image presents an inspiring panorama that embodies the bustling energy and allure of the city that never sleeps. As daylight fades, the city lights illuminate the skyline, creating a magical atmosphere that attracts visitors from around the globe. Through this lens, the viewer is invited to experience the dynamic spirit and cultural significance of New York City, making it a timeless depiction of urban life.",
+    "imageUrl": "https://i.shgcdn.com/9fa6be73-ac7f-4453-a1e5-68df1d5c3a71/-/format/auto/-/preview/3000x3000/-/quality/lighter/"
   },
   {
     "title": "Yosemite Valley",
-    "artist": "Ansel Adams",
-    "year": "1952",
-    "category": "Drawing",
-    "description": "Detailed sketch of Yosemite Valley's natural beauty",
-    "imageUrl": ""
+    "artist": "Unknown",
+    "year": "1890",
+    "category": "Landscape Photography",
+    "description": "This stunning photograph captures the majestic beauty of Yosemite Valley, a natural wonder located in Yosemite National Park, California. Known for its breathtaking cliffs, iconic granite domes like El Capitan and Half Dome, and lush valleys, Yosemite Valley is a favorite destination for nature lovers and outdoor enthusiasts. The image showcases the vibrant colors of the landscape, with towering trees, cascading waterfalls, and expansive meadows creating a picturesque scene that embodies the spirit of the American wilderness. With its diverse ecosystems and unique geological formations, Yosemite Valley not only provides stunning vistas but also serves as a vital habitat for numerous species. This photograph invites viewers to immerse themselves in the tranquility and grandeur of nature, highlighting the importance of conservation and appreciation for our planet's remarkable landscapes.",
+    "imageUrl": "https://as1.ftcdn.net/v2/jpg/02/45/48/24/1000_F_245482413_pDv3bZKgxcytFwOQUrOO3l8NtZ4pJJEy.jpg"
   },
   {
     "title": "Route 66",
-    "artist": "Wayne Thiebaud",
-    "year": "1975",
-    "category": "Painting",
-    "description": "Nostalgic portrayal of the historic Route 66",
-    "imageUrl": ""
+    "artist": "Unknown",
+    "year": "1926",
+    "category": "Travel Photography",
+    "description": "This nostalgic photograph captures the essence of the historic Route 66, often referred to as the 'Main Street of America.' Known for its iconic landscapes, roadside attractions, and rich cultural history, Route 66 stretches over 2,400 miles from Chicago to Santa Monica. The image depicts riders journeying along the open road, embodying the spirit of adventure and freedom that this legendary highway represents. The vibrant colors and vintage elements in the photograph evoke a sense of longing for simpler times, inviting viewers to reminisce about classic American road trips. As one of the most celebrated routes in the United States, Route 66 holds a special place in the hearts of travelers, symbolizing the exploration of diverse landscapes and cultures. This photograph serves as a tribute to the enduring legacy of Route 66 and the memories created along its winding paths.",
+    "imageUrl": "https://img.welt.de/img/reise/Fern/mobile113755537/8366586867-ci3x2l-w1200/Route-66-Riders-2.jpg"
   },
   {
     "title": "Golden Gate Bridge",
-    "artist": "Richard Diebenkorn",
-    "year": "1980",
-    "category": "Painting",
-    "description": "Iconic representation of San Francisco's Golden Gate Bridge",
-    "imageUrl": ""
+    "artist": "Unknown",
+    "year": "1937",
+    "category": "Architectural Photography",
+    "description": "This iconic photograph showcases the magnificent Golden Gate Bridge, a symbol of San Francisco and a remarkable feat of engineering. Spanning approximately 1.7 miles across the Golden Gate Strait, the bridge connects San Francisco to Marin County and is celebrated for its stunning Art Deco design and vibrant International Orange color. This image captures the grandeur of the bridge against a backdrop of rolling fog and serene waters, highlighting its status as one of the most photographed landmarks in the world. The Golden Gate Bridge not only serves as a critical transportation route but also as a reminder of human ingenuity and ambition, drawing millions of visitors each year. Through this portrayal, viewers are invited to appreciate the bridge's beauty and its integral role in the cultural and historical identity of San Francisco.",
+    "imageUrl": "https://cdn.britannica.com/95/94195-050-FCBF777E/Golden-Gate-Bridge-San-Francisco.jpg"
   },
   {
     "title": "Statue of Liberty",
-    "artist": "Keith Haring",
-    "year": "1986",
-    "category": "Drawing",
-    "description": "Unique interpretation of the Statue of Liberty",
-    "imageUrl": ""
+    "artist": "Unknown",
+    "year": "1886",
+    "category": "Monument Photography",
+    "description": "This striking photograph presents a unique interpretation of the Statue of Liberty, an enduring symbol of freedom and democracy located on Liberty Island in New York Harbor. Gifted to the United States by France in 1886, the statue stands at 305 feet tall from the base to the tip of the torch and serves as a welcoming beacon to millions of immigrants arriving by sea. The image captures the statue's grandeur against a backdrop of the New York skyline, emphasizing its significance as an iconic landmark in American history. The vibrant colors and artistic perspective invite viewers to reflect on the statue's powerful message of hope and liberty. This photograph not only highlights the beauty of the statue itself but also the spirit of resilience and opportunity that it represents, making it an essential part of the narrative of the United States.",
+    "imageUrl": "https://img.statuelibertycruise.com/images/poi/statue-liberty-cruise/product/statue-cruise.webp"
   },
   {
     "title": "Mount Rushmore",
-    "artist": "Norman Rockwell",
-    "year": "1960",
-    "category": "Painting",
-    "description": "Patriotic depiction of the Mount Rushmore National Memorial",
-    "imageUrl": ""
+    "artist": "Gutzon Borglum",
+    "year": "1941",
+    "category": "Sculpture / Landmark",
+    "description": "This patriotic depiction showcases the Mount Rushmore National Memorial, which features the carved faces of four prominent U.S. presidents: George Washington, Thomas Jefferson, Theodore Roosevelt, and Abraham Lincoln. Located in the Black Hills region of South Dakota, the monument was sculpted by artist Gutzon Borglum and his son, Lincoln Borglum, and is a testament to American history and the ideals of democracy. The project began in 1927 and was completed in 1941, taking 14 years to finish. Mount Rushmore attracts millions of visitors each year, who come to admire the colossal granite sculptures and the breathtaking surrounding landscape. The memorial symbolizes the nation's history, culture, and the contributions of its leaders, making it a significant landmark in the United States. The stunning view from the base, coupled with the powerful presence of the sculptures, evokes a sense of pride and patriotism.",
+    "imageUrl": "https://cdn.britannica.com/71/226771-138-0801C623/did-you-know-Mount-Rushmore.jpg"
   },
   {
     "title": "French Quarter, New Orleans",
-    "artist": "John James Audubon",
-    "year": "1821",
-    "category": "Drawing",
-    "description": "Detailed sketch of New Orleans' historic French Quarter",
-    "imageUrl": ""
+    "artist": "Unknown",
+    "year": "1718",
+    "category": "Architectural Photography",
+    "description": "This detailed photograph captures the vibrant essence of the French Quarter, the historic heart of New Orleans. Known for its lively atmosphere, colorful buildings, and rich cultural heritage, the French Quarter is a melting pot of music, art, and culinary delights. The image features the iconic Bourbon Street, lined with bars, restaurants, and shops, showcasing the distinctive architecture influenced by Spanish, French, and Creole styles. The lively ambiance, often filled with the sounds of jazz and the scents of local cuisine, highlights the unique character of this renowned neighborhood. As one of the oldest districts in the city, the French Quarter is a testament to New Orleans' dynamic history and its ongoing celebration of culture and community. This photograph invites viewers to immerse themselves in the charm and vibrancy that make the French Quarter a must-visit destination for travelers.",
+    "imageUrl": "https://www.travelandleisure.com/thmb/Wn5pE3B1-nl_jHavBUn5GMvlkpU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/bourbon-street-new-orleans-NOLATODO0122-61a8c11ad1244c7a9a81e65e06371ce4.jpg"
   },
   {
     "title": "Yellowstone Geysers",
-    "artist": "Thomas Moran",
+    "artist": "Unknown",
     "year": "1872",
-    "category": "Painting",
-    "description": "Dramatic portrayal of Yellowstone's famous geysers",
-    "imageUrl": ""
+    "category": "Nature Photography",
+    "description": "This dramatic photograph showcases the stunning beauty of Yellowstone's famous geysers, particularly highlighting the extraordinary Castle Geyser during an eruption. Located in Yellowstone National Park, which was established in 1872 as the first national park in the United States, these geothermal features are a testament to the park's unique geological activity. The image captures the powerful eruption of steam and water, which can reach impressive heights, creating a breathtaking natural spectacle. Visitors from around the world are drawn to Yellowstone to witness these natural wonders, which offer an insight into the Earth’s geothermal processes. The vibrant colors and dynamic movements captured in this photograph emphasize the raw power and beauty of nature, inviting viewers to appreciate the incredible landscape and the ever-changing environment of this iconic national park.",
+    "imageUrl": "https://media.istockphoto.com/id/468052892/photo/castle-geyser-erupting-in-yellowstone.jpg?s=612x612&w=0&k=20&c=kbw-yvIubjwVxAXFInbRnxID1tUnVQvNqRUY4RiSrXA="
   },
   {
-    "title": "Yellowstone Geysers",
-    "artist": "Thomas Moran",
-    "year": "1872",
-    "category": "Painting",
-    "description": "Dramatic portrayal of Yellowstone's famous geysers",
-    "imageUrl": ""
+    "title": "The White House",
+    "artist": "James Hoban",
+    "year": "1800",
+    "category": "Architecture / Landmark",
+    "description": "This iconic photograph captures the grandeur of the White House, the official residence and workplace of the President of the United States, located at 1600 Pennsylvania Avenue NW in Washington, D.C. Designed by architect James Hoban and completed in 1800, the White House stands as a symbol of American democracy and political power. The neoclassical architecture, with its distinctive façade and prominent columns, has made it one of the most recognizable buildings in the world. The White House has served various purposes over the years, hosting dignitaries, state dinners, and public events, while also being a central location for significant political decisions and historical moments. This photograph invites viewers to appreciate its architectural beauty and its pivotal role in shaping the history and governance of the United States.",
+    "imageUrl": "https://media.istockphoto.com/id/1300444386/de/foto/das-wei%C3%9Fe-haus-in-washington-dc.jpg?s=612x612&w=0&k=20&c=nIRkahHfYondXsMzv1-qhYrev9VU19rVvD1CkzI5r2A="
   },
   {
-    "title": "Yellowstone Geysers",
-    "artist": "Thomas Moran",
-    "year": "1872",
-    "category": "Painting",
-    "description": "Dramatic portrayal of Yellowstone's famous geysers",
-    "imageUrl": ""
+    "title": "BBQ in America",
+    "artist": "Unknown",
+    "year": "2023",
+    "category": "Food Photography",
+    "description": "This lively photograph captures the essence of a classic summer BBQ in America, showcasing the joyous atmosphere of outdoor gatherings centered around delicious food and camaraderie. The image features an array of grilled meats, fresh vegetables, and vibrant sides, symbolizing the popular tradition of barbecuing that brings family and friends together. BBQ culture varies across regions in the U.S., with each area boasting its unique flavors and styles, from Texas brisket to Kansas City ribs. This depiction emphasizes the communal spirit of American BBQs, where people come together to enjoy good food, laughter, and memorable moments. The warm colors and festive setup in the photograph evoke feelings of nostalgia and celebration, making it a fitting representation of summertime traditions in the United States.",
+    "imageUrl": "https://images.stockcake.com/public/7/0/3/70316447-aaed-414e-82b3-baa3051f66ad_large/summer-bbq-party-stockcake.jpg"
   },
   {
-    "title": "Chicago Skyline",
-    "artist": "Judy Chicago",
-    "year": "1990",
-    "category": "Painting",
-    "description": "Modern interpretation of the Chicago skyline",
-    "imageUrl": ""
+    "title": "Lincoln Memorial Statue",
+    "artist": "Daniel Chester French",
+    "year": "1922",
+    "category": "Sculpture / Monument",
+    "description": "This iconic photograph features the statue of Abraham Lincoln seated in the Lincoln Memorial, a symbol of unity, strength, and perseverance in American history. Designed by sculptor Daniel Chester French and dedicated in 1922, the statue portrays Lincoln with a contemplative expression, reflecting his legacy as one of the most revered presidents of the United States. The memorial, located on the National Mall in Washington, D.C., is not only a tribute to Lincoln's contributions to the nation but also serves as a site for numerous pivotal events in American history, including Martin Luther King Jr.'s famous 'I Have a Dream' speech. This powerful image invites viewers to appreciate the artistry and significance of the memorial, which stands as a testament to Lincoln's vision of equality and justice for all."
+    ,
+    "imageUrl": "https://cdn.nycitynewsservice.com/blogs.dir/9/files/2013/02/AP4201081140.jpg"
   },
   {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
+    "title": "A Country Night in Nashville",
+    "artist": "Unknown",
+    "year": "2023",
+    "category": "Cultural Photography",
+    "description": "This captivating photograph captures the vibrant atmosphere of a country night in Nashville, the heart of country music in the United States. The image showcases the lively energy of the city, filled with the sounds of live music, the warmth of friendly gatherings, and the spirit of Southern hospitality. Nashville is known for its iconic music venues, honky-tonks, and rich cultural heritage, making it a central hub for artists and fans alike. This portrayal invites viewers to experience the charm of Nashville's nightlife, where the rhythmic melodies of country tunes create a sense of connection and celebration. With its colorful lights and bustling streets, this photograph highlights the importance of music in bringing people together and the city's enduring significance as a musical landmark.",
+    "imageUrl": "https://res.cloudinary.com/dwzhqvxaz/f_auto,q_auto,fl_progressive/v1672933160/Titles/A%20Country%20Night%20in%20Nashville/ACountryNightInNashville_Prod2_1920x1080.jpg"
   },
   {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
+    "title": "American Sports Spirit",
+    "artist": "Unknown",
+    "year": "2023",
+    "category": "Sports Photography",
+    "description": "This dynamic photograph captures the electrifying atmosphere of an American sporting event, showcasing the passion and enthusiasm that defines sports culture in the United States. The image highlights the intensity of competition and the vibrant energy of the fans, creating an immersive experience for viewers. From iconic sports such as football and basketball to baseball and hockey, sports play a significant role in American society, bringing communities together and fostering a sense of camaraderie. This portrayal celebrates the spirit of American sportsmanship, emphasizing teamwork, dedication, and the love for the game. The photograph serves as a reminder of the joy and excitement that sports bring to millions, reflecting the diverse and vibrant tapestry of American culture.",
+    "imageUrl": "https://www.northjersey.com/gcdn/presto/2023/04/21/PNJM/63ba6a4c-178d-433b-892a-44f505ca9e2a-USATSI_20416240_1.jpg?width=1733&height=1156&fit=crop&format=pjpg&auto=webp"
   },
   {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
+    "title": "Iconic Marilyn Monroe",
+    "artist": "Unknown",
+    "year": "1952",
+    "category": "Photography",
+    "description": "This iconic photograph captures the timeless beauty and charisma of Marilyn Monroe, one of the most celebrated actresses and cultural figures of the 20th century. Taken circa 1952, this portrait showcases Monroe's signature style and captivating presence, which cemented her status as a Hollywood legend. Known for her charm, wit, and unforgettable performances, Monroe became a symbol of femininity and glamour, influencing fashion and popular culture for generations. This image not only highlights her iconic status but also reflects the era of classic Hollywood, characterized by elegance and star-studded allure. Through this portrayal, viewers are invited to appreciate the lasting impact of Marilyn Monroe on entertainment and the cultural landscape, as well as her enduring legacy as an emblem of beauty and talent.",
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod/images/actress-marilyn-monroe-poses-for-a-portrait-in-circa-1952-news-photo-1664823877.jpg"
   },
   {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
+    "title": "Superheroes in Pop Art",
+    "artist": "Unknown",
+    "year": "2023",
+    "category": "Pop Art",
+    "description": "This vibrant artwork features a dynamic collection of superhero characters rendered in a bold pop art style. The lively colors, striking lines, and graphic composition showcase the excitement and energy characteristic of superhero culture. Pop art, which emerged in the 1950s and 1960s, often draws inspiration from popular culture, and this artwork celebrates the iconic status of superheroes in contemporary society. These characters symbolize heroism, justice, and the fight against evil, resonating with audiences across generations. This piece not only pays homage to the rich history of comic books and graphic novels but also reflects the significant impact of superheroes in modern media and popular culture. Through this work, viewers are invited to appreciate the creativity and imagination that bring these beloved characters to life.",
+    "imageUrl": "https://assets.promptbase.com/DALLE_IMAGES%2F4XIJF3BthzQQTHOVSgVn%2Fresized%2F1697995384111_1000x1000.webp?alt=media&token=6de70158-a4ad-4959-9c4e-9e5a51044f80"
   },
   {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
+    "title": "Las Vegas",
+    "artist": "Unknown",
+    "year": "2023",
+    "category": "Travel Photography",
+    "description": "This vibrant photograph captures the essence of Las Vegas, known as the Entertainment Capital of the World. The image showcases the dazzling lights, extravagant resorts, and dynamic atmosphere that define the Las Vegas Strip. Renowned for its world-class shows, casinos, and nightlife, Las Vegas offers a unique experience that attracts millions of visitors each year. The colorful neon signs and iconic landmarks, such as the Bellagio and the Eiffel Tower at Paris Las Vegas, reflect the city's blend of glamour and excitement. This portrayal of Las Vegas highlights its reputation as a hotspot for entertainment, dining, and adventure, making it a symbol of American pop culture and a must-visit destination for travelers seeking a memorable experience.",
+    "imageUrl": "https://s7g10.scene7.com/is/image/flyedelweiss/las-shows-header:story-560w?ts=1729872150883&dpr=on,2.625"
   },
   {
-    "title": "",
-    "artist": "",
-    "year": "",
-    "category": "",
-    "description": "",
-    "imageUrl": ""
+    "title": "Patriotic Eagle",
+    "artist": "Unknown",
+    "year": "2023",
+    "category": "Digital Art",
+    "description": "This striking digital artwork features a majestic eagle, a powerful symbol of freedom and patriotism in the United States. The eagle, depicted with vibrant colors and dynamic detail, embodies strength, courage, and resilience, qualities that resonate deeply with the American spirit. The background may reflect elements representative of the American landscape, further enhancing the theme of patriotism. This artwork serves as a reminder of the ideals of liberty and justice that are foundational to the nation, making it a fitting representation of American values. The eagle has been a national emblem since 1782, and its powerful presence continues to inspire pride and unity.",
+    "imageUrl": "https://creator.nightcafe.studio/jobs/ORNrBinCvUBZXU95iaiK/ORNrBinCvUBZXU95iaiK--1--jqc6o.jpg"
   }
 ]
