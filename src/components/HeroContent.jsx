@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import HeroImg from "../assets/HeroImage/HeroImg.mp4";
+import HeroImg from "../assets/images/HeroImage/HeroImg.mp4";
 
 
 
