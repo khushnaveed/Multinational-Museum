@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const CountryCard = ({ name, flag, mapUrl }) => {
   const cardStyle = {
-    width: "18%", // 1/5
+    width: "25%", // 1/5
     minWidth: "200px",
     backgroundColor: "#000000", //Country Card individual background color
     borderRadius: "0.5rem", // rounded-lg
