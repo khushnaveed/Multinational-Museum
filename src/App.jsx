@@ -3,17 +3,17 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import HeroContent from "./components/HeroContent";
+import HeroContent from "./pages/HeroContent"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Exhibitions from "./components/Exhibitions";
-import News from "./components/News";
-import Booking from "./components/Booking";
-import BookingConfirmation from './components/BookingConfirmation';
+import Exhibitions from "./pages/Exhibitions";
+import News from "./pages/News";
+import Booking from "./pages/Booking";
+import BookingConfirmation from './pages/BookingConfirmation';
 import "./App.css"
-import Events from "./components/Events";
-import ContactUs from "./components/ContactUs";
-import Artwork from "./components/Artwork";
-import Documentaries from "./components/Documentaries";
+import Events from "./pages/Events";
+import ContactUs from "./pages/ContactUs";
+import Artwork from "./pages/Artwork";
+import Documentaries from "./pages/Documentaries";
 
 function App() {
   return (

@@ -2,13 +2,13 @@
 
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import CountryCard from "../CountryCard";
-import afghanistanData from "../components/Data.json/Afghanistan.json";
-import ethiopiaData from "../components/Data.json/Ethiopia.json";
-import iranData from "../components/Data.json/Iran.json";
-import pakistanData from "../components/Data.json/Pakistan.json";
-import usaData from "../components/Data.json/USA.json";
-import CountryGallery from "../CountryGallery";
+import CountryCard from "./CountryCard";
+import afghanistanData from "../DataForArtwork/Afghanistan.json";
+import ethiopiaData from "../DataForArtwork/Ethiopia.json";
+import iranData from "../DataForArtwork/Iran.json";
+import pakistanData from "../DataForArtwork/Pakistan.json";
+import usaData from "../DataForArtwork/USA.json";
+import CountryGallery from "./CountryGallery";
 
 const countries = [
   {

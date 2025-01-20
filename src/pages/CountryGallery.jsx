@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { useNavigate } from 'react-router-dom';
-import BackgroundImage from "./components/BackgroundImage"
+import BackgroundImage from "../components/BackgroundImage"
 import ArtworkCard from './ArtworkCard';
 
 const CountryGallery = ({ country }) => {
