@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import NewsBackground from "../assets/NewsImage/NewsBackground.mp4"
+import NewsBackground from "../assets/images/NewsImage/NewsBackground.mp4"
 
 export default function News() {
   const newsArticles = [
