@@ -1,6 +1,9 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
+import HeroImg from "../assets/HeroImage/HeroImg.mp4";
+
+
 
 export default function HeroContent() {
   const words = [
@@ -47,7 +50,7 @@ export default function HeroContent() {
           muted
           className="w-full h-full object-cover opacity-60"
         >
-          <source src="/image/Heroimg.mp4" type="video/mp4" />
+          <source src={HeroImg} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

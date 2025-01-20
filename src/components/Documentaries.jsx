@@ -20,10 +20,10 @@ const DocumentaryData = [
   },
   {
     id: 3,
-    title: "Los Angeles Skyscrapers",
+    title: "Journey Through Ethiopia",
     description:
-      "This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.",
-    video: "https://www.youtube.com/embed/Zi_XLOBDo_Y", // Proper embed link
+      "Ethiopia is one of Africa’s most beautiful and fascinating countries, and a surprising travel destination. From spectacular mountain landscapes and national parks to vast lakes and mysterious deserts. From incredible wildlife to intriguing historic landmarks. From vibrant, fast growing cities to small villages and tribal regions, steeped in culture and traditions.",
+    video: "https://www.youtube.com/embed/2xW9mTStyhM", // Proper embed link
     link: "https://www.youtube.com/watch?v=Zi_XLOBDo_Y",
     updated: "Last updated 3 mins ago",
   },
@@ -38,10 +38,10 @@ const DocumentaryData = [
   },
   {
     id: 5,
-    title: "New York City Skyline",
+    title: "Afghanistan is not what you think",
     description:
-      "A breathtaking view of the New York City skyline with its towering skyscrapers and bustling atmosphere.",
-    video: "https://www.youtube.com/embed/LXb3EKWsInQ", // Proper embed link
+      "Are you ready to discover the hidden gems of Afghanistan? Join me on an inspiring 5 week journey through this complex country, as I uncover the beauty, culture and resilience of the Afghan people.From the bustling streets of Kabul to the tranquil villages nestled in the mountains, this video takes you on a journey through Afghanistan's diverse landscapes and rich history. You'll get a glimpse into the daily lives of the Afghan people, as we visit local markets, explore ancient ruins, and meet with artisans and craftspeople who are keeping traditional Afghan culture alive.",
+    video: "https://www.youtube.com/embed/VMUx7s6mgH8", // Proper embed link
     link: "https://www.youtube.com/watch?v=LXb3EKWsInQ",
     updated: "Last updated 8 mins ago",
   },
@@ -63,7 +63,7 @@ function Documentaries() {
   };
 
   return (
-    <div className="flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:flex-wrap sm:justify-center sm:space-x-6">
+    <div className="pt-24 px-4 sm:px-6 lg:px-8 flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:flex-wrap sm:justify-center sm:space-x-6">
       {DocumentaryData.map((doc) => (
         <a
           key={doc.id}
@@ -72,16 +72,14 @@ function Documentaries() {
           rel="noopener noreferrer"
           className={`flex flex-col rounded-lg bg-black text-white shadow-lg hover:shadow-xl transition-all duration-300 sm:w-full md:w-[40%] lg:w-[30%] xl:w-[25%] p-6 ${
             expandedCard === doc.id ? "transform scale-110 z-50" : "z-10"
-          }`}
-        >
+          }`}>
           <div className="rounded-t-lg h-72 w-full overflow-hidden">
             <iframe
               className="w-full h-full"
               src={doc.video}
               title={doc.title}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+              allowFullScreen></iframe>
           </div>
           <div className="p-6">
             <h5 className="mb-4 text-2xl font-semibold">{doc.title}</h5>
@@ -94,8 +92,7 @@ function Documentaries() {
                   e.preventDefault(); // Prevent navigation when clicking "Read More"
                   toggleDescription(doc.id);
                 }}
-                className="text-blue-500 cursor-pointer ml-2"
-              >
+                className="text-blue-500 cursor-pointer ml-2">
                 {expandedDescription === doc.id ? "Read Less" : "Read More"}
               </span>
             </p>

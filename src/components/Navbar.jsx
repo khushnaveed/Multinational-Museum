@@ -94,7 +94,7 @@ export default function Navbar() {
                       <a href={item.href}>
                         <img
                           alt="Your Company"
-                          src="/image/Logo.png"
+                          src="src/assets/LogoImage/Logo.png"
                           className="h-12 w-auto"
                         />
                       </a>
