@@ -224,10 +224,10 @@ const Exhibitions = ({ exhibit }) => {
                   index + 1
                 }" />
                     <div class="card-content">
-                      <h3><a href="http://localhost:5183/documentaries" style="color: white; text-decoration: none;" class="hover:text-gray-300">${
+                      <h3><a href="http://localhost:5173/artwork" style="color: white; text-decoration: none;" class="hover:text-gray-300">${
                         exhibit.exhibitions[index]
                       }</a></h3>
-                      <p><a href="http://localhost:5183/documentaries" style="color: white; text-decoration: none;" class="hover:text-gray-300">${
+                      <p><a href="http://localhost:5173/artwork" style="color: white; text-decoration: none;" class="hover:text-gray-300">${
                         exhibit.description
                       }</a></p>
                     </div>
