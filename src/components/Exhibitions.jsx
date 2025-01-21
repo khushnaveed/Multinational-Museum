@@ -2,6 +2,9 @@ import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { FaCreditCard, FaPaypal } from "react-icons/fa";
 
+
+
+
 const exhibitions = [
   {
     country: "Afghanistan",
@@ -87,7 +90,10 @@ const exhibitions = [
   },
 ];
 
-const Exhibitions = ({ exhibit }) => {
+
+
+
+const Exhibitions = ({ exhibits }) => {
   const openPopupWindow = (exhibit) => {
     const popup = window.open("", "width=800,height=600");
     if (popup) {
@@ -100,7 +106,6 @@ const Exhibitions = ({ exhibit }) => {
           <title>${exhibit.country} Exhibitions</title>
           <style>
             body {
-              /* font-family: 'Roboto', sans-serif; */
               margin: 0;
               padding: 0;
               background-color: #121212;
@@ -111,87 +116,103 @@ const Exhibitions = ({ exhibit }) => {
               justify-content: center;
               min-height: 100vh;
               overflow: hidden;
-       h1 {
+            }
+             h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 700;
-  color: white; /* White text */
+  color: white;
   text-shadow: 
-    2px 2px 5px rgba(255, 255, 255, 0.8), /* White shadow */
-    -2px -2px 5px rgba(255, 255, 255, 0.8); /* White shadow */
-  animation: glow 3s ease-in-out infinite alternate; /* Slower animation */
-  padding-right: 155px; /* Pushes the text to the left */
+    2px 2px 5px rgba(255, 255, 255, 0.8),
+    -2px -2px 5px rgba(255, 255, 255, 0.8);
+  animation: glow 3s ease-in-out infinite alternate;
 }
 
+/* Center the gallery container */
+.gallery {
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  max-width: 800px;
+  margin-left:140px;
+}
 
-         
-            .gallery {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              margin-bottom: 2rem;
-              position: relative;
-              width: 100%;
-              height: 70vh;
-              max-width: 800px;
-            }
-            .card {
-              position: absolute;
-              width: 80%;
-              height: 100%;
-              background-color: #fff;
-              border-radius: 16px;
-              box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-              overflow: hidden;
-              transition: transform 0.3s ease, opacity 0.3s ease;
-              opacity: 0.3;
-              transform: scale(0.9);
-              transition: all 0.3s ease;
-            }
-            .card.active {
-              opacity: 1;
-              transform: scale(1);
-            }
-            .card img {
-              width: 100%;
-              height: 100%;
-              object-fit: cover;
-              transition: opacity 0.3s ease;
-              border-radius: 12px;
-            }
-            .card-content {
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              padding: 1rem;
-              background-color: rgba(0, 0, 0, 0.5);
-              border-top-left-radius: 12px;
-              border-top-right-radius: 12px;
-              color: #fff;
-              font-size: 1.2rem;
-            }
-            .nav-btn {
-              position: absolute;
-              top: 50%;
-              transform: translateY(-50%);
-              background-color: rgba(0, 0, 0, 0.5);
-              color: #fff;
-              font-size: 2rem;
-              border: none;
-              padding: 1rem;
-              cursor: pointer;
-            }
-            .prev-btn {
-              left: 0;
-            }
-            .next-btn {
-              right: 0;
-            }
-           .back-btn {
-  background-color: #fff; /* White background */
-  color: #121212; /* Dark color for the text */
+/* Center the card within the gallery */
+.card {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.3;
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+
+/* When a card is active (visible) */
+.card.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Ensure the image fills the card */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+}
+
+/* Style for content inside cards */
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Navigation buttons (previous and next) */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+    margin-right:150px;
+
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+/* Style for the back button */
+.back-btn {
+  background-color: #fff;
+  color: #121212;
   padding: 0.8rem 1.6rem;
   border: none;
   border-radius: 4px;
@@ -205,10 +226,53 @@ const Exhibitions = ({ exhibit }) => {
 
 .back-btn:hover {
   background-color: gray;
-  color: #fff; 
-  transform: scale(1.05); 
+  color: #fff;
+  transform: scale(1.05);
 }
 
+  
+            /* Media Query for Mobile Screens */
+       @media (max-width: 640px) {
+  .gallery {
+    height: 60vh; /* Adjust the height on mobile screens */
+  }
+
+  .card {
+    width: 70%; /* Full width for smaller screens */
+    height: 70%; /* Adjust height for mobile */
+      margin-left: 10px; /* Adds 20px of space to the left side of the element, outside its border */
+      margin-right:25px;
+  }
+
+  .card img {
+    width: 100%; /* Ensure image takes full width */
+    height: 100%; /* Adjust image height automatically */
+  }
+
+  .card-content {
+    font-size: 0.9rem; /* Adjust font size for mobile */
+    padding: 0.6rem; /* Adjust padding for mobile */
+  }
+
+  .nav-btn {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    padding: 0.8rem; /* Adjust padding for mobile */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left:20px;
+  }
+
+ 
+  /* Adjust back button */
+  .back-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem; /* Reduce padding */
+  }
+  h1{
+              font-size: 2rem;
+  }
+}
           </style>
         </head>
         <body>
@@ -217,25 +281,17 @@ const Exhibitions = ({ exhibit }) => {
             ${exhibit.image
               .map(
                 (img, index) => `
-                  <div class="card ${
-                    index === 0 ? "active" : ""
-                  }" id="card-${index}">
-                    <img src="${img}" alt="${exhibit.country} - Image ${
-                  index + 1
-                }" />
+                  <div class="card ${index === 0 ? "active" : ""}" id="card-${index}">
+                    <img src="${img}" alt="${exhibit.country} - Image ${index + 1}" />
                     <div class="card-content">
-                      <h3><a href="http://localhost:5173/artwork" style="color: white; text-decoration: none;" class="hover:text-gray-300">${
-                        exhibit.exhibitions[index]
-                      }</a></h3>
-                      <p><a href="http://localhost:5173/artwork" style="color: white; text-decoration: none;" class="hover:text-gray-300">${
-                        exhibit.description
-                      }</a></p>
+                      <h3><a href="http://localhost:5173/artwork" style="color: white; text-decoration: none;" class="hover:text-gray-300">${exhibit.exhibitions[index]}</a></h3>
+                      <p><a href="http://localhost:5173/artwork" style="color: white; text-decoration: none;" class="hover:text-gray-300">${exhibit.description}</a></p>
                     </div>
                   </div>
                 `
               )
               .join("")}
-
+            
             <button class="nav-btn prev-btn" onclick="navigateGallery(-1)">&#10094;</button>
             <button class="nav-btn next-btn" onclick="navigateGallery(1)">&#10095;</button>
           </div>
@@ -243,14 +299,14 @@ const Exhibitions = ({ exhibit }) => {
           <script>
             let currentIndex = 0;
             const cards = document.querySelectorAll('.card');
-
+  
             function navigateGallery(direction) {
               cards[currentIndex].classList.remove('active');
               currentIndex = (currentIndex + direction + cards.length) % cards.length;
               cards[currentIndex].classList.add('active');
               updateCardOpacity(currentIndex);
             }
-
+  
             function updateCardOpacity(activeIndex) {
               cards.forEach((card, index) => {
                 if (index === activeIndex) {
@@ -279,52 +335,45 @@ const Exhibitions = ({ exhibit }) => {
       `);
     }
   };
+  
+
 
   return (
     <div className="min-h-screen relative text-gray-200">
       {/* Video Background */}
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-40"
-      >
-        <source
-          src="https://cdn.pixabay.com/video/2024/02/06/199539-910530492_large.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-
+  
       {/* Whole Page Background Animation */}
       <div className="gradient-animation min-h-screen">
         {/* Hero Section */}
-        <section className="text-gray-200  py-14 bg-opacity-60 ">
+     <section className="text-gray-200 py-4 sm:py-6 md:py-14 bg-opacity-60 ">
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-4xl font-bold text-center mb-12 text-gray-200 flex items-center justify-center">
-              {/* <i className="fas fa-globe mr-3"></i> */}Exhibitions
-            </h1>
+          <h1 className="text-2xl  sm:text-sm  md:text-4xl font-bold text-center mb-12 text-gray-200 flex items-center justify-center">
+  Exhibitions
+</h1>
+
           </div>
         </section>
-
+  
         {/* Overlapping Exhibitions Section */}
         <section
-          className="relative py-16 px-8"
+          className="relative py-0 px-8 "
           style={{
             backgroundImage: 'url("")',
             backgroundSize: "cover",
             backgroundPosition: "center",
-            zIndex: "1",
+            zIndex: "0",
           }}
         >
-          <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10">
+          <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10 ">
             {exhibitions.map((exhibit, index) => (
               <div
                 key={index}
-                className="relative group w-[400px] h-[600px] bg-gray-200 rounded-[10px] transform transition duration-500 hover:scale-110 hover:rotate-12 hover:translate-y-[-10px] hover:z-10 shadow-[rgba(255,255,255,0.5)_0px_0px_15px_0px,_rgba(255,255,255,0.3)_4px_4px_20px_0px,_rgba(0,0,0,0.5)_8px_8px_30px_0px,_rgba(0,0,0,0.3)_12px_12px_40px_0px]"
+                className={`relative group w-[250px] h-[350px] sm:w-[50%] sm:h-[50px]  md:w-[300px] md:h-[450px] lg:w-[400px] lg:h-[600px] bg-gray-200 rounded-[10px] transform transition duration-500 sm:hover:scale-110
+                  sm:hover:rotate-12 sm:hover:translate-y-[-10px] hover:z-10 shadow-[rgba(255,255,255,0.5)_0px_0px_15px_0px,_rgba(255,255,255,0.3)_4px_4px_20px_0px,_rgba(0,0,0,0.5)_8px_8px_30px_0px,_rgba(0,0,0,0.3)_12px_12px_40px_0px]
+                  mb-6 sm:mb-0 sm:p-0`}
                 style={{
-                  marginTop: `${index * -70}px`,
-                  zIndex: `${100 - index}`,
+                  marginTop: window.innerWidth <= 640 ? "0px" : `${index !== 0 ? index * -70 : 0}px`, // Prevent overlap on mobile
+                  zIndex: window.innerWidth <= 640 ? "1" : `${100 - index}`, // Set zIndex to 1 for mobile to remove layering
                 }}
                 onClick={() => openPopupWindow(exhibit)}
               >
@@ -333,10 +382,12 @@ const Exhibitions = ({ exhibit }) => {
                   alt={exhibit.country}
                   className="w-full h-full rounded object-cover group-hover:opacity-80"
                 />
-                <div className="absolute rounded inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300"></div>
-                <div className="absolute w-full bottom-0 p-6 text-gray-200 bg-black  bg-opacity-40  z-10">
-                  <h2 className="text-3xl font-bold">{exhibit.country}</h2>
-                  <p className="mt-2">{exhibit.description}</p>
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 transition duration-300 flex items-end">
+                  <div className="p-4 w-full text-gray-200">
+                    <h2 className="text-3xl font-bold">{exhibit.country}</h2>
+                    <p className="mt-2">{exhibit.description}</p>
+                  </div>
                 </div>
               </div>
             ))}
@@ -345,6 +396,9 @@ const Exhibitions = ({ exhibit }) => {
       </div>
     </div>
   );
+  
+
+  
 };
 
 export default Exhibitions;
