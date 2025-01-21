@@ -341,23 +341,7 @@ const Exhibitions = ({ exhibits }) => {
   return (
     <div className="min-h-screen relative text-gray-200">
       {/* Video Background */}
-<<<<<<< HEAD:src/pages/Exhibitions.jsx
-      <video
-        autoPlay
-        loop
-        muted
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-10"
-      >
-        <source
-          src="https://cdn.pixabay.com/video/2024/02/06/199539-910530492_large.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-      </video>
-
-=======
   
->>>>>>> shamim20januar:src/components/Exhibitions.jsx
       {/* Whole Page Background Animation */}
       <div className="gradient-animation min-h-screen">
         {/* Hero Section */}
