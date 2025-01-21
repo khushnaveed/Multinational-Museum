@@ -127,6 +127,7 @@ const Exhibitions = ({ exhibits }) => {
     2px 2px 5px rgba(255, 255, 255, 0.8),
     -2px -2px 5px rgba(255, 255, 255, 0.8);
   animation: glow 3s ease-in-out infinite alternate;
+  margin-right:30px;
 }
 
 /* Center the gallery container */
@@ -197,7 +198,7 @@ const Exhibitions = ({ exhibits }) => {
   border: none;
   padding: 1rem;
   cursor: pointer;
-    margin-right:150px;
+    margin-right:180px;
 
 }
 
@@ -220,8 +221,8 @@ const Exhibitions = ({ exhibits }) => {
   font-weight: 600;
   text-transform: uppercase;
   width: 120px;
-  margin: 1rem auto;
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  margin-right:60px;
 }
 
 .back-btn:hover {
@@ -260,17 +261,18 @@ const Exhibitions = ({ exhibits }) => {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left:20px;
+    margin-left:50px;
+
   }
 
  
   /* Adjust back button */
   .back-btn {
     font-size: 0.9rem;
-    padding: 0.6rem 1.2rem; /* Reduce padding */
+    margin-left:60px;
   }
   h1{
-              font-size: 2rem;
+     font-size: 2rem;
   }
 }
           </style>
