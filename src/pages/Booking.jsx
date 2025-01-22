@@ -138,6 +138,10 @@ const Booking = () => {
               <div className="flex items-center gap-4">
                 <input
                   type="number"
+                  //test
+                  inputMode="numeric"
+
+
                   min="0"
                   value={adultQty}
                   onChange={(e) => setAdultQty(Number(e.target.value))}
@@ -155,6 +159,8 @@ const Booking = () => {
               <div className="flex items-center gap-4">
                 <input
                   type="number"
+                  //test
+                  inputMode="numeric"
                   min="0"
                   value={childQty}
                   onChange={(e) => setChildQty(Number(e.target.value))}
@@ -171,6 +177,8 @@ const Booking = () => {
               <div className="flex items-center gap-4">
                 <input
                   type="number"
+                  //test
+                  inputMode="numeric"
                   min="0"
                   value={guideQty}
                   onChange={(e) => setGuideQty(Number(e.target.value))}
@@ -188,6 +196,8 @@ const Booking = () => {
               <div className="flex items-center gap-4">
                 <input
                   type="number"
+                  //test
+                  inputMode="numeric"
                   min="0"
                   value={museumPassQty}
                   onChange={(e) => setMuseumPassQty(Number(e.target.value))}
