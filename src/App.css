@@ -9,3 +9,14 @@ html {
     font-family: 'Athiya';
     background-color: black;
 }
+
+
+/* src/styles.css or src/App.css */
+@media (min-width: 641px) and (max-width: 766px) {
+    .exhibition-card {
+      /* Custom styles for screens between 641px and 766px */
+      width: 48%;
+      height: 350px;
+    }
+  }
+  

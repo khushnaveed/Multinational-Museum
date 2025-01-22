@@ -1,6 +1,5 @@
 import React from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";
-import { FaCreditCard, FaPaypal } from "react-icons/fa";
 
 
 
@@ -231,9 +230,8 @@ const Exhibitions = ({ exhibits }) => {
   transform: scale(1.05);
 }
 
-  
-            /* Media Query for Mobile Screens */
-       @media (max-width: 640px) {
+  /* Existing mobile styles (for screens under 640px) */
+@media (max-width: 640px) {
   .gallery {
     height: 60vh; /* Adjust the height on mobile screens */
   }
@@ -241,8 +239,8 @@ const Exhibitions = ({ exhibits }) => {
   .card {
     width: 70%; /* Full width for smaller screens */
     height: 70%; /* Adjust height for mobile */
-      margin-left: 10px; /* Adds 20px of space to the left side of the element, outside its border */
-      margin-right:25px;
+    margin-left: 10px;
+    margin-right: 25px;
   }
 
   .card img {
@@ -251,30 +249,31 @@ const Exhibitions = ({ exhibits }) => {
   }
 
   .card-content {
-    font-size: 0.9rem; /* Adjust font size for mobile */
-    padding: 0.6rem; /* Adjust padding for mobile */
+    font-size: 0.9rem;
+    padding: 0.6rem;
   }
 
   .nav-btn {
-    font-size: 1.5rem; /* Smaller font size for mobile */
-    padding: 0.8rem; /* Adjust padding for mobile */
+    font-size: 1.5rem;
+    padding: 0.8rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left:50px;
-
+    margin-left: 50px;
   }
 
- 
-  /* Adjust back button */
   .back-btn {
     font-size: 0.9rem;
-    margin-left:60px;
+    margin-left: 60px;
   }
-  h1{
-     font-size: 2rem;
+
+  h1 {
+    font-size: 2rem;
   }
 }
+
+
+
           </style>
         </head>
         <body>
@@ -343,22 +342,21 @@ const Exhibitions = ({ exhibits }) => {
   return (
     <div className="min-h-screen relative text-gray-200">
       {/* Video Background */}
-  
+
       {/* Whole Page Background Animation */}
       <div className="gradient-animation min-h-screen">
         {/* Hero Section */}
-     <section className="text-gray-200 py-4 sm:py-6 md:py-14 bg-opacity-60 ">
-          <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-2xl  sm:text-sm  md:text-4xl font-bold text-center mb-12 text-gray-200 flex items-center justify-center">
-  Exhibitions
-</h1>
-
+        <section className="text-gray-200 py-4 sm:py-6 md:py-14 bg-opacity-60 ">
+          <div className="max-w-7xl mx-auto text-center  py-10">
+            <h1 className="text-2xl sm:text-sm md:text-4xl font-bold text-center mb-12 text-gray-200 flex items-center justify-center">
+              Exhibitions
+            </h1>
           </div>
         </section>
-  
+
         {/* Overlapping Exhibitions Section */}
         <section
-          className="relative py-0 px-8 "
+          className="relative py-0 px-8"
           style={{
             backgroundImage: 'url("")',
             backgroundSize: "cover",
@@ -366,15 +364,18 @@ const Exhibitions = ({ exhibits }) => {
             zIndex: "0",
           }}
         >
-          <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10 ">
+          <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10">
             {exhibitions.map((exhibit, index) => (
               <div
                 key={index}
-                className={`relative group w-[250px] h-[350px] sm:w-[50%] sm:h-[50px]  md:w-[300px] md:h-[450px] lg:w-[400px] lg:h-[600px] bg-gray-200 rounded-[10px] transform transition duration-500 sm:hover:scale-110
+                className={`relative group exhibition-card  w-[250px] h-[350px] sm:w-[50%] sm:h-[50px] md:w-[40%] md:h-[350px] lg:w-[400px] lg:h-[600px] bg-gray-200 rounded-[10px] transform transition duration-500 sm:hover:scale-110
                   sm:hover:rotate-12 sm:hover:translate-y-[-10px] hover:z-10 shadow-[rgba(255,255,255,0.5)_0px_0px_15px_0px,_rgba(255,255,255,0.3)_4px_4px_20px_0px,_rgba(0,0,0,0.5)_8px_8px_30px_0px,_rgba(0,0,0,0.3)_12px_12px_40px_0px]
                   mb-6 sm:mb-0 sm:p-0`}
                 style={{
-                  marginTop: window.innerWidth <= 640 ? "0px" : `${index !== 0 ? index * -70 : 0}px`, // Prevent overlap on mobile
+                  marginTop:
+                    window.innerWidth <= 640
+                      ? "0px"
+                      : `${index !== 0 ? index * -70 : 0}px`, // Prevent overlap on mobile
                   zIndex: window.innerWidth <= 640 ? "1" : `${100 - index}`, // Set zIndex to 1 for mobile to remove layering
                 }}
                 onClick={() => openPopupWindow(exhibit)}
@@ -398,9 +399,6 @@ const Exhibitions = ({ exhibits }) => {
       </div>
     </div>
   );
-  
-
-  
 };
 
 export default Exhibitions;
