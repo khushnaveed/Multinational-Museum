@@ -54,7 +54,7 @@ const Artwork = () => {
 };
 
 const CountryList = () => (
-  <div className="min-h-screen bg-gray-900 text-white p-8 relative"> {/* title and background*/}
+  <div className="min-h-screen bg-black text-white p-8 relative"> {/* title and main background color*/}
     <h1 className="text-4xl font-bold mb-8 text-center">
       DCI Student Museum   
     </h1>
