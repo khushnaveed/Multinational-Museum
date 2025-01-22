@@ -26,12 +26,12 @@ const BackgroundImage = ({ src, alt }) => {
     right: 0,
     bottom: 0,
     backgroundColor: 'black',
-    opacity: .5, //For Gallery opacity behind cards
+    opacity: 0.6, //For Gallery opacity behind cards
   };
 
   return (
     <div style={backgroundStyle}>
-      <img src={src || '/museum-crack1.jpg'} alt={alt} style={imgStyle} />
+      <img src={src || '/ArtworkBg/b.jpg'} alt={alt} style={imgStyle} />
       <div style={overlayStyle} />
     </div>
   );
