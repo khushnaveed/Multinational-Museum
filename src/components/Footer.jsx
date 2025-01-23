@@ -24,11 +24,34 @@ const Footer = () => {
             </div>
 
             <ul className="text-base leading-relaxed text-gray-200 mt-7">
-              <li className="hover:text-blue-600">Luis Jurado</li>
-              <li className="hover:text-blue-600">Zahra Rafieirad</li>
-              <li className="hover:text-blue-600">Shameem Fazli</li>
-              <li className="hover:text-blue-600">Million Daniel</li>
-              <li className="hover:text-blue-600">Khush Bakht Naveed</li>
+              <li className="hover:text-blue-600">
+                <a href="https://github.com/luisjurado1" target="_blank">
+                  Luis Jurado
+                </a>{" "}
+              </li>
+              <li className="hover:text-blue-600">
+                {" "}
+                <a href="https://github.com/zahra-rafieirad" target="_blank">
+                  Zahra Rafieirad
+                </a>
+              </li>
+              <li className="hover:text-blue-600">
+                {" "}
+                <a href="https://github.com/shameem-oss" target="_blank">
+                  Shameem Fazli
+                </a>
+              </li>
+              <li className="hover:text-blue-600">
+                <a href="https://github.com/Mila-Amen" target="_blank">
+                  Million Daniel
+                </a>{" "}
+              </li>
+              <li className="hover:text-blue-600">
+                {" "}
+                <a href="https://github.com/khushnaveed" target="_blank">
+                  Khush Bakht Naveed
+                </a>
+              </li>
             </ul>
 
             <ul className="flex items-center space-x-3 mt-9">
@@ -120,7 +143,7 @@ const Footer = () => {
             <ul className="mt-6 space-y-4">
               <li>
                 <a
-                  href="/"
+                  href="https://github.com/khushnaveed/Museum-Website"
                   className="flex text-base text-gray-200 transition-all duration-200 hover:text-blue-600"
                 >
                   About Us
@@ -128,7 +151,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/exhibitions"
                   title=""
                   className="flex text-base text-gray-200 transition-all duration-200 hover:text-blue-600 "
                 >
@@ -139,7 +162,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="/"
+                  href="/booking"
                   title=""
                   className="flex text-base text-gray-200 transition-all duration-200 hover:text-blue-600 "
                 >
@@ -150,7 +173,7 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="/"
+                  href="/events"
                   title=""
                   className="flex text-base text-gray-200 transition-all duration-200 hover:text-blue-600 "
                 >
@@ -177,7 +200,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="/contactus"
                   title=""
                   className="flex text-base text-gray-200 transition-all duration-200 hover:text-blue-600 "
                 >

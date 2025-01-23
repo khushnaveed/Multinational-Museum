@@ -54,9 +54,11 @@ const Artwork = () => {
 };
 
 const CountryList = () => (
-  <div className="min-h-screen bg-black text-white p-8 relative"> {/* title and main background color*/}
+  <div className="min-h-screen bg-black text-white p-8 relative">
+    {" "}
+    {/* title and main background color*/}
     <h1 className="text-4xl font-bold mb-8 text-center">
-      DCI Student Museum   
+      Welcome to Multinational Museum
     </h1>
     <div className="flex flex-wrap justify-center gap-8">
       {countries.map((country) => (
