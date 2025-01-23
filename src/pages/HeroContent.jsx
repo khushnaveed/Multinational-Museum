@@ -46,10 +46,16 @@ export default function HeroContent() {
       {/* Background video */}
       <div className="absolute inset-0">
         <video
-          autoPlay
-          loop
+          /* autoPlay
+          loop */
           muted
-          className="w-full h-full object-cover opacity-60">
+          autoPlay={true}
+          loop={true}
+          controls={false}
+          playsInline
+        
+          className="w-full h-full object-cover opacity-60"
+        >
           <source src={HeroImg} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -66,7 +72,8 @@ export default function HeroContent() {
         <div className="mt-8">
           <button
             onClick={() => navigate("/booking")}
-            className="bg-gray-600 text-white py-3 px-8 rounded-lg text-xl hover:bg-blue-700 transition duration-300 mt-6">
+            className="bg-gray-600 text-white py-3 px-8 rounded-lg text-xl hover:bg-blue-700 transition duration-300 mt-6"
+          >
             Book Your Tickets Here
           </button>
         </div>
