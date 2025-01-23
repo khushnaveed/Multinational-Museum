@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 
 const DocumentaryData = [
@@ -13,7 +14,7 @@ const DocumentaryData = [
     id: 2,
     title: "IRAN - Golestan Palace - A UNESCO World Heritage Site",
     description:
-      "Golestan Palace in Tehran used to be the royal residence of the Qajar Kings during their reign of 131 years.  During this period the palace was practically rebuilt.  The complex, as it stands today, was last renovated in 1865.  It consists of a group of buildings and halls, each with their own unique character and purpose.",
+      "Golestan Palace in Tehran used to be the royal residence of the Qajar Kings during their reign of 131 years. During this period the palace was practically rebuilt. The complex, as it stands today, was last renovated in 1865. It consists of a group of buildings and halls, each with their own unique character and purpose.",
     video: "https://www.youtube.com/embed/4qe4to3RW-g", // Proper embed link
     link: "https://www.youtube.com/watch?v=4qe4to3RW-g",
     updated: "Last updated 3 mins ago",
@@ -70,10 +71,10 @@ function Documentaries() {
           href={doc.link}
           target="_blank"
           rel="noopener noreferrer"
-          className={`flex flex-col rounded-lg bg-black text-white shadow-lg hover:shadow-xl transition-all duration-300 sm:w-full md:w-[40%] lg:w-[30%] xl:w-[25%] p-6 ${
+          className={`flex flex-col rounded-lg bg-black text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 sm:w-full md:w-[40%] lg:w-[30%] xl:w-[25%] p-6 ${
             expandedCard === doc.id ? "transform scale-110 z-50" : "z-10"
           }`}>
-          <div className="rounded-t-lg h-72 w-full overflow-hidden">
+          <div className=" rounded-t-lg h-72 w-full overflow-hidden">
             <iframe
               className="w-full h-full"
               src={doc.video}
@@ -81,7 +82,7 @@ function Documentaries() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
           </div>
-          <div className="p-6">
+          <div className="bg-gray-900 p-6">
             <h5 className="mb-4 text-2xl font-semibold">{doc.title}</h5>
             <p className="mb-6 text-lg">
               {expandedDescription === doc.id
