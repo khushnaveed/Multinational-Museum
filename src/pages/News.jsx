@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import NewsBackground from "../assets/NewsImage/NewsBackground.mp4"
+import NewsBackground from "/NewsImage/NewsBackground.mp4";
 
 export default function News() {
   const newsArticles = [
@@ -8,35 +8,35 @@ export default function News() {
       title: "Arts of Iran",
       description:
         "The modern-day country of Iran, known in ancient times as Persia, has a history of civilization dating back approximately ten thousand years..",
-      image: "src/assets/NewsImage/IranNews.jpg",
+      image: "/NewsImage/IranNews.jpg",
       link: "https://www.sdmart.org/exhibition/arts-of-iran/ ",
     },
     {
       title: "Solomon R. Guggenheim Museum NewYork",
       description:
         "Frank Lloyd Wright's landmark nautilus-like building is renowned as much for its famous architecture as for its superlative collection of modern and contemporary art and well-curated shows, some of which utilize the entire museum.",
-      image: "src/assets/NewsImage/UsaNews.jpg",
+      image: "/NewsImage/UsaNews.jpg",
       link: "https://www.guggenheim.org/",
     },
     {
       title: "Pakistan Monument Museum",
       description:
         "The Pakistan Monument is a national monument in Islamabad that is shaped like a petal. It is situated in the western Shakarparian Hills and the best place to visit in Islamabad. The magnificent Monument was erected to reflect Pakistanis’ unity and patriotism. It also honors the martyrs who laid down their lives for the sake of our country and its people.",
-      image: "src/assets/NewsImage/PakistanNews.jpg",
+      image: "/NewsImage/PakistanNews.jpg",
       link: "https://www.tripadvisor.com/Attraction_Review-g293960-d2164348-Reviews-Pakistan_Monument_Museum-Islamabad_Islamabad_Capital_Territory.html#/media/2164348/?albumid=-160&type=ALL_INCLUDING_RESTRICTED&category=-160",
     },
     {
       title: "The Obelisk of Axum: the stages of return, Ethiopia",
       description:
         "By a ceremony to whom Ethiopian Authorities have ascribed an admirable simbolical and political value, on the 4 September 2008 the obelisk of Axum was brought back  to the site where it was found in 1935 by an italian archaeological expedition. The discovery also concerned other similar examples, which are nowadays located on the area of the Axumita Reign’s ancient capital.",
-      image: "src/assets/NewsImage/EthiopiaNews.jpg",
+      image: "/NewsImage/EthiopiaNews.jpg",
       link: "https://www.lattanzisrl.it/en/the-obelisk-of-axum-the-stages-of-return/",
     },
     {
       title: "Linden Museum Stuttgart – Afghanistan",
       description:
         "It was developed by the Linden-Museum together with the Entangled: Stuttgart – Afghanistan working group. Since 2019, people from the Stuttgart region have been taking part, many of them with an international, Afghanistan-related history, as well as partners from academia and the arts. They have contributed to the exhibition in terms of concept, content and, in some cases, very personal memories and thoughts. Throughout the exhibition there are always references to the present – even with historical themes. This also happens through personal and critical comments or artistic positions.",
-      image: "src/assets/NewsImage/AfganistanNews.jpg",
+      image: "/NewsImage/AfganistanNews.jpg",
       link: "https://lindenmuseum.de/?lang=en",
     },
   ];
