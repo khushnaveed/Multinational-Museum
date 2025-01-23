@@ -46,14 +46,11 @@ export default function HeroContent() {
       {/* Background video */}
       <div className="absolute inset-0">
         <video
-          /* autoPlay
-          loop */
           muted
           autoPlay={true}
           loop={true}
           controls={false}
           playsInline
-        
           className="w-full h-full object-cover opacity-60"
         >
           <source src={HeroImg} type="video/mp4" />

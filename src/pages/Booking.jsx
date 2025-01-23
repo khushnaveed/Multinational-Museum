@@ -111,9 +111,11 @@ const Booking = () => {
     <div className="min-h-screen relative">
       {/* Video Background */}
       <video
-        autoPlay
-        loop
         muted
+        autoPlay={true}
+        loop={true}
+        controls={false}
+        playsInline
         className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-60"
       >
         <source

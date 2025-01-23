@@ -46,10 +46,13 @@ export default function News() {
       {/* Background Video */}
       <div className="absolute inset-0">
         <video
-          autoPlay
-          loop
           muted
-          className="w-full h-full object-cover opacity-60">
+          autoPlay={true}
+          loop={true}
+          controls={false}
+          playsInline
+          className="w-full h-full object-cover opacity-60"
+        >
           <source src={NewsBackground} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -62,7 +65,8 @@ export default function News() {
           {newsArticles.map((article, index) => (
             <div
               key={index}
-              className="bg-gray-800 shadow-md rounded-lg overflow-hidden">
+              className="bg-gray-800 shadow-md rounded-lg overflow-hidden"
+            >
               <img
                 src={article.image}
                 alt={article.title}
@@ -75,7 +79,8 @@ export default function News() {
                   href={article.link}
                   className="text-blue-400 hover:text-blue-300 hover:underline font-medium"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                >
                   Read More
                 </a>
               </div>

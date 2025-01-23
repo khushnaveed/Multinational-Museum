@@ -20,9 +20,11 @@ const BookingConfirmation = () => {
     <div className="min-h-screen  flex items-center justify-center p-4">
       {/* Video Background */}
       <video
-        autoPlay
-        loop
         muted
+        autoPlay={true}
+        loop={true}
+        controls={false}
+        playsInline
         className="absolute top-0 left-0 w-full h-full object-cover -z-10 opacity-40"
       >
         <source
