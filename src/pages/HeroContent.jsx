@@ -1,9 +1,8 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
-import HeroImg from "../assets/images/HeroImage/HeroImg.mp4";
-
-
+import { useNavigate } from "react-router-dom"; // Import useNavigate hook
+import HeroImg from "../assets/HeroImage/HeroImg.mp4";
 
 export default function HeroContent() {
   const words = [
@@ -16,6 +15,8 @@ export default function HeroContent() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [loop, setLoop] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
+
+  const navigate = useNavigate(); // Initialize the navigate hook
 
   useEffect(() => {
     const handleTyping = () => {
@@ -48,18 +49,27 @@ export default function HeroContent() {
           autoPlay
           loop
           muted
-          className="w-full h-full object-cover opacity-60"
-        >
+          className="w-full h-full object-cover opacity-60">
           <source src={HeroImg} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
 
-      {/* Title */}
+      {/* Title and content */}
       <div className="relative text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-normal uppercase">
-          {text}
+        <h1 className="text-4xl md:text-6xl font-normal uppercase">{text}</h1>
+        <h1 className="text-2xl md:text-4xl font-semibold mt-10">
+          Welcome to Multinational Museum
         </h1>
+
+        {/* Book Now Button */}
+        <div className="mt-8">
+          <button
+            onClick={() => navigate("/booking")}
+            className="bg-gray-600 text-white py-3 px-8 rounded-lg text-xl hover:bg-blue-700 transition duration-300 mt-6">
+            Book Your Tickets Here
+          </button>
+        </div>
       </div>
     </div>
   );
