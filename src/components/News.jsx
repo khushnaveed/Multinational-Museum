@@ -42,7 +42,7 @@ export default function News() {
   ];
 
   return (
-    <div className="bg-gray-900 min-h-screen py-12 text-gray-200 relative">
+    <div className="bg-gray-900 min-h-screen py-12 text-gray-200 relative ">
       {/* Background Video */}
       <div className="absolute inset-0">
         <video
@@ -56,9 +56,9 @@ export default function News() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-7xl px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-8 ">
         <h1 className="text-4xl font-bold text-center mb-12">News</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {newsArticles.map((article, index) => (
             <div
               key={index}
