@@ -2,7 +2,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate hook
-import HeroImg from "../assets/images/HeroImage/HeroImg2.mp4";
+import HeroImg from "../assets/images/HeroImage/HeroImg3.mp4";
 
 export default function HeroContent() {
   const words = [
