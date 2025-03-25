@@ -3,7 +3,7 @@
 A virtual journey through the rich cultural heritage and history of five diverse nations, showcasing their most significant artifacts, historical landmarks, and cultural contributions.
 
 ## Technologies Used 🚀
-- **Frontend**: React 18 with TypeScript
+- **Frontend**: React 18 with JavaScript
 - **Styling**: Tailwind CSS for modern, responsive design
 - **Build Tool**: Vite for optimal development experience
 - **Icons**: Lucide React for consistent iconography
